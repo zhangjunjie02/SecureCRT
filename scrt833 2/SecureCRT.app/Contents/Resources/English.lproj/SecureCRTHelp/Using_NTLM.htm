@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Using NTLM</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("Using NTLM<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Using NTLM</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>To use NT LAN Manager (NTLM) (a Windows authentication protocol) with 
+ SecureCRT Telnet and Telnet/TLS sessions, you must have a valid Windows 
+ security context for NTLM authentication to succeed. Typically, in a Windows 
+ network, this means that the local machine and remote server would be 
+ members of the same (or trusted) Active Directory Domains. Once a user 
+ authenticates to Windows on the client side, the user then has a security 
+ context that can be used to authenticate the client to the remote server 
+ (assuming that the security context is valid between both the client and 
+ server).</p>
+<p>As an example, the remote machine must have a username and password 
+ associated with the session that is attempting to access the Telnet server. 
+ The server's machine must have that same username and password listed 
+ under its <span class="Label">Users and Passwords</span> facility in the 
+ Windows Control Panel.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> If a 
+ user's password is changed on the local machine, it must also be changed 
+ on the Telnet server.</p>
+<p>In <span>Secure</span>CRT, NTLM authentication is enabled by default. 
+ You can disable NTLM by unchecking the <span class="Label">Enable NTLM 
+ authentication</span> option on the <span class="DialogName"><a href="SO_Connection_Telnet.htm">Session 
+ Options/Connection/Telnet</a></span> dialog.</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

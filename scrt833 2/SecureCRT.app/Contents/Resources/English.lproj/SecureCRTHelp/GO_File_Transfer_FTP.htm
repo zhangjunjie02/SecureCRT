@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/File Transfer/FTP</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nFile Transfer/FTP");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > File Transfer/FTP<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;File Transfer / 
+ FTP</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="color: #800000;">This category only appears if VanDyke Software's 
+ SecureFX® 3.0 (or newer) is also installed.</p>
+<p>The <strong>File Transfer/FTP</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a><span 
+	 class="Dialog">&#160;</span>dialog allows you to control the attributes 
+ of FTP transfers.</p>
+<p class="GroupNoText">Receive buffer group</p>
+<p class="Field">Use system default size</p>
+<p class="Normal025">By default the system default buffer size is used. 
+ It is highly recommended that you use the system default buffer size.</p>
+<p class="Field">Size</p>
+<p class="Normal025">If you decide not to use the system default buffer 
+ size, enter the buffer size here.</p>
+<p class="GroupNoText">Send buffer group</p>
+<p class="Field">Use system default size</p>
+<p class="Normal025">By default the system default buffer size is used. 
+ It is highly recommended that you use the system default buffer size.</p>
+<p class="Field">Size</p>
+<p class="Normal025">If you decide not to use the system default buffer 
+ size, enter the buffer size here.</p>
+<p class="GroupNoText">Data connection options group</p>
+<p class="Field">Use outgoing data connections (PASV/EPSV)</p>
+<p class="Normal025">Checking this box forces all data connections to be 
+ originated by SecureFX (using the FTP PASV or EPSV command). This setting 
+ is often needed where a firewall will not allow incoming connections from 
+ external FTP servers. If the PASV or EPSV connection fails, SecureFX automatically 
+ tries to reconnect using the original host/IP address. When this check 
+ box is unchecked, SecureFX will have the FTP server create an incoming 
+ data connection instead (using the FTP PORT or EPRT command).</p>
+<p class="Normal025">This option is on by default. This is used as the 
+ default setting for the identical <a href="SO_File_Transfer.htm"><span 
+	 class="DialogName" style="background-color: Transparent;">Session 
+ Options/File Transfer</span></a> option.</p>
+<p class="Field">Disable direct server-to-server transfers</p>
+<p class="Normal025">This option is unchecked by default. Checking this 
+ option will force all server-to-server transfers to be handled by establishing 
+ indirect data connections through the local host. This option is sometimes 
+ needed where a server behaves poorly after receiving a request to establish 
+ a server-to-server connection.</p>
+<p class="Field">Limit local ports used for PORT connections</p>
+<p class="Normal025">This option, when enabled, allows you to specify a 
+ range of ports for SecureFX to use when making an FTP or FTP/TLS data 
+ connection.</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

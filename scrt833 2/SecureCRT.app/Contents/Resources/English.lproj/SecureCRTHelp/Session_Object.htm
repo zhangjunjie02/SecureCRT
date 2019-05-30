@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Session Object</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:#ffffff; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Scripting\nScript Objects Reference\nSession Object");
+addAvenueInfo("ActiveX Scripting","Window_Object.htm","Screen_Object.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > <a href=\"Application_Object.htm\">Script Objects Reference<\/a> > Session Object<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Keyword KKEYS="scripting;scripting&#028;objects;scripting&#028;ActiveX"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Session Object</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p class="SingleSpaced025">&#160;</p>
+<p class="SOH1">Description</p>
+<p class="SingleSpaced025">The Session object provides access to the state 
+ and properties that exist for the current <a href="javascript:TextPopup(this)" id="HotSpot6811" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot6811', 'POPUP6811');
+//]]></script><span class="glosstext" id="POPUP6811" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> 
+ or <a href="javascript:TextPopup(this)" id="HotSpot33892" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot33892', 'POPUP33892');
+//]]></script><span class="glosstext" id="POPUP33892" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> .</p>
+<p class="SingleSpaced025">&#160;</p>
+<p class="SOH1">Syntax</p>
+<p class="Entry025single"><nobr style="white-space: nowrap;">session.<span>P</span><span><i>roperty</i> 
+ [ = <i>expression</i> ]</span></nobr></p>
+<p class="Entry025single"><nobr style="white-space: nowrap;">session.<span 
+	 style="font-style: italic;"><i>M<i>e</i></i></span><i>thod</i>([<i>arglist</i>])</nobr></p>
+<p class="SingleSpaced025">&#160;</p>
+<p class="SOH1">Remarks</p>
+<p class="SingleSpaced025"><span>Secure</span>CRT's Session object is accessed 
+ through the top-level object’s <code>Session</code> property.</p>
+<p class="SingleSpaced025">&#160;</p>
+<p class="SOH1"><u style="text-decoration: underline; ">Session Object 
+ Properties and Methods</u></p>
+<table cellspacing="1">
+	<col width="193" />
+	<col width="191" />
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="Base"><!--ForeHelp.Hotspot JUMP="Session_Object_Properties"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Properties"><b>Properties</b></a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="Base"><!--ForeHelp.Hotspot JUMP="Session_Object_Methods"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Methods"><b>Methods</b></a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Properties_Config">Config</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Connect"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Methods_Connect">Connect</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Properties_Connected"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Properties_Connected">Connected</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Methods_ConnectInTab">ConnectInTab</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Properties_LocalAddress"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Properties_LocalAddress">LocalAddress</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Disconnect"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Methods_Disconnect">Disconnect</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Properties_Locked">Locked</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Methods_Lock">Lock</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Properties_LogFileName"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Properties_LogFileName">LogFileName</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Log"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Methods_Log">Log</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Properties_Logging">Logging</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Methods_LogUsingSessiionOptions"><!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Print"--><!--ForeHelp.EndHotspot-->LogUsingSessionOptions</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Properties_Path">Path</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Print"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Methods_Print">Print</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<!--ForeHelp.Hotspot JUMP="Session_Object_Properties_RemoteAddress"--><!--ForeHelp.EndHotspot--><a 
+		 href="Session_Object.htm#Session_Object_Properties_RemoteAddress1">RemoteAddress</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Methods_SetStatusText">SetStatusText</a></p></td>
+	</tr>
+	<tr style="vertical-align: middle;">
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#RemotePort">RemotePort</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Session_Object_Methods_Unlock">Unlock</a></p></td>
+	</tr>
+</table>
+<p class="Base">&#160;</p>
+<p class="SOH1"><a name="Session_Object_Properties" id="Session_Object_Properties"></a>Properties</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_Config" id="Session_Object_Properties_Config"></a>Config</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns the configuration associated with the 
+ session.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">This configuration will not be saveable to a 
+ new name.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">Set</span> 
+ <span style="font-style: italic;"><i>objectvarname</i></span> <span style="font-style: normal;">=</span> 
+ <span style="font-style: italic;"><i>object</i></span></i><span style="font-style: italic;"><i>.Config</i></span></p>
+<p class="SOH4">Example</p>
+<p class="Entry100single"><span class="Entry">Set config = crt.Session.Config</span></p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>objectvarname</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.Config</p>
+<p class="SOH4">Example</p>
+<p class="Entry100single">config = crt.Session.Config</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_Connected" id="Session_Object_Properties_Connected"></a>Connected</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns a Boolean value indicating whether the 
+ current session is connected or not.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Boolean read-only property.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>Connected</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single">[ <span style="font-style: italic;"><i>varname</i></span> 
+ = ] <span style="font-style: italic;"><i>object</i></span>.Connected</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_LocalAddress" id="Session_Object_Properties_LocalAddress"></a>LocalAddress</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns the IP address of the local machine 
+ in the form of a string.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">LocalAddress is a read-only string property. 
+ The LocalAddress property should only be accessed if the session is connected. 
+ Attempting to access LocalAddress while not connected is an error.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>LocalAddress</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single">[ <span style="font-style: italic;"><i>varname</i></span> 
+ = ] <span style="font-style: italic;"><i>object</i></span>.LocalAddress</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_Locked"></a>Locked</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns a Boolean value indicating whether the 
+ current session is locked or not.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Boolean read-only property.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single">[ <span style="font-style: italic;"><i>varname</i></span> 
+ = ] <span style="font-style: italic;"><i>object</i></span>.Locked</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> </i>= ] <span style="font-style: italic;"><i>object</i></span>.Locked</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_LogFileName" id="Session_Object_Properties_LogFileName"></a>LogFileName</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns or sets the name of the current log 
+ file.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">If filename is invalid a runtime error is generated. 
+ See also: <!--ForeHelp.Hotspot JUMP="Session_Object_Methods_Log"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Object.htm#Session_Object_Methods_Log"><span style="font-family: 'Courier New', sans-serif;">session.Log</span></a></p>
+<p class="SingleSpaced075">If the log filename contains parameter substitutions 
+ that are known when the function is called, they are filled in. Otherwise, 
+ the literal string is returned.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i></i></span>.LogFileName 
+ [ = <span style="font-style: italic;"><i><i>filename</i></i></span> ]</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i></i></span>.LogFileName 
+ [ = <span style="font-style: italic;"><i><i>filename</i></i></span> ]</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_Logging" id="Session_Object_Properties_Logging"></a>Logging</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns a Boolean value indicating whether the 
+ current session is logging or not.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Boolean read-only property.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>Logging</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>Logging</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_Path" id="Session_Object_Properties_Path"></a>Path</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns the path for the current session as 
+ it is found within the <a href="Session_Manager.htm" style="font-weight: bold;">Session 
+ Manager</a> or the <span style="font-weight: bold;"><a href="Connect_Dialog.htm">Connect</a></span> 
+ dialog, including the name of the session itself.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Path is a read-only string property that returns 
+ the organizational folder path for a saved session as it appears in the 
+ <span style="font-weight: bold;">Session Manager</span>. If the session 
+ object used when making this call is not associated with a saved session, 
+ the name <span class="Entry">Default</span> is returned, indicating that 
+ the session corresponds to an ad hoc connection, not a saved session. 
+ Path separators are operating system specific; on Windows the value returned 
+ will have &quot;\&quot; as the path separator; on Linux/Mac versions of 
+ SecureCRT, &quot;/&quot; the used as the path separator.</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">If the sessions are organized as shown below:</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075" style="text-indent: 24px;"><span class="Entry">Sessions</span></p>
+<p class="SingleSpaced075" style="text-indent: 24px;"><span class="Entry">- 
+ &#160;Routers</span></p>
+<p class="SingleSpaced075" style="text-indent: 48px;"><span class="Entry">- 
+ Region 01</span></p>
+<p class="SingleSpaced075" style="text-indent: 48px;"><span class="Entry">- 
+ Region 02</span></p>
+<p class="SingleSpaced075" style="text-indent: 72px;"><span class="Entry">- 
+ Cisco Router 1</span></p>
+<p class="SingleSpaced075" style="text-indent: 72px;"><span class="Entry">- 
+ Cisco Router 2</span></p>
+<p class="SingleSpaced075" style="text-indent: 72px;"><span class="Entry">- 
+ Cisco Router 3</span></p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">where <span class="Entry">Cisco Router 3</span> 
+ is the saved session used to make a connection in a tab, the following 
+ line of script code:</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075" style="text-indent: 24px;"><span class="Entry">strSessionPath 
+ = crt.GetScriptTab().Session.Path</span></p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">would produce a string variable named <span 
+	 class="Entry">strSessionPath</span> with a value of <span class="Entry">Routers\Region 
+ 02\Cisco Router 3</span> in the Windows versions of SecureCRT, and a value 
+ of <span class="Entry">Routers/Region 02/Cisco Router 3</span> on Linux 
+ and Mac OS X.</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i>object.</i></span>Path</p>
+<p class="SOH4">Example</p>
+<p class="Entry100single">If crt.session.path = &quot;work\server0&quot; 
+ Then</p>
+<p class="Entry100single">&#160;&#160;&#160;&#160;myprompt = &quot;linux&quot;</p>
+<p class="Entry100single">End If</p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i>object.</i></span>Path</p>
+<p class="SOH4">Example</p>
+<p class="Entry100single">if crt.Session.Path == &quot;work\server0&quot;:</p>
+<p class="Entry100single">&#160;&#160;myprompt = &quot;linux&quot;</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Properties_RemoteAddress1" id="Session_Object_Properties_RemoteAddress1"></a>RemoteAddress</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns the IP address of the remote host in 
+ the form of a string.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">RemoteAddress is a read-only string property. 
+ The RemoteAddress property should only be accessed if the session is connected. 
+ Attempting to access RemoteAddress while not connected is an error. Note 
+ that the IP address is not available when the session is connected through 
+ a SOCKS Version 5 proxy.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>RemoteAddress</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i><i>object</i>.</i></span>RemoteAddress</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="RemotePort" id="RemotePort"></a>RemotePort</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Returns the port number of the remote port.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i>object</i></span>.RemotePort</p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;"><span style="font-style: normal;">[</span> 
+ <span style="font-style: italic;"><i>varname</i></span> <span style="font-style: normal;">= 
+ ]</span></i> <span style="font-style: italic;"><i>object</i></span>.RemotePort</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH1"><a name="Session_Object_Methods" id="Session_Object_Methods"></a>Methods</p>
+<p class="SOH2"><a name="Session_Object_Methods_Connect" id="Session_Object_Methods_Connect"></a>Connect</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Connects to a session.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">The Connect method takes a string parameter 
+ that specifies how a connection is to be made. The format of the string 
+ parameter matches the format of the command line arguments to SecureCRT. 
+ The Connect method can accept an empty argument set.</p>
+<p class="SingleSpaced075">The command crt.Session.Connect() means &quot;connect 
+ to the current session&quot;. If a connection has not been made before, 
+ the command will fail. If a connection already exists, nothing happens, 
+ otherwise, this command is equivalent to pressing the <span style="font-weight: bold;">Reconnect</span> 
+ button.</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">Examples:</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect using a predefined 
+ session:</p>
+<p class="Entry125single">crt.session.Connect(&quot;/s mysession&quot;)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect to &quot;myhost&quot; 
+ on port 2345 using the <a href="javascript:TextPopup(this)" id="HotSpot26139" class="glossterm">Telnet</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot26139', 'POPUP26139');
+//]]></script><span class="glosstext" id="POPUP26139" style="display: none;"> Telnet is a protocol that provides an interface for communications between clients and servers.</span> 
+ protocol and Default session parameters:</p>
+<p class="Entry125single">crt.session.Connect(&quot;/telnet myhost 2345&quot;)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">The Connect method takes a parameter (<span 
+	 class="Entry">True</span> or <span class="Entry">False</span>) that 
+ determines whether or not the script should wait for the connection to 
+ fully authenticate before continuing. For instance, the connect call in 
+ the examples below will wait until the connection has been fully authenticated 
+ before returning and allowing the script to execute the error check just 
+ below the connect call. This parameter only applies to SSH1 and SSH2 connections. 
+ Whereas, passing False would allow the error check to execute before the 
+ connection has a chance to finish. You will probably want to use False 
+ only in cases where you want to script the logon process for the session 
+ you are attempting to connect to. The default value for this parameter 
+ is <span class="Entry">True</span>.</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075">The Connect method also takes an optional parameter 
+ (<span class="Entry">True</span> or <span class="Entry">False</span>) 
+ that specifies whether or not to suppress pop-up messages. This parameter 
+ defaults to <span class="Entry">False</span> (don't suppress).</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;">object</i><span 
+	 style="font-style: normal;">.Connect [</span>arg <span style="font-style: normal;">[,</span> 
+ True|False<span style="font-style: normal;">] [,</span> True|False<span 
+	 style="font-style: normal;">]]</span></p>
+<p class="SOH4">Examples</p>
+<p class="Entry100single"><span class="Entry"># $language = &quot;VBScript&quot;</span></p>
+<p class="Entry100single"><span class="Entry"># $interface = &quot;1.0&quot;</span></p>
+<p class="Entry100single"><span class="Entry">On Error Resume Next</span></p>
+<p class="Entry100single"><span class="Entry">crt.Session.Connect &quot;/SSH2 
+ /PASSWORD password username@hostname&quot;, True</span></p>
+<p class="Entry100single"><span class="Entry">If Err.Number &lt;&gt; 0 
+ Then</span></p>
+<p class="Entry100single"><span class="Entry">&#160;&#160;&#160;&#160;MsgBox 
+ &quot;Connection Failed&quot;</span></p>
+<p class="Entry100single"><span class="Entry">Else</span></p>
+<p class="Entry100single"><span class="Entry">&#160;&#160;&#160;&#160;MsgBox 
+ &quot;Connection Successful&quot;</span></p>
+<p class="Entry100single"><span class="Entry">End If</span></p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">The following is 
+ an example script that uses the /ENCRYPTEDPASSWORD command-line option.</p>
+<p class="Entry100single"><span class="Entry"># $language = &quot;VBScript&quot;</span></p>
+<p class="Entry100single"><span class="Entry"># $interface = &quot;1.0&quot;</span></p>
+<p class="Entry100single"><span class="Entry">set config = crt.OpenSessionConfiguration(&quot;&lt;session 
+ name&gt;&quot;)</span></p>
+<p class="Entry100single"><span class="Entry">CRT.dialog.messagebox(config.GetOption(&quot;Password&quot;))</span></p>
+<p class="Entry100single"><span class="Entry">crt.Session.Connect &quot;/SSH2 
+ /ENCRYPTEDPASSWORD &quot; &amp; config.GetOption(&quot;Password&quot;) 
+ &amp; &quot; &lt;username&gt;@&lt;hostname&gt;&quot;, True</span></p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Connect(<span 
+	 style="font-style: italic;"><i>arg</i></span> [, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>] [, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>])</p>
+<p class="SOH4">Examples</p>
+<p class="Entry100single"># $language = &quot;Python&quot;</p>
+<p class="Entry100single"># $interface = &quot;1.0&quot;</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">errcode = 0</p>
+<p class="Entry100single">try:</p>
+<p class="Entry100single">&#160;&#160;crt.Session.Connect(&quot;/SSH2 /PASSWORD 
+ password username@hostname&quot;, True)</p>
+<p class="Entry100single">except ScriptError:</p>
+<p class="Entry100single">&#160;&#160;errcode = crt.GetLastError()</p>
+<p class="Entry100single">if errcode != 0:</p>
+<p class="Entry100single">&#160;&#160;crt.Dialog.MessageBox(&quot;Connection 
+ Failed&quot;)</p>
+<p class="Entry100single">else:</p>
+<p class="Entry100single">&#160;&#160;crt.Dialog.MessageBox(&quot;Connection 
+ Successful&quot;)</p>
+<p class="Entry100single">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">The following is 
+ an example script that uses the /ENCRYPTEDPASSWORD command-line option.</p>
+<p class="Entry100single"># $language = &quot;Python&quot;</p>
+<p class="Entry100single"># $interface = &quot;1.0&quot;</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">import SecureCRT</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">set config = crt.OpenSessionConfiguration(&quot;&lt;session 
+ name&gt;&quot;)</p>
+<p class="Entry100single">crt.Dialog.Messagebox(config.GetOption(&quot;Password&quot;))</p>
+<p class="Entry100single">crt.Session.Connect(&quot;/SSH2 /ENCRYPTEDPASSWORD 
+ &quot; + config.GetOption(&quot;Password&quot;) + &quot;&lt;username&gt;@&lt;hostname&gt;&quot;, 
+ True)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_ConnectInTab" id="Session_Object_Methods_ConnectInTab"></a>ConnectInTab</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Connects to a session in a tab or tiled session 
+ window.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Takes the same arguments as Connect. This also 
+ returns a Tab object.</p>
+<p class="SingleSpaced075">The ConnectInTab method also takes two optional 
+ parameters (True or False). The first determines whether or not the script 
+ should wait for the connection to fully authenticate before continuing. 
+ The first parameter only applies to SSH1 and SSH2 connections. The second 
+ optional parameter specifies whether the call fails silently or raises 
+ an exception. If the second parameter is False and the connection attempt 
+ fails, an exception is raised and the method returns an empty object. 
+ If the second parameter is True and the connection attempt fails, the 
+ method returns a valid Tab object, which can then be used to check for 
+ &#160;connection status in order to determine if the connection attempt 
+ was successful. See the Connect method above for additional examples. 
+ ConnectInTab is not supported with sessions that use TN3270 emulation.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single">Set <span style="font-style: italic;"><i>objTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.ConnectInTab [<span 
+	 style="font-style: italic;"><i>arg</i></span> [, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>]&#160;[, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>]]</p>
+<p class="SOH4">Examples</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect in a tab 
+ using a predefined session:</p>
+<p class="Entry125single">Set tab = crt.session.ConnectInTab(&quot;/s mysession&quot;)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect in a tab 
+ to &quot;myhost&quot; on port 2345 using the <a href="javascript:TextPopup(this)" id="HotSpot35021" class="glossterm">Telnet</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot35021', 'POPUP35021');
+//]]></script><span class="glosstext" id="POPUP35021" style="display: none;"> Telnet is a protocol that provides an interface for communications between clients and servers.</span> 
+ protocol and Default session parameters:</p>
+<p class="Entry125single">Set tab = crt.session.ConnectInTab(&quot;/telnet 
+ myhost 2345&quot;)</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Close tab if attempt 
+ to connect fails:</p>
+<p class="Entry125single">Set objNewTab = crt.Session.ConnectInTab(&quot;Host_Does_Not_Exist&quot;,,True)</p>
+<p class="Entry125single">MsgBox _</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&quot;Script Tab's index: 
+ &quot; &amp; crt.GetScriptTab().Index &amp; vbcrlf &amp; _</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&quot;New Tab's index: 
+ &quot; &amp; objNewTab.Index</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;If Not objNewTab.Session.Connected 
+ Then</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;' 
+ Make sure we're not re-using disconnected</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;' 
+ tabs, we don't want to close the script</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;' 
+ tab, just any new tabs that get created by</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;' 
+ calls to ConnectInTab(), but which don't</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;' 
+ result in a successful connection.</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;If 
+ crt.GetScriptTab().Index &lt;&gt; objNewTab.Index Then</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;crt.Dialog.MessageBox(&quot;Closing 
+ failed tab&quot;)</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;objNewTab.Close()</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;End 
+ If</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;End If</p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>objTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.ConnectInTab [<span 
+	 style="font-style: italic;"><i>arg</i></span> [, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>] [, <span style="font-style: italic;"><i>True</i></span>|<span 
+	 style="font-style: italic;"><i>False</i></span>]]</p>
+<p class="SOH4">Example</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect in a tab 
+ using a predefined session:</p>
+<p class="Entry125single">crt.Session.ConnectInTab(&quot;/s mysession&quot;)</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Connect in a tab 
+ to &quot;myhost&quot; on port 2345 using the Telnet protocol and Default 
+ session parameters:</p>
+<p class="Entry125single">crt.Session.ConnectInTab(&quot;/telnet myhost 
+ 2345&quot;)</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">&#160;</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">Close tab if attempt 
+ to connect fails:</p>
+<p class="Entry125single">objNewTab = crt.Session.ConnectInTab(&quot;Host_Does_Not_Exist&quot;, 
+ failSilently=True)</p>
+<p class="Entry125single">crt.Dialog.MessageBox(</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&quot;Script Tab's index: 
+ &quot; + str(crt.GetScriptTab().Index) + &quot;\n&quot; +</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&quot;New Tab's index: 
+ &quot; + str(objNewTab.Index))</p>
+<p class="Entry125single">if objNewTab.Session.Connected != True:</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;# Make sure we're 
+ not re-using disconnected</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;# tabs, we don't 
+ want to close the script</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;# tab, just any 
+ new tabs that get created by</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;# calls to ConnectInTab(), 
+ but which don't</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;# result in a successful 
+ connection.</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;if crt.GetScriptTab().Index 
+ != objNewTab.Index:</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;crt.Dialog.MessageBox(&quot;Closing 
+ failed tab&quot;)</p>
+<p class="Entry125single">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;objNewTab.Close()</p>
+<p class="SingleSpaced075" style="margin-left: 96px;">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_Disconnect" id="Session_Object_Methods_Disconnect"></a>Disconnect</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075"><a class="glossterm">Disconnects</a> 
+ the current session.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">If the current session is not connected, Disconnect 
+ does nothing.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;">object</i>.Disconnect</p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Disconnect()</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_Lock"></a>Lock</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Locks the current session (or all sessions).</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">All the parameters are optional. The default 
+ for prompt is false. If prompt is true, the <span style="font-weight: bold;">Lock 
+ Session</span> dialog will be displayed. The default for password is the 
+ empty string (&quot;&quot;) and the default for lockallsessions is false.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single" style="font-style: italic;">object<span style="font-style: normal;">.Lock([,prompt 
+ [,password, [,lockallsessions]]])</span></p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Lock([,prompt 
+ [,password, [,lockallsessions]]])</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_Log" id="Session_Object_Methods_Log"></a>Log</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Enables or disables logging.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Starts or stops logging depending on the Boolean 
+ state of the &quot;start&quot; parameter. When logging is being started 
+ the optional Boolean &quot;append&quot; and &quot;raw&quot; parameters 
+ may be set to True to open the log file for appending or to log raw characters 
+ respectively. The append and raw parameters are optional and are false 
+ if not specified (When &quot;start&quot; is false the values of append 
+ and raw are ignored).</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single">object<span style="font-style: normal;">.Log(</span>start<span 
+	 style="font-style: normal;">[,</span> append<span style="font-style: normal;">[,</span> 
+ raw]<span style="font-style: normal;">])</span></p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Log(<span 
+	 style="font-style: italic;"><i>start</i></span>[, <span style="font-style: italic;"><i>append</i></span>[, 
+ <span style="font-style: italic;"><i>raw</i></span>]])</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_LogUsingSessiionOptions" 
+					 id="Session_Object_Methods_LogUsingSessiionOptions"></a>LogUsingSessionOptions</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Turns on logging using the logging options for 
+ the current session.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">If the session is an ad hoc session, the Default 
+ session's logging options will be used.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;">object</i>.LogUsingSessionOptions</p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><i style="font-style: italic;">object</i>.LogUsingSessionOptions()</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_Print" id="Session_Object_Methods_Print"></a>Print</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Starts or stops autoprint.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Starts or stops autoprint depending on the Boolean 
+ <span class="Entry" style="font-style: italic;"><i>start</i></span> parameter.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span><i style="font-style: italic;">object</i></span>.Print(<span 
+	 style="font-style: italic;"><i>start</i></span>)</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span><i style="font-style: italic;">object</i></span>.Print(<span 
+	 style="font-style: italic;"><i>start</i></span>)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_SetStatusText" id="Session_Object_Methods_SetStatusText"></a>SetStatusText</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Allows you to set the text within the status 
+ bar for a specific session.</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">Sets the status bar message to the specified 
+ text string.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i><i style="font-style: italic;">object</i>.</i></span>SetStatusText(<span 
+	 style="font-style: italic;"><i>text</i></span>)</p>
+<p class="SOH3"><span style="font-style: italic;"><i>P</i></span>ython</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span><i style="font-style: italic;">object</i></span>.SetStatusText(<span 
+	 style="font-style: italic;"><i>text</i></span>)</p>
+<p class="SingleSpaced075">&#160;</p>
+<p class="SOH2"><a name="Session_Object_Methods_Unlock"></a>Unlock</p>
+<p class="SOH3">Description</p>
+<p class="SingleSpaced075">Unlocks the current session (or all sessions).</p>
+<p class="SOH3">Remarks</p>
+<p class="SingleSpaced075">All the parameters are optional.&#160;The default 
+ for prompt is false. If prompt is true, the <span style="font-weight: bold;">Unlock 
+ Session</span> dialog will be displayed. The default for password is the 
+ empty string (&quot;&quot;) and the default for unlockallsessions is false.</p>
+<p class="SOH3">VBScript</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single" style="font-style: italic;">object<span style="font-style: normal;">.Unlock([,prompt 
+ [,password, [,unlockallsessions]]])</span></p>
+<p class="SOH3">Python</p>
+<p class="SOH4">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Unlock([,prompt 
+ [,password, [,unlockallsessions]]])</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">&#160;</p>
+<p class="SingleSpaced075">&#160;</p>
+<!--ForeHelp.EndHotspot-->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

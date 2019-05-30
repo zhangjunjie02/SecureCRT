@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Determine Escape Sequence Key Codes</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Configuring the Keyboard\nDetermine Escape Sequence Key Codes");
+addTocInfo("Scripting\nDetermining Escape Sequence Key Codes");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > Determining Escape Sequence Key Codes<\/p>");
+}
+else{
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"SO_Terminal_Emulation.htm#bc-6\">Configuring the Keyboard<\/a> > Determine Escape Sequence Key Codes<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Determine Escape Sequence Key Codes</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>If you need to determine the escape sequence for a particular key that a terminal emulator sends to a remote system (e.g., for use in scripting or custom key mappings), there are a couple of ways to do this.</p>
+<p>Using any terminal emulator, connect to a remote system running UNIX. You should be able to use the following command from your shell to determine what sequence of characters the remote system receives when a particular key is pressed:</p>
+<p class="Normal025"><span class="Entry">cat –v</span></p>
+<p>For example, if you press the PF1 key from a VT100 terminal (or an emulator which maps the PF1 key), you should see:</p>
+<p class="Normal025"><span class="Entry">^[OP</span></p>
+<p>(This is typically read: ESC O P.)</p>
+<p>In <span>Secure</span>CRT, using the VT100 keyboard emulation, this can be sent by pressing the NUM LOCK key.</p>
+<p>Using <span>Secure</span>CRT's ActiveX scripting support with VBScript, you could send this sequence using the following command string:</p>
+<p class="Entry025"><span class="Entry">c</span>rt.Screen.Send Chr(27) &amp; "OP"</p>
+<p>Using SecureCRT's Python scripting support, you could send this sequence using the following command string:</p>
+<p class="Entry025"><span class="Entry">c</span>rt.Screen.Send(chr(27) + "OP")</p>
+<p>In the examples above, "27" is the ASCII decimal value for the ESC character.</p>
+<p>Similarly, in <span>Secure</span>CRT's <span class="DialogName"><a href="SO_Terminal_Emulation_Mapped_Keys.htm">Session Options/Terminal/Emulation/Mapped Keys</a></span> dialog or Keymap Editor, you can use "\e" to represent the ESC character, or use the octal ASCII value "\033". More information about this can be found in the <a href="Table_of_Keymap_Functions.htm">Table of Keymap Functions</a> and <a href="Send_String_And_Function_Ke.htm">Send String and Function Key Commands</a> sections.</p>
+<p>Using the Keymap Editor, you can also find out the default mappings for the keys you press. For example, with the VT100 keymap loaded, clicking on the F1 button in the Keymap Editor will show you "VT_PF1", which is an internal alias for the sequence "ESC O P" (or "^[OP", "\033OP", etc.).</p>
+<p>It is important to understand that there are no absolute values that any particular key sends, so what one remote system accepts for PF1 may not be consistent on a different system. Moreover, there are many ways of representing the same escape sequence, including decimal (e.g., "Chr(27)" in VBScript), backslash escape characters (e.g., "\e" for ESC in <span>Secure</span>CRT), and octal (e.g., "\033OP" or "\033\117\120").</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Session Options/File Transfer/FTP/SFTP</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nSession Options Dialog\nFile Transfer\nFile Transfer/FTP/SFTP");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Session_Options_Dialog.htm\">Session Options Dialog<\/a> > <a href=\"SO_File_Transfer.htm\">File Transfer<\/a> > File Transfer/FTP/SFTP<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;File Transfer / FTP/SFTP</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="color: #800000;">This category only appears if VanDyke Software's SecureFX® 3.0 (or newer) is also installed.</p>
+<p>The <strong>File Transfer/FTP/SFTP</strong> category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a href="Session_Options_Dialog.htm"><strong>Session Options</strong></a> dialog allows you to control server and upload attributes for a given session.</p>
+<p class="GroupNoText">Server parameters group</p>
+<p class="Field025">Operating system</p>
+<p class="Normal025">Select the operating system used on the server. By default, this option is set to automatically detect the operating system on the server when connecting. This option allows you to override the automatic detection and specify a supported type.</p>
+<p class="Field025">Time zone</p>
+<p class="Normal025">Select the time zone of the server. This information is used when translating file times from the server so that a more accurate comparison can be performed when comparing local file time and remote file times.</p>
+<p class="Normal025">By default, this option is set to automatically detect the time zone of the server, if possible, using the server's connection A data path or circuit between two computers over a phone line, network cable, or other media. reply. Many FTP servers put time and date information in the initial reply text sent from the server, and SecureFX will attempt to determine time zone of the server from this text. If it fails to detect an appropriate time zone, the local time zone (i.e., the time zone in use on the client machine) is used by default.</p>
+<p class="Normal050"><span style="font-weight: bold;">Note:</span> The SFTP protocol does not provide a mechanism for a server to communicate time zone information to the client. If this option is set to <span class="Entry">Automatic detect</span>, timestamps will always be displayed using the local time zone when the SFTP protocol is used.</p>
+<p class="GroupNoText">Upload options group</p>
+<p class="Field025">Filename conversion</p>
+<p class="Normal025">Choose the filename conversion rule that will be applied to uploaded files. The choices for this option are as follows:</p>
+<p class="BulletLevel2"><span style="font-family: Symbol, sans-serif;">·</span> &#160;&#160;&#160;<span style="font-weight: bold;">Preserve case</span> causes SecureFX to create the file on the remote machine using the filename exactly as it is stored on the local machine.</p>
+<p class="BulletLevel2"><span style="font-family: Symbol, sans-serif;">·</span> &#160;&#160;&#160;<span style="font-weight: bold;">Uppercase</span> causes the alphabetic characters in a filename to be converted to all uppercase.</p>
+<p class="BulletLevel2"><span style="font-family: Symbol, sans-serif;">·</span> &#160;&#160;&#160;<span style="font-weight: bold;">Lowercase</span> causes the alphabetic characters in a filename to be converted to all lowercase.</p>
+<p class="Field025">File creation mask (not available when using SFTP)</p>
+<p class="Normal025">Enter a file creation mask (also called the UMASK) that will be used when a new file is uploaded to the FTP server. By default, this option is blank, which means that the UMASK command will not be sent to the FTP server, and the server will use the default UMASK setting for current logon.</p>
+<p class="Normal025">The file creation mask is a value that is used to determine the default permissions settings for new files. This feature is usually only available on UNIX systems.</p>
+<p class="Normal025">The value specified for the file creation mask is given in octal and is XORed on the remote system with the permissions of 666 for files and 777 for directories. For example, the value 002 would give complete access to the group and only read (and directory search) access to others. The value 022 would give only read (and directory search) access to the group and others.</p>
+<p class="RelatedTopics"><a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Session Options/File Transfer','SO_File_Transfer.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a> </p>
+<p class="relatedtopics">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

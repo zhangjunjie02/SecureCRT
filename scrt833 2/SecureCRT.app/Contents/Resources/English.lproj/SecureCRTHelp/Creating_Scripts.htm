@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 8" />
+<title>Creating ActiveX Scripts</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:#ffffff; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript" src="ehlpdhtm.js"></script><script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.setRelStartPage)
+	{
+	addTocInfo("Scripting\nCreating ActiveX Scripts");
+addAvenueInfo("ActiveX Scripting","","Handling_Script_Errors.htm");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"whd_show0.gif","whd_show2.gif","whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"whd_hide0.gif","whd_hide2.gif","whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"whd_prev0.gif","whd_prev2.gif","whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"whd_next0.gif","whd_next2.gif","whd_next1.gif");
+
+	}
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Scripts.htm\">Scripting<\/a> > Creating ActiveX Scripts<\/p>");
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("SecureCRT.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+//]]></script>
+</head>
+
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<!--ForeHelp.Keyword KKEYS="scripting;scripting&#028;creating;scripting&#028;ActiveX;Automate logon;Logon script"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Creating ActiveX 
+ Scripts</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p><span>Secure</span>CRT is capable of hosting &quot;ActiveX Script&quot; 
+ engines. The most common ActiveX script engines are VBScript and JScript 
+ (Microsoft’s version of JavaScript), both of which are freely available 
+ from Microsoft. Chances are you already have them installed if you’ve 
+ installed Internet Explorer 4.0.</p>
+<p>ActiveX script engines communicate with <span>Secure</span>CRT via standard 
+ interfaces. Therefore, <span>Secure</span>CRT can host any compliant script 
+ engine to run your scripts. The advantage of this approach is that you 
+ can script <span>Secure</span>CRT using the language of your choice. If 
+ an ActiveX script engine is available for your preferred scripting language, 
+ you can write scripts that will work with <span>Secure</span>CRT.</p>
+<p class="NoteLevel1"><span class="NoteBold">Note:</span> To run a logon 
+ script in <span>Secure</span>CRT, you must first turn off the <strong>Automate 
+ logon</strong> option in the <strong><a href="SO_Connection_Login_Actions.htm">Connection/Logon 
+ Actions</a></strong> category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Options_Dialog.htm"><span class="Dialog">Session Options</span></a> 
+ dialog and then, on the same dialog, check the <strong>Logon script</strong> 
+ check box and choose the script that you want to run.</p>
+<p class="Normal025"><span style="font-weight: bold;"><b>Note2:</b></span> A script 
+ cannot be run from another script. This includes scripts started manually 
+ and logon scripts.</p>
+<p>Scripts for <span>Secure</span>CRT are text files that you create with 
+ your text editor.</p>
+<p>A script header is not required as long as the file extension is registered 
+ in the registry with a script engine (as common file extensions are). 
+ If you want to use a header (for example, if you are using a file without 
+ an extension or with an extension that is not common), the header must 
+ begin on the first line of the script.</p>
+<p>Script headers will be used by <span>Secure</span>CRT to identify which 
+ script language the script is written in and the version of <span>Secure</span>CRT 
+ scripting interface. Each line of the script header must begin with a 
+ (#) character. A <span>Secure</span>CRT script header includes a <b>$language</b> 
+ line that identifies the script engine and an <b>$interface</b> line to 
+ identify <span>Secure</span>CRT's interface version.</p>
+<p>The syntax of the script header is always the same regardless of the 
+ script language you are using.</p>
+<p>A simple but complete <span>Secure</span>CRT script with a header that 
+ identifies it as VBScript is shown below:</p>
+<p class="Entry025"><nobr style="white-space: nowrap;"># $language = &quot;VBScript&quot;<span 
+	 style="font-family: 'Courier New', sans-serif;"><br />
+# $interface = &quot;1.0&quot;</span></nobr><span style="font-family: 'Courier New', sans-serif;"><nobr><br />
+<br />
+Sub Main</nobr></span><nobr><span style="font-family: 'Courier New', sans-serif;"><br />
+&#160;&#160;' Display</span> <span style="font-family: 'Courier New', sans-serif;">Secure</span><span 
+	 style="font-family: 'Courier New', sans-serif;">CRT's version</span><br />
+&#160;&#160;MsgBox &quot;<span>Secure</span>CRT version is: &quot; &amp; 
+ crt.Version<br />
+End Sub</nobr></p>
+<p class="NoteLevel1"><span class="NoteBold">Note:</span> A <span>Secure</span>CRT 
+ script header may also contain blank lines that begin with (#).</p>
+<p>The quoted string following <b>$language</b> identifies the script engine. 
+ If you are writing scripts that use Microsoft’s JScript language, the 
+ appropriate identifier is <span style="font-family: 'Courier New', sans-serif;">JScript</span>. 
+ If you are using another script engine you’ll need to consult the documentation 
+ for the identifier for that language. Currently the script header should 
+ specify version <code>1.0</code> for <b>$interface</b>. Future versions 
+ of <span>Secure</span>CRT may support other versions. The example script 
+ above has a subroutine named <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ where all of the script’s code is located. When <span>Secure</span>CRT 
+ executes scripts it always attempts to run a <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ routine if you have defined one.</p>
+<p>It is not a requirement that you place your code within a <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ however there may be reasons why you would want to do this. The VBScript 
+ and JScript engines will parse and execute global script code (script 
+ code you have defined outside of any subroutine) before your <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ is executed. If you have &quot;initialization&quot; code that you want 
+ to ensure has been completely executed before your actual script code 
+ begins, it may be useful to place your initialization code at the global 
+ level. This will ensure that your initialization code will all execute 
+ before your <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ code runs.</p>
+<p>Another reason you may want a <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ routine is to allow your scripts a way of aborting themselves in case 
+ of problems. In VBScript there is no built-in way of exiting a script 
+ at the global level. However, if you want to exit a subroutine it is possible 
+ to use the <code>Exit Sub</code> syntax to do so. For example, in VBScript:</p>
+<p class="Entry025"><nobr style="white-space: nowrap;">Sub Main<span style="margin: 0pt 0pt 0pt 36pt; 
+	 font-family: 'Courier New', sans-serif;"><br />
+<br />
+&#160;&#160;condition = DoSomething()<br />
+&#160;&#160;If condition = 0 Then<br />
+&#160;&#160;&#160;&#160;' Error, bailout<br />
+&#160;&#160;&#160;&#160;Exit Sub<br />
+&#160;&#160;End If<br />
+&#160;&#160;</span></nobr><span style="margin: 0pt 0pt 0pt 36pt; font-family: 'Courier New', sans-serif;">&#160;</span><nobr 
+	 style="white-space: nowrap;"><span style="margin: 0pt 0pt 0pt 36pt; 
+										 font-family: 'Courier New', sans-serif;"><br />
+End Sub</span></nobr></p>
+<p>When the <span style="font-family: 'Courier New', sans-serif;">main</span> 
+ routine ends the script has finished running. By placing your code within 
+ a <span style="font-family: 'Courier New', sans-serif;">main</span> you 
+ have the option of invoking <code>Exit Sub</code> whenever it might be 
+ necessary.</p>
+<p>The previous script samples are written in VBScript. The remainder of 
+ code samples in this document are all written in VBScript unless it is 
+ stated otherwise. The properties and methods of <span>Secure</span>CRT's 
+ interface can be used as documented by any compatible scripting language.</p>
+<p>For files stored on NTFS file systems, the script header can optionally 
+ be stored in an NTFS alternate data stream called header.txt. One way 
+ to do this is to choose <span class="Label">Run</span> from the Windows 
+ Start menu and enter the following:</p>
+<p class="Entry025">notepad myscript.txt:header.txt</p>
+<p>Script files can be stored in UTF-8 or Unicode format. Storing a script 
+ file in UTF-8 or Unicode format enables characters from languages such 
+ as Chinese or Japanese to be included in the script.</p>
+<p>For examples of <span>Secure</span>CRT scripts, see the sample scripts 
+ in the <span>Secure</span>CRT Installation\Scripts folder and on the VanDyke 
+ Software website in the <!--ForeHelp.Hotspot JUMP=""--><!--ForeHelp.EndHotspot--><a 
+	 href="http://www.vandyke.com/support/crt/scripting_faq.html">Scripting 
+ FAQ</a> section.</p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Example Scripts','Example_Scripts.htm','Handling Script Errors','Handling_Script_Errors.htm','Overview of Script Objects','Overview_of_Script_Objects.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="17" width="81" alt="Related Topics" /></a>
+
+
+</p>
+<p class="RelatedTopics"><!--ForeHelp.Hotspot JUMP="Handling_Script_Errors"--><!--ForeHelp.EndHotspot--></p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

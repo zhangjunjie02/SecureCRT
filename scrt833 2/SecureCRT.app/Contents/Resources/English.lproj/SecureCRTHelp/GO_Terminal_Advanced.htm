@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/Terminal/Advanced</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nTerminal/Advanced");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > Terminal/Advanced<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Terminal / Advanced</p>
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <span class="DialogName">Terminal/Advanced</span> category of the 
+ <a href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a> 
+ dialog allows you to configure <span>Secure</span>CRT advanced <a href="javascript:TextPopup(this)" id="HotSpot21118" class="glossterm">terminal</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot21118', 'POPUP21118');
+//]]></script><span class="glosstext" id="POPUP21118" style="display: none;"> A device usually consisting of a keyboard, a display unit such as a cathode ray tube, and a serial port used for entering and sending data to a computer and displaying any data received from the computer.  Terminals are usually connected to a computer with a serial line or some other type of connection.  There are many terminal types including VT100, VT102, VT220, and others.</span> emulation-related options.</p>
+<p class="Group">Options group</p>
+<p>This group contains various <span>Secure</span>CRT options.</p>
+<p class="Field025">Enable execute escape sequence</p>
+<p class="Normal025">This option allows you to enable and disable the ability 
+ to send escape sequences.</p>
+<p class="Field025">Disable resize</p>
+<p class="Normal025">Check this option to globally disallow the resizing 
+ of <a href="javascript:TextPopup(this)" id="HotSpot33242" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot33242', 'POPUP33242');
+//]]></script><span class="glosstext" id="POPUP33242" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> windows by 
+ means of the resize handles. Note that even though you may change the 
+ setting of this option globally, it is possible to make exceptions for 
+ one or more sessions by setting this option on a per session basis. Resizing 
+ the <span>Secure</span>CRT window can affect the number of rows and columns 
+ (see the <span class="Label">Size</span> group of the <a href="Session_Options_Dialog.htm" 
+															 style="background-color: Transparent;"><span 
+	 class="DialogName">Session Options</span></a> dialog, <span class="Label"><a 
+	 href="SO_Terminal_Emulation.htm" style="background-color: Transparent;">Terminal/Emulation</a></span> 
+ category, for more information). By default, the <span class="Label">Disable 
+ resize</span> option is not selected.</p>
+<p class="Normal050"><span style="font-weight: bold;">Note:</span> Full 
+ screen mode is not allowed when the Disable resize feature is set.</p>
+<p class="Field025">Connect to multiple sessions sequentially</p>
+<p class="Normal025">When multiple sessions are connecting, check this 
+ option to have the sessions connect one after the other instead of all 
+ at once.</p>
+
+
+<p class="Field025">Disable session 
+ zooming with mouse scrollwheel</p>
+<p class="Normal025">This option 
+ allows you to enable and disable the ability to use the mouse scrollwheel 
+ to zoom a session.</p>
+
+
+<p class="Field025">Swap <span class="Entry">ENTER</span> and <span class="Entry">CTRL+ENTER</span> 
+ in Command window</p>
+<p class="Normal025">When this option is enabled, SecureCRT swaps the Command 
+ window behaviors of the <span class="Entry">ENTER</span> key (send command, 
+ by default) and the <span class="Entry">CTRL+ENTER</span> key combination 
+ (queue command, by default).</p>
+
+
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Global Options/Terminal','GO_Terminal.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+ </p>
+<p class="RelatedTopics">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

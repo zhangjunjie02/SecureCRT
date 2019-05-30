@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Disabling Zmodem</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:#ffffff; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2">
+</script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2">
+</script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2">
+</script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2">
+</script><!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Using the Software\nTransferring Files with Zmodem\nDisabling Zmodem");
+addAvenueInfo("Using the Software","Uploading_a_File_w_Zmodem.htm","Using_Compression.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"The_OSX_Toolbar_Mac.htm\">Using the Software<\/a> > <a href=\"Overview_of_ZModem.htm\">Transferring Files with Zmodem<\/a> > Disabling Zmodem<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Keyword KKEYS="ZModem;file transfers;Disable ZModem"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Disabling Zmodem</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p>To disable the <a href="javascript:TextPopup(this)" id="HotSpot5599" class="glossterm">Zmodem</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot5599', 'POPUP5599');
+//]]></script><span class="glosstext" id="POPUP5599" style="display: none;"> Zmodem is a file transfer protocol that touts speed and reliability.  In this terminal emulation application, it provides a mechanism for secure file transfers as long as the remote machine has Zmodem support installed.</span> protocol features in <span>Secure</span>CRT:</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->1.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->In the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a href="Session_Options_Dialog.htm"><span class="Dialog">Session Options</span></a> dialog, open the <strong><a href="SO_Terminal_X_Y_Zmodem.htm">File Transfer/X/Y/Zmodem</a></strong> category.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->2.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Select the <strong>Disable Zmodem</strong> option.</p>
+<p>When the Zmodem protocol is disabled, <span>Secure</span>CRT will ignore the character sequence that starts a Zmodem transfer.</p>
+<p class="RelatedTopics"><a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Changing the Default File Transfer Directories','Changing_the_Default_File_T.htm','Downloading a File with Zmodem','Downloading_a_File_w_Zmodem.htm','Uploading a File with Zmodem','Uploading_a_File_w_Zmodem.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a> </p>
+<p class="RelatedTopics"><!--ForeHelp.Hotspot JUMP="Changing_the_Default_File_Transfer_Directories"--><!--ForeHelp.EndHotspot--></p>
+<!--ForeHelp.EndHotspot-->
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

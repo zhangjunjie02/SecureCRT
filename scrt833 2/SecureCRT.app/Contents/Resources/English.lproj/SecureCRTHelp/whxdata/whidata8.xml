@@ -1,0 +1,99 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="window features" >
+  <topic name="Switching Between Multiple Session Windows" url="Switching_Between_Multiple_.htm" />
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+  <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  <topic name="File Menu" url="File_Menu.htm" />
+  <key name="Always on Top" >
+    <topic name="Session Options/Appearance/Window#SO_App_Win_alwaysontop" url="SO_Terminal_Appearance_Window.htm#SO_App_Win_alwaysontop" />
+  </key>
+  <key name="clearing on disconnect" >
+    <topic name="Session Options/Options" url="SO_Terminal.htm" />
+  </key>
+  <key name="closing on disconnect" >
+    <topic name="Session Options/Options#SO_Options_closeondiscon" url="SO_Terminal.htm#SO_Options_closeondiscon" />
+  </key>
+  <key name="creating" >
+    <topic name="File Menu" url="File_Menu.htm" />
+  </key>
+  <key name="hiding/showing components" >
+    <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  </key>
+  <key name="position" >
+    <topic name="Session Options/Appearance/Window#SO_App_Win_initialposition" url="SO_Terminal_Appearance_Window.htm#SO_App_Win_initialposition" />
+  </key>
+  <key name="size/resize" >
+    <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  </key>
+  <key name="switching between multiple windows" >
+    <topic name="Switching Between Multiple Session Windows" url="Switching_Between_Multiple_.htm" />
+  </key>
+  <key name="System menu" >
+    <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  </key>
+</key>
+<key name="Window left margin" >
+  <topic name="Global Options/Appearance" url="GO_Terminal_Appearance.htm" />
+</key>
+<key name="window object" >
+  <topic name="Window Object" url="Window_Object.htm" />
+</key>
+<key name="Window Transparency" >
+  <topic name="Global Options/Terminal/Appearance/Advanced" url="GO_Terminal_Appearance_Advanced.htm" />
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="wizard" >
+  <topic name="Global Options/General" url="GO_General.htm" />
+</key>
+<key name="X.509" >
+  <topic name="Using X.509 Certificates" url="Using_X.509_Certificates.htm" />
+  <topic name="Global Options/SSH Host Keys" url="GO_SSH_Host_Keys.htm" />
+  <topic name="Using an Exported Public Key" url="Using_an_Exported_Public_Key.htm" />
+  <topic name="Tools Menu" url="Tools_Menu.htm" />
+</key>
+<key name="X11 forwarding" >
+  <topic name="Port Forwarding With SSH" url="Port_Forwarding_With_SSH.htm" />
+  <topic name="Session Options/Connection/Port Forwarding/Remote" url="SO_Connection_Port_Forwarding_Remote.htm" />
+</key>
+<key name="Xmodem" >
+  <topic name="Changing the Default File Transfer Directories" url="Changing_the_Default_File_T.htm" />
+  <topic name="Downloading a File with Xmodem" url="Downloading_a_File_with_XMo.htm" />
+  <topic name="Overview of Xmodem" url="Overview_of_XModem.htm" />
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+  <topic name="Uploading a File with Xmodem" url="Uploading_a_File_with_XMode.htm" />
+  <topic name="Session Options/Terminal/Xmodem/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+</key>
+<key name="XON/XOFF" >
+  <topic name="Serial Quick Connect Options" url="Serial_Quick_Connect_Option.htm" />
+  <topic name="Session Options/Connection/Serial" url="SO_Connection_Serial.htm" />
+</key>
+<key name="Xterm" >
+  <topic name="Xterm Escape Sequences" url="Xterm_Escape_Sequences.htm" />
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="Ymodem" >
+  <topic name="Downloading a File with Ymodem" url="Downloading_a_File_with_Ymodem.htm" />
+  <topic name="Overview of Ymodem" url="Overview_of_Ymodem.htm" />
+  <topic name="Uploading a File with Ymodem" url="Uploading_a_File_with_Ymodem.htm" />
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+  <topic name="Session Options/Terminal/X/Y/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+</key>
+<key name="Zmodem" >
+  <topic name="Uploading a File with Zmodem" url="Uploading_a_File_w_Zmodem.htm" />
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+  <topic name="Overview of Zmodem" url="Overview_of_ZModem.htm" />
+  <topic name="Downloading a File with Zmodem" url="Downloading_a_File_w_Zmodem.htm" />
+  <topic name="Disabling Zmodem" url="Disabling_ZModem.htm" />
+  <topic name="Changing the Default File Transfer Directories" url="Changing_the_Default_File_T.htm" />
+  <topic name="Session Options/Terminal/Xmodem/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+</key>
+<key name="Zmodem Upload List" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+</key>
+
+</indexdata>

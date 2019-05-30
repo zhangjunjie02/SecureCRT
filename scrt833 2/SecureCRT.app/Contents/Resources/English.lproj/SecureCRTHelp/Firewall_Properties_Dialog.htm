@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Firewall Properties Dialog</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nFirewall Properties Dialog");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > Firewall Properties Dialog<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Firewall Properties 
+ Dialog</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <span class="DialogName">Firewall Properties</span> dialog can be 
+ accessed by clicking on either the <strong>Add...</strong> or <strong>Edit...</strong> 
+ button on the <!--ForeHelp.Hotspot JUMP="Session_Options_Connection_Port_Forwarding"--><!--ForeHelp.EndHotspot--><strong><a 
+	 href="GO_Firewall.htm">Firewall</a></strong> category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a> 
+ dialog.</p>
+<p class="FieldLevel1">Name</p>
+<p>Enter unique name for this firewall. This name will be used in the <a 
+	 href="Session_Options_Dialog.htm"><span class="DialogName">Session 
+ Options</span></a> dialog to specify the firewall for a given session.</p>
+<p class="FieldLevel1">Type group</p>
+<p>Select the type of firewall that you are using from the list of firewalls 
+ that are supported by <span>Secure</span>CRT.</p>
+<p class="FieldLevel1">Parameters group</p>
+<p>This group allows you to configure the parameters for the firewall <strong>Type</strong> 
+ that you selected above. The options in this group vary based on the <span 
+	 class="Label">Type</span> selection. The supported firewalls are listed 
+ below:</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>Generic/Telnet 
+ -</b> Choose this option if you connect through a proxy server that uses 
+ a simple send/expect interface. Selecting this type will enable the <span 
+	 class="Label">Proxy prompt</span> and <span class="Label">Proxy command</span> 
+ options described below.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>SOCKS 
+ Version 4</b></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>SOCKS 
+ Version 5 (no <a href="javascript:TextPopup(this)" id="HotSpot38467" class="glossterm">authentication</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot38467', 'POPUP38467');
+//]]></script><span class="glosstext" id="POPUP38467" style="display: none;"> The process of verifying that an individual truly is who he or she claims to be.  Supplying a password is a very common method of authentication.  The most secure method of authentication supported in SecureCRT is public-key authentication.  See also: identity file, public-private key pair.</span> 
+ )</b></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>SOCKS 
+ Version 5 (username/password) -</b> If your firewall server is running 
+ either SOCKS version 4 or SOCKS version 5, select one of these types for 
+ the Type field. Enter the hostname or <a class="glossterm">IP 
+ address</a> of your SOCKS firewall server in the &quot;Hostname 
+ or IP&quot; field, and enter the SOCKS firewall port number in the &quot;Port&quot; 
+ field. The conventional port number for SOCKS is 1080.<br />
+The &quot;<b style="font-weight: normal;">username/password&quot;</b> version 
+ of the SOCKS firewall choices allows for firewall user authentication. 
+ The only method of authentication currently supported is the &quot;Username/Password 
+ Authentication&quot; protocol, which requires the username and password 
+ to be sent as clear text. Therefore, this method is not recommended for 
+ non-secure environments</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>HTTP 
+ (no authentication) -</b> This type allows your server to connect through 
+ an HTTP proxy server.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>HTTP 
+ (Basic username/password) -</b> This type allows your server to connect 
+ through an HTTP proxy server that supports &quot;Basic&quot; authentication 
+ (this is an HTTP standard). &quot;Basic&quot; authentication sends usernames 
+ and passwords in the clear, therefore, this method is not recommended 
+ for nonsecure environments.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>OPEN 
+ host -</b> Select this type if your firewall server requires the OPEN 
+ command. This type may be selected for the <b style="font-weight: normal;">CSM</b> 
+ proxy server. Also, enter the hostname and port of the firewall server 
+ in the appropriate fields.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>USER 
+ user@host:port -</b> Select this type if your server is running the <b 
+	 style="font-weight: normal;">WinGate</b> proxy server. Enter the hostname 
+ or IP address and port of the firewall server in the appropriate fields. 
+ This type may also be selected for use with the <b style="font-weight: normal;">CSM</b> 
+ proxy server. This type should also be used for the <b style="font-weight: normal;">WinProxy</b> 
+ proxy server. <span>For this particular proxy server you may also need 
+ to have the <b>Use outgoing data connections (PASV)</b> option <u style="text-decoration: none; ">unchecked</u> 
+ in the <!--ForeHelp.Hotspot JUMP="Session_Options_Options_FTP"--><!--ForeHelp.EndHotspot--></span><span 
+	 class="Label"><a href="SO_Connection_FTP.htm">Connection/FTP</a></span> 
+ <span>category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Site"--><!--ForeHelp.EndHotspot--></span><span 
+	 class="Dialog"><a href="Session_Options_Dialog.htm">Session Options</a></span> 
+ <span>dialog.</span></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>USER 
+ user@host port</b></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>USER 
+ user@host port (with login) -</b> Select these types if your server is 
+ running the TIS Internet Firewall Toolkit. Choose the first form if the 
+ firewall server does not require authentication. If your firewall server 
+ requires authentication, choose the second form. Also, enter the hostname 
+ or IP address and port of the firewall server in the appropriate fields.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><font 
+ face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore--><b>USER 
+ user@host login -</b> This type will send the remote username and the 
+ server address followed by the firewall user ID. It then expects to send 
+ the password for the remote user and the password for the firewall user. 
+ This type should be used if your server is running the <b style="font-weight: normal;">Raptor 
+ Firewall</b>.<br />
+For this firewall type you will need to enter the username and password 
+ that is required by the firewall server to authenticate your <a href="javascript:TextPopup(this)" id="HotSpot38794" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot38794', 'POPUP38794');
+//]]></script><span class="glosstext" id="POPUP38794" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> . Also, enter the hostname 
+ or IP address and port of the firewall server in the appropriate fields.</p>
+<p class="Field025">Hostname or IP</p>
+<p class="Normal025">Enter the hostname or IP address of the machine to 
+ which you want to connect.</p>
+<p class="Field025">Port</p>
+<p class="Normal025">Enter the port to which you want to connect. For a 
+ SOCKS firewall, this is usually <code>1080</code>.</p>
+<p class="Field025">Username</p>
+<p class="Normal025">Enter the username for this connection.</p>
+<p class="Field025">Password</p>
+<p class="Normal025">Enter the password for this connection.</p>
+<p class="Field025">Proxy prompt</p>
+<p class="Normal025">This option applies only if you have selected <code>Generic/Telnet 
+ proxy</code> as your firewall <strong>Type</strong>.</p>
+<p class="Normal025">Enter the prompt that <span>Secure</span>CRT can expect 
+ to receive from the generic/Telnet proxy. For example, to use the TIS 
+ Firewall toolkit, the prompt would be:</p>
+<p class="Entry050">tn-gw&gt;</p>
+<p class="Normal025">For WinGate, the prompt would be:</p>
+<p class="Entry050">WinGate&gt;</p>
+<p class="Field025">Proxy command</p>
+<p class="Normal025">This option applies only if you have selected <code>Generic/Telnet 
+ proxy</code> as your firewall <strong>Type</strong>.</p>
+<p class="Normal025">Enter the connect or open command that <span>Secure</span>CRT 
+ needs to send to the generic/Telnet proxy. For example, to use the TIS 
+ Firewall toolkit, the command would be:</p>
+<p class="Entry050">c %h % p\r</p>
+<p class="Normal025">For WinGate, the command would be:</p>
+<p class="Entry050">%h % p\r\n</p>
+<p>The <a href="javascript:TextPopup(this)" id="HotSpot30299" class="glossterm">SSH</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot30299', 'POPUP30299');
+//]]></script><span class="glosstext" id="POPUP30299" style="display: none;"> SSH is an acronym for the Secure Shell protocol.  A communications protocol used to encrypt network traffic between a client and a server.</span> protocol imposes 
+ some special constraints on what firewall software can be used. SSH does 
+ work with SOCKS firewalls. SSH does not work with generic firewalls that 
+ are not 8-bit clean or that modify the contents of the data stream. SSH 
+ cannot be used through the TIS tn-gw generic proxy.</p>
+<p>&#160;</p>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

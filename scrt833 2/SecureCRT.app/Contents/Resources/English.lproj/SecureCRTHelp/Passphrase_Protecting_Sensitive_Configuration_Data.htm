@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-US" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>Passphrase Protecting Sensitive Configuration Data</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Using the Software\nPassphrase Protecting Data");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"The_OSX_Toolbar_Mac.htm\">Using the Software<\/a> > Passphrase Protecting Data<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /> &#160;Passphrase Protecting Sensitive Configuration Data</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>If you have not previously set a configuration passphrase, SecureCRT will ask you to create a passphrase at startup. There are two options. The first option is to create a passphrase. This passphrase will be used to encrypt all sensitive data stored in your configuration, such as passwords and automated logon (send/expect) scripts. The second option is to continue without creating a passphrase. Although the sensitive data will be encrypted in the configuration, this option is not as secure as specifying a passphrase. This option is only recommended if you do not save sensitive data in the configuration.</p>
+<p>The next time SecureCRT starts, if you have created a passphrase, you will be prompted for it so that it can be used to encrypt and decrypt sensitive configuration data. If you chose not to create a passphrase, you will not be prompted for the passphrase. If you choose to continue without entering the passphrase, you will still be able to establish connections, but the previously saved sensitive data will not be used, so you will have to enter passwords and other sensitive data that was saved. Also, passwords and other sensitive data will not be able to be saved. However, the data will be left intact in the configuration so that it can be used the next time the passphrase is entered at startup.</p>
+<p class="SectionHead">Changing, Removing, or Resetting the Passphrase</p>
+<p>You can change, remove, or reset the passphrase by pressing the <span style="font-weight: bold;">Change Passphrase…</span> button from the <span style="font-weight: bold;">Enter Passphrase</span> dialog at startup. If you choose to change the passphrase, you will need to enter the old passphrase and the new passphrase twice. If you choose to remove the passphrase, you will need to enter the old passphrase. Removing the passphrase will not remove any sensitive data from the configuration, but the way the data is encrypted is not as secure as choosing your own passphrase. If you choose to reset the passphrase, you will be prompted for the new passphrase twice. In this case, all sensitive data will be deleted from the configuration file. This option is recommended only if you have forgotten the passphrase. If you previously did not have a passphrase and wish to add one, you can choose <span style="font-weight: bold;">Change Configuration Passphrase…</span> from the <span style="font-weight: bold;"><a href="Tools_Menu.htm">Tools</a></span> menu. You will then be prompted to create a passphrase the next time SecureCRT starts.</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

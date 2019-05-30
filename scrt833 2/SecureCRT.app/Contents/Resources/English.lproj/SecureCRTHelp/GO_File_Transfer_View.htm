@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/File Transfer/View</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nFile Transfer/View");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > File Transfer/View<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;File Transfer / 
+ View</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="color: #800000;">This category only appears if VanDyke Software's 
+ SecureFX® 3.0 (or newer) is also installed.</p>
+<p>The <strong>File Transfer/View</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a><span 
+	 class="Dialog">&#160;</span>dialog allows you to control the attributes 
+ of the local window or of session windows.</p>
+<p class="Group">General group</p>
+<p>This group contains general view options.</p>
+<p class="Field025">Show file attributes in details view</p>
+<p class="Normal025">Select this option to include an <span class="Label">Attributes</span> 
+ column in windows that use the <span class="Label">Details</span> icon 
+ view. In the local window this column will display Windows file attributes. 
+ In remote session windows this column displays UNIX-style permissions, 
+ owner and group ownership of files. This information is usually only available 
+ on UNIX-based FTP servers.</p>
+<p class="Field">Display the folder tree</p>
+<p class="Normal025">Select this option to display the folder tree view. 
+ This default behavior can be temporarily superseded with the use of the 
+ SecureFX <span class="Label">Folder Tree</span> command on the <span class="Label">View</span> 
+ menu or with the SecureFX <span class="Label">Folder Tree</span> toolbar 
+ button.</p>
+<p class="Field">Sort folders at top</p>
+<p class="Normal025">Select this option to force the folders always to 
+ be sorted at the top of the local and remote windows regardless of which 
+ column is used for sorting and whether the order is ascending or descending.</p>
+<p class="Field">Number style</p>
+<p class="Normal025">This option sets the manner in which numbers are displayed 
+ in the tree view. The default selection is <span class="Entry">Plain</span>. 
+ The available options are:</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Plain</span> - Selecting this option 
+ will cause numbers to be displayed without punctuation or abbreviations.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Abbreviated</span> - Selecting this 
+ option will cause numbers to be displayed using an appropriate abbreviated 
+ size quantity (i.e., KB, MB, GB). Numbers less than 1 kilobyte are not 
+ abbreviated.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Punctuated</span> - Selecting this 
+ option will cause numbers to be punctuated using the Regional parameters 
+ defined in the system settings (e.g., numbers would be displayed with 
+ commas after every three digits on U.S. systems).</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">KB</span> - Selecting this option 
+ will cause numbers to be displayed as kilobytes.</p>
+<p class="Group">Local window group</p>
+<p>This group contains options that control the local window.</p>
+<p class="Field">Display filenames using Explorer attributes</p>
+<p class="Normal025">Enabling this option forces SecureFX to display filenames 
+ with the same alphabetic case as the Windows Explorer. For example, an 
+ uppercase filename stored on disk as AUTOEXEC.BAT will normally display 
+ in Windows Explorer as Autoexec.bat. By default, this option is disabled, 
+ which causes filenames to be displayed using the same alphabetic case 
+ in which the name is actually stored on disk.</p>
+<p class="Normal050"><span style="font-weight: bold;">Note:</span> When 
+ a file is uploaded to a remote site, the real filename case is used regardless 
+ of this setting.</p>
+<p class="Field">Do not show hidden or system files</p>
+<p class="Normal025">This option affects the local window only and is disabled 
+ by default.</p>
+<p class="Field">Position on bottom/right when tabbed horizontally/vertically</p>
+<p class="Normal025">This option controls the location of the local tab 
+ and the remote tabs. When this option is enabled, the local tab appears 
+ at the right or bottom of the window. This option is off by default.</p>
+<p class="Group">Remote window group</p>
+<p>This group contains options that control the remote window.</p>
+<p class="Field">Do not show dot files</p>
+<p class="Normal025">Enabling this option prevents filenames beginning 
+ with a dot (.) in remote directories from displaying. By default, it is 
+ enabled. This option may be temporarily superseded using the <span class="Label">Dot 
+ Files</span> command on the <span class="Label">View</span> menu. However, 
+ the <span class="Label">Do not show dot files</span> option will take 
+ precedence over the <span class="Label">All entries</span> option in the 
+ <span class="DialogName"><a href="SO_Connection_FTP.htm" style="background-color: Transparent;">Connection//FTP</a></span> 
+ category of the <span class="DialogName"><a href="Session_Options_Dialog.htm" 
+											 style="background-color: Transparent;">Session 
+ Options</a></span> dialog.</p>
+<p class="Field025">Display file times in local time zone</p>
+<p class="Normal025">Enabling this option causes the remote directory file 
+ times to be displayed in the time zone being used by the local machine 
+ rather than the time zone defined for the session. This option may be 
+ helpful when visually comparing the file times displayed on the remote 
+ machine to the file times displayed in the local window. By default, this 
+ option is disabled.</p>
+<p class="Field">Display the log view</p>
+<p class="Normal025">Select this option to display the session window's 
+ log view. This default behavior can be temporarily superseded with the 
+ use of the SecureFX <span class="Label">Log View</span> toolbar button.</p>
+<p class="Field">Save session window position</p>
+<p class="Normal025">Checking this option instructs SecureFX to store your 
+ session window positions when you close the windows and reopen them in 
+ the same place.</p>
+<p class="Field">Log window buffer size (lines)</p>
+<p class="Normal025">This option sets the maximum number of lines that 
+ each log window can display. The default value is 500.</p>
+<p class="Group">Transfer window group</p>
+<p>This group contains options that affect the transfer window.</p>
+<p class="Field">Number style</p>
+<p class="Normal025">This option sets the way that numbers are displayed 
+ in the transfer window. The default selection is <span class="Entry">Abbreviated</span>. 
+ The available options are:</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Plain</span> - Selecting this option 
+ will cause numbers to be displayed without punctuation or abbreviations.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Abbreviated</span> - Selecting this 
+ option will cause numbers to be displayed using an appropriate abbreviated 
+ size quantity (i.e., KB, MB, GB). Numbers less than 1 kilobyte are not 
+ abbreviated.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">Punctuated</span> - Selecting this 
+ option will cause numbers to be punctuated using the Regional parameters 
+ defined in the system settings (e.g., numbers would be displayed with 
+ commas after every three digits on U.S. systems).</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span class="Entry">KB</span> - Selecting this option 
+ will cause numbers to be displayed as kilobytes.</p>
+<p class="BulletLevel2">&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

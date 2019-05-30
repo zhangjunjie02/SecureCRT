@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<item name="Creating Python Scripts" url="Creating_Python_Scripts.htm" />
+<item name="Handling Script Errors" url="Handling_Script_Errors.htm" />
+<item name="Overview of Script Objects" url="Overview_of_Script_Objects.htm" />
+<item name="Determining Escape Sequence Key Codes" url="Determine_Escape_Sequence_Key_Codes.htm#bc-1" />
+<item name="SendKeys Keystroke Table" url="SendKeys_Keystroke_Table.htm" />
+<book name="Script Objects Reference" >
+  <item name="Application Object" url="Application_Object.htm" />
+  <item name="Arguments Object" url="Arguments_Object.htm" />
+  <item name="Clipboard Object" url="Clipboard_Object.htm" />
+  <item name="CommandWindow Object" url="CommandWindow_Object.htm" />
+  <item name="Dialog Object" url="Dialog_Object.htm" />
+  <item name="FileTransfer Object" url="FileTransfer_Object.htm" />
+  <item name="Screen Object" url="Screen_Object.htm" />
+  <item name="Session Object" url="Session_Object.htm" />
+  <item name="SessionConfiguration Object" url="SessionConfiguration_Object.htm" />
+  <item name="Tab Object" url="Tab_Object.htm" />
+  <item name="Window Object" url="Window_Object.htm" />
+</book>
+
+</tocdata>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Session Options/Connection/SSH2/Advanced</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nSession Options Dialog\nConnection\nConnection/SSH2/Advanced");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Session_Options_Dialog.htm\">Session Options Dialog<\/a> > <a href=\"SO_Connection.htm\">Connection<\/a> > Connection/SSH2/Advanced<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Connection / SSH2 
+ / Advanced</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <strong>SSH2/Advanced</strong> category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Options_Dialog.htm"><span class="DialogName">Session 
+ Options</span></a> dialog allows you to further configure your <a href="javascript:TextPopup(this)" id="HotSpot39136" class="glossterm">SSH2</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot39136', 'POPUP39136');
+//]]></script><span class="glosstext" id="POPUP39136" style="display: none;"> The second version of the SSH protocol which provides a way to encrypt network traffic between a client and a server, with a slightly different set of security features than the SSH1 protocol provides.</span> <a href="javascript:TextPopup(this)" id="HotSpot15385" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot15385', 'POPUP15385');
+//]]></script><span class="glosstext" id="POPUP15385" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> 
+ . The <strong>SSH2</strong> category only appears when you have selected 
+ <code>SSH2</code> or <span class="Entry">SFTP</span> as your <!--ForeHelp.Hotspot JUMP="Session_Options_Connection"--><!--ForeHelp.EndHotspot--><a 
+	 href="SO_Connection.htm"><strong>Protocol</strong></a>.</p>
+<p class="FieldLevel1">Cipher</p>
+<p>The <a href="javascript:TextPopup(this)" id="HotSpot28249" class="glossterm">encryption</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot28249', 'POPUP28249');
+//]]></script><span class="glosstext" id="POPUP28249" style="display: none;"> The process of converting a data transmission into a secret format that cannot easily be read by unauthorized individuals.  See also: decryption.</span> algorithm 
+ to use for <a href="javascript:TextPopup(this)" id="HotSpot25148" class="glossterm">data privacy</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot25148', 'POPUP25148');
+//]]></script><span class="glosstext" id="POPUP25148" style="display: none;"> The concept that data should only be viewed or accessed by those with authorization to do so.  Data privacy is achieved using a cipher to encrypt data.</span>. 
+ The <a class="glossterm">ciphers</a> provided 
+ for use with the SSH2 protocol in SecureCRT are AES, ChaCha20-Poly1305, 
+ Twofish, Blowfish, 3DES, and RC4. You may also set the cipher to <code>None</code>, 
+ which will effectively render your connection unsecure. No encryption 
+ will occur if the cipher is set to <code>None</code>, and all data will 
+ be transmitted in plain text.</p>
+<p class="NoteLevel1"><b style="font-weight: bold;">WARNING: Setting cipher 
+ to</b> <b><code>None</code></b> <b>causes the data channel to be left 
+ unencrypted and offers no</b> <!--ForeHelp.Hotspot JUMP="Security_Considerations"--><!--ForeHelp.EndHotspot--><b><a 
+	 href="Security_Considerations.htm">security</a>.</b></p>
+<p>SecureCRT will attempt to connect using the first selected cipher in 
+ the <span style="font-weight: bold;">Cipher</span> list and then, if not 
+ successful, work down the list trying each selected cipher. To reorder 
+ the list, select the cipher that you want to reposition and use the buttons 
+ to the right of the list to move the cipher up or down.</p>
+<p class="FieldLevel1">MAC (Message Authentication Code)</p>
+<p>The SSH2 protocol provides increased security over <a href="javascript:TextPopup(this)" id="HotSpot34409" class="glossterm">SSH1</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot34409', 'POPUP34409');
+//]]></script><span class="glosstext" id="POPUP34409" style="display: none;"> The first version of the SSH protocol which provides a way to encrypt network traffic between a client and a server.</span> 
+ by means of a <a class="glossterm">MAC (Message Authentication 
+ Codes)</a> which ensures <a href="javascript:TextPopup(this)" id="HotSpot35328" class="glossterm">data 
+ integrity</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot35328', 'POPUP35328');
+//]]></script><span class="glosstext" id="POPUP35328" style="display: none;"> The concept that information can be verified as original and unaltered.  If data integrity is ensured, information can only be modified by those with proper authorization.  See also: MAC.</span> . Although specifying a MAC is optional, it is 
+ highly recommended that a MAC be specified in order to ensure data integrity. 
+ The MACs provided for use with the SSH2 protocol in SecureCRT are SHA1, 
+ SHA2, MD5, and UMAC..</p>
+<p class="NoteLevel1"><b style="font-weight: bold;">WARNING: Data integrity 
+ cannot be ensured if MAC is set to</b> <b><code>None</code></b><b>.</b></p>
+<p>SecureCRT will attempt to connect using the first selected MAC in the 
+ MAC list and then, if not successful, work down the list trying each selected 
+ MAC. To reorder the list, select the MAC that you want to reposition and 
+ use the buttons to the right of the list to move the MAC up or down.</p>
+<p class="GroupNoText">Options group</p>
+<p class="Field025">Compression</p>
+<p class="Normal025">Select the type of <!--ForeHelp.Hotspot JUMP="Using_Compression"--><!--ForeHelp.EndHotspot--><a 
+	 href="Using_Compression.htm">compression</a> that you want for this 
+ SSH2 <a href="javascript:TextPopup(this)" id="HotSpot39470" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot39470', 'POPUP39470');
+//]]></script><span class="glosstext" id="POPUP39470" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> .</p>
+<p class="Field025">Level</p>
+<p class="Normal025">This option controls the level of compression. The 
+ compression level ranges from 0 (minimal compression) to 9 (maximum compression). 
+ A higher level means better compression but slower performance. The default 
+ value is 5.</p>
+<p class="Field025">Enable OpenSSH agent forwarding</p>
+<p class="Normal025">Check this option to use the agent to connect to a 
+ remote machine through another remote machine (see <!--ForeHelp.Hotspot JUMP="Using_the_Agent"--><!--ForeHelp.EndHotspot--><a 
+	 href="Using_the_Agent.htm">Using the Agent</a>). This is a tri-state 
+ option; If this option is set to the tri-state value (square), the setting 
+ from the <span class="DialogName"><a href="GO_SSH2.htm">Global Options/SSH2</a></span> 
+ category will be used.</p>
+<p class="Field025">Force session channel to close on disconnect</p>
+<p class="Normal025">When this option is checked and a session is disconnected 
+ by the user, SecureCRT will force the connection to close immediately 
+ without waiting for a response from the remote system.</p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Session Options/Connection','SO_Connection.htm','Session Options/Connection/SSH2','SO_Connection_SSH2.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+</p>
+<p class="RelatedTopics">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

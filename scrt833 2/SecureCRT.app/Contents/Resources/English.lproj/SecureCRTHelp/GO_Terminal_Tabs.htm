@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/Terminal/Tabs/Tiling</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nTerminal/Tabs/Tiling");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > Terminal/Tabs/Tiling<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /> &#160;Terminal / Tabs/Tiling</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <strong>Terminal/Tabs/Tiling</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a href="Global_Options_Dialog.htm"><strong>Global Options</strong></a> dialog allows you to configure the look and behavior of tabs and tiled session windows in SecureCRT. Some options only apply to tabs. See below for information about which options apply to both tabs and tiled sessions.</p>
+<p class="Group">Appearance group</p>
+<p>This group allows you to set the appearance of the tabs in SecureCRT.</p>
+<p class="Field025">Connected</p>
+<p class="Normal025">Clicking on this tab when the <span style="font-weight: bold;">Show status indicators</span> option is set to <span class="Entry">Background colors</span> or <span class="Entry">Color rectangles</span>, allows you to choose the color displayed for connected sessions.</p>
+<p class="Field025">Disconnected</p>
+<p class="Normal025">Clicking on this tab when the <span style="font-weight: bold;">Show status indicators</span> option is set to <span class="Entry">Background colors</span> or <span class="Entry">Color rectangles</span>, allows you to choose the color displayed for disconnected sessions.</p>
+<p class="Field025">New Input</p>
+<p class="Normal025">Clicking on this tab when the <span style="font-weight: bold;">Show status indicators</span> option is set to <span class="Entry">Background colors</span> or <span class="Entry">Color rectangles</span>, allows you to choose the color displayed for sessions that have received new input.</p>
+<p class="Field025">Inactivity</p>
+<p class="Normal025">Clicking on this tab when the <span style="font-weight: bold;">Show status indicators</span> option is set to <span class="Entry">Background colors</span> or <span class="Entry">Color rectangles</span>, allows you to choose the color displayed for sessions that have been inactive for longer than the number of seconds specified below in the <span style="font-weight: bold;">Show inactivity status after</span> option.</p>
+<p class="Field025">Locked</p>
+<p class="Normal025">Clicking on this tab when the <span style="font-weight: bold;">Show status indicators</span> option is set to <span class="Entry">Background colors</span> or <span class="Entry">Color rectangles</span>, allows you to choose the color displayed for sessions that have been locked.</p>
+<p class="Field025">Show status indicators</p>
+<p class="Normal025">This option allows you to select how status indicators are displayed on the tabs: icons, background colors, or colored rectangles. Icons are always shown when sessions are tiled.</p>
+<p class="Field050">Show inactivity status after <span style="font-style: italic;"><i>n</i></span> seconds</p>
+<p class="Normal050">Enter the number of seconds after which the session will be considered inactive. The range is 1 to 999 seconds; the default is 5. This option is also used by tiled sessions.</p>
+<p class="Field025">Minimum tab width</p>
+<p class="Normal025">Enter the minimum width of your tabs. Since <span>Secure</span>CRT will try to shrink multiple tabs to fit in one window, this option can be useful to keep your tabs readable. This option can be set from 20 to 300 pixels.</p>
+<p class="Normal050"><span style="font-weight: bold;">Note:</span> The full tab name is always shown unless the tabs do not fit in the window. In this case, the tab names will be truncated as needed, but will never be made smaller than the specified minimum tab width. You can view the full name in a tooltip by hovering your pointer over the tab name.</p>
+<p class="Group">Options group</p>
+<p>This group allows you to set the behavior of tabs in your system.</p>
+<p class="Field025">Double-click action</p>
+<p class="Normal025">This option allows you to choose the action taken when you double-click on a tab. The actions include the following:</p>
+<p class="BulletLevel2"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;<span class="Entry">Close Tab</span> – Disconnects the tab's session and closes the tab.</p>
+<p class="BulletLevel2"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;<span class="Entry">Clone Tab</span> – Creates a new session that is identical to the tab's session and opens it in a new tab.</p>
+<p class="BulletLevel2"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;<span class="Entry">Clone Tab in New Window</span> – Creates a new session that is identical to the tab's session and opens it in a new window.</p>
+<p class="BulletLevel2"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;<span class="Entry">Send Tab to New Window</span> – Removes the tab from the current window and moves it into a new window.</p>
+<p class="BulletLevel2"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;<span class="Entry">Reconnect Tab</span> – Reconnects the tab's session if it is disconnected.</p>
+<p class="Normal050"><span style="font-weight: bold;">Note:</span> For tiled sessions, double-clicking maximizes the session.</p>
+<p class="Field025">Tab location</p>
+<p class="Normal025">This option allows you to choose the placement of the tabs, either at the top or the bottom of the window.</p>
+<p class="Field025">Confirm when closing multiple tabs</p>
+<p class="Normal025">Select this option to have SecureCRT alert you when you are closing more than one tab (for example, if you close a window containing more than one open session). &#160;If the option <span class="Label"><a href="GO_General.htm">Show confirm disconnect dialog</a></span> is checked, SecureCRT will always alert you if one or more sessions is open. This option is also used by tiled sessions.</p>
+<p class="Field025">Only show tabs when there are more than one</p>
+<p class="Normal025">Select this option to only have tabs displayed when there are multiple tabs.</p>
+<p class="Field025">CTRL+TAB switches to most recently used tab</p>
+<p class="Normal025">Instructs SecureCRT to apply this operation to the stated keystrokes. This option is also used by tiled sessions.</p>
+<p class="Field025">Reuse disconnected tabs</p>
+<p class="Normal025">When opening a new session, this option instructs SecureCRT to reuse the currently selected tab if it is disconnected. This option is enabled by default. This option is also used by tiled sessions.</p>
+<p class="normal025">&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

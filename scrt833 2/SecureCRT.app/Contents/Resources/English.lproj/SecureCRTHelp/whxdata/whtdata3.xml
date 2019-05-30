@@ -1,0 +1,20 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<item name="Changing the Terminal Font" url="SO_Terminal_Appearance.htm#SO_App_fontsbc-1" />
+<book name="Changing the Properties of the Text Cursor" >
+  <item name="Changing the Style of the Cursor" url="SO_Terminal_Appearance.htm#SO_App_curstylebc-2" />
+  <item name="Changing the Color of the Cursor" url="SO_Terminal_Appearance.htm#SO_App_curcolorbc-3" />
+  <item name="Turning Off the Cursor Blink" url="SO_Terminal_Appearance.htm#SO_App_blinkbc-4" />
+  <item name="Trackable Insertion Caret" url="GO_Terminal_Appearance.htm#GO_App_accessibilitybc-1" />
+</book>
+<book name="Changing Foreground and Background Colors" >
+  <item name="Overview of Color Schemes" url="Overview_of_Color_Schemes.htm" />
+  <item name="Choosing a Color Scheme" url="SO_Terminal_Appearance.htm#bc-5" />
+  <item name="Creating or Modifying a Color Scheme" url="Modifying_a_Color_Scheme.htm" />
+</book>
+<book name="Changing the Size of the Terminal Screen" >
+  <item name="Setting the Number of Rows and Columns" url="SO_Terminal_Emulation.htm#SO_Emulation_sizebc-4" />
+  <item name="Session Window Size" url="SO_Terminal_Emulation.htm#SO_Emulation_sizebc-5" />
+</book>
+
+</tocdata>

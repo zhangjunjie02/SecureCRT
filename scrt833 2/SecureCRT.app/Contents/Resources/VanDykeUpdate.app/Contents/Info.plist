@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+        <key>CFBundleIconFile</key>
+        <string>VanDykeUpdate.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleVersion</key>
+	<string>119814</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2012-2018 VanDyke Software, Inc.</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>VanDykeUpdate</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.vandyke.VanDykeUpdate</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>

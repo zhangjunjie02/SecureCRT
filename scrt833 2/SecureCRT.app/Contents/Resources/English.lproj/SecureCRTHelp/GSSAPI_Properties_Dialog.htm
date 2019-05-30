@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>GSSAPI Properties Dialog</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGSSAPI Properties Dialog");
+addAvenueInfo("Dialogs","Public_Key_Properties_Dialo.htm","Local_Port_Forwarding_Prope.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > GSSAPI Properties Dialog<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span>&#160;&#160;GSSAPI Properties 
+ Dialog</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <span class="DialogName">GSSAPI Properties</span> dialog can be 
+ accessed by clicking on the <span class="Label">Properties</span> button 
+ in the <span class="Label">Authentication</span> group of the <strong><a 
+	 href="SO_Connection.htm">Connection</a>/<a href="SO_Connection_SSH1.htm">SSH1</a>, 
+ <a href="SO_Connection_SSH2.htm">SSH2</a>, or <a href="SO_Connection_Telnet.htm">Telnet</a></strong> 
+ category of the <span class="DialogName"><a href="Session_Options_Dialog.htm">Session 
+ Options</a></span> dialog when <span class="Entry">GSSAPI</span> is the 
+ specified authentication method.</p>
+<p>GSSAPI (Generic Security Services Application Program Interface) is 
+ a generic API for performing client/server authentication. GSSAPI allows 
+ SecureCRT to authenticate with a server without knowing anything about 
+ the specific authentication mechanism in use.</p>
+<p class="Group">Method</p>
+<p>SecureCRT supports the following types of GSSAPI provider:</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->MS 
+ Kerberos - In order to use this provider, SecureCRT must be running on 
+ Windows 2000 or newer. &#160;The Windows 2000 computer must have been 
+ configured as part of an Active Directory domain or been configured to 
+ participate in a Kerberos realm.</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->GSSAPI 
+ - In order to use this provider, you must have a Gssapi32.dll file provided 
+ by a third party (e.g., the MIT Kerberos distribution). &#160;This third-party 
+ application must be configured correctly for your environment. &#160;</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Auto 
+ Detect - This setting instructs SecureCRT to attempt to automatically 
+ determine which of the above two methods will work with the server that 
+ you are connecting to. &#160;This is the recommended setting.</p>
+<p class="Group">Delegation</p>
+<p>When SecureCRT authenticates with GSSAPI, it can control whether or 
+ not the server is allowed to access other secured resources (such as network 
+ file servers) without further prompting for credentials. &#160;SecureCRT 
+ supports the following delegation settings:</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Full 
+ - If this delegation is selected and the GSSAPI mechanism both supports 
+ delegation and is configured to allow delegation, the server may be able 
+ to access other secured resources without prompting for credentials.</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->None 
+ - &#160;If this delegation is selected, the server may have to prompt 
+ for further authentication in order to access secured resources such as 
+ network files, printers, or to log on to a different server.</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Limited 
+ - This delegation is the same as Full delegation for the MS Kerberos method. 
+ &#160;If the GSSAPI method is in use, it's meaning is determined by the 
+ Gssapi32.dll in use.</p>
+<p class="Group">&lt;&lt; Advanced</p>
+<p>Pressing this button expands (or contracts) the GSSAPI Properties dialog 
+ to display (or hide) the following options.</p>
+<p class="Group">SPN (Server Principal Name)</p>
+<p>When authenticating with GSSAPI, SecureCRT must determine the canonical 
+ name of a server. The server has exactly one canonical name, which no 
+ other server can share. The server may have other names, for example, 
+ the server 192.168.20.1 may be known as mail.mydomain.com, mydomain.com 
+ and mail, but it has only one canonical name, mail.mydomain.com.</p>
+<p>SecureCRT uses this canonical name to form a Server Principal Name (SPN), 
+ which the GSSAPI provider uses to identify the server with which it should 
+ authenticate.</p>
+<p>SecureCRT usually uses the host variable (HOST) to determine the server 
+ SPN. However, this depends on hostname lookups working correctly. If this 
+ does not work correctly, this behavior can be overridden by manually specifying 
+ the SPN.</p>
+<p class="Field">Manually specify the SPN (default is host@$(HOST))</p>
+<p class="Normal025">Checking this box will enable the SPN text box below 
+ and manually specify the SPN.</p>
+<p class="Field">SPN</p>
+<p class="Normal025">Enter the SPN string. The string is almost always 
+ of the form host@&lt;server canonical name&gt;. An example of a valid 
+ string is &quot;host@mail.mydomain.com&quot;. SecureCRT will make the 
+ following variable substitutions in the specified SPN name:</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->$(HOST) 
+ - the hostname as specified in the <span class="DialogName"><a href="SO_Connection_SSH2.htm">Session 
+ Options/Connection/SSH2</a></span> category.</p>
+<p class="BulletL1"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->$(PORT) 
+ - the port as specified in the <span class="DialogName"><a href="SO_Connection_SSH2.htm">Session 
+ Options/Connection/SSH2</a></span> category</p>
+<p class="Normal025">If the server is in a different Kerberos realm, the 
+ realm name may need to be appended (e.g., host@mail.mydomain.com@KRBS.MYDOMAIN.COM.</p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Session Options/Connection','SO_Connection.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>SessionConfiguration Object</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Scripting\nScript Objects Reference\nSessionConfiguration Object");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > <a href=\"Application_Object.htm\">Script Objects Reference<\/a> > SessionConfiguration Object<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;SessionConfiguration 
+ Object</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p class="SOH1">Description</p>
+<p class="SingleSpaced025">The SessionConfiguration object provides methods 
+ for accessing session configuration through scripting.</p>
+<p class="SOH1">Syntax</p>
+<p class="Entry025"><nobr style="white-space: nowrap;"><span style="white-space: nowrap;">SessionConfiguration</span><span>.</span><i>Method</i>([<i>arglist</i>])</nobr></p>
+<p class="SOH1">Remarks</p>
+<p class="SingleSpaced025">Can be used in the following cases:</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font> 
+ &#160;&#160;Change settings in an existing session before connecting.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font> 
+ &#160;&#160;Convert an Excel spreadsheet to save <span>Secure</span>CRT 
+ <span>or SecureFX (if installed)</span> sessions.</p>
+<p class="SOH1"><u style="text-decoration: underline; "><span style="text-decoration: underline; "><u>SessionConfiguration</u></span> 
+ Object Methods</u></p>
+<table cellspacing="1">
+	<col />
+	<col />
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent"><!--ForeHelp.Hotspot JUMP="FileTrans_Object_Properties"--><!--ForeHelp.EndHotspot--><b><a 
+		 href="#SessConf_Object_Methods" style="font-size: 10pt; font-family: Arial, sans-serif;">Methods</a></b></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="192"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#SessConf_Object_ConnectInTab">ConnectInTab</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="192"><p class="ObjTableContent">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="192"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#SessConf_Object_GetOption">GetOption</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="192"><p class="ObjTableContent">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#SessConf_Object_Save" style="font-size: 10pt; font-family: Arial, sans-serif;">Save</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent">&#160;</p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#SessConf_Object_SetOption" style="font-size: 10pt; font-family: Arial, sans-serif;">SetOption</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="18" width="192"><p class="ObjTableContent">&#160;</p></td>
+	</tr>
+</table>
+<p class="SectionHead"><a name="SessConf_Object_Methods" id="SessConf_Object_Methods"></a>Methods</p>
+<p class="ObjHead"><a name="SessConf_Object_ConnectInTab" id="SessConf_Object_ConnectInTab"></a>ConnectInTab</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Connects to a session in a tab or tiled session window.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText" style="font-style: normal;">This method returns a Tab 
+ object. ConnectInTab is not supported with sessions that use TN3270 emulation.</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">V</span>BScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single">Set <span style="font-style: italic;"><i>objTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.ConnectInTab</p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single">Set objConfig = crt.OpenSessionConfiguration(&quot;Test&quot;)</p>
+<p class="Entry100single">objConfig.SetOption &quot;Hostname&quot;, &quot;host&quot;</p>
+<p class="Entry100single">Set objTab = objConfig.ConnectInTab</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">Python</span></p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>objTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.ConnectInTab()</p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single">objConfig = crt.OpenSessionConfiguration(&quot;Test&quot;)</p>
+<p class="Entry100single">objConfig.SetOption(&quot;Hostname&quot;, &quot;host&quot;)</p>
+<p class="Entry100single">objTab = objConfig.ConnectInTab()</p>
+<p class="ObjHeadSub">&#160;</p>
+<p class="ObjHead"><a name="SessConf_Object_GetOption" id="SessConf_Object_GetOption"></a>GetOption</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Gets the value of the specified option.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText"><span class="Entry" style="font-style: italic;"><i>OptionName</i></span> 
+ is a string parameter that is the name of the option. This method returns 
+ the value of the specified option. If the option is a string type (S), 
+ a string is returned. If the option is a multi-string (Z), an array of 
+ strings is returned. If the option is a DWORD (D), an integer is returned.</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">V</span>BScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry" style="font-style: italic;"><i>varname</i></span> 
+ <span class="Entry">=</span> <span class="Entry" style="font-style: italic;"><i>object</i></span><span 
+	 class="Entry">.GetOption</span><span class="Entry" style="font-style: italic;"><i>(OptionName)</i></span></p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single"><span class="Entry">Set objTab = crt.GetScriptTab<br />
+Set objConfig = objTab.Session.Config<br />
+szUsername = objConfig.GetOption(&quot;Username&quot;)<br />
+szSessionName = objTab.Session.Path<br />
+MsgBox &quot;Username for current session (&quot; &amp; _<br />
+szSessionName &amp; &quot;) = &quot; &amp; szUsername<br />
+<br />
+vPortForwards = objConfig.GetOption(&quot;Port Forward Table V2&quot;)<br />
+nElements = UBound(vPortForwards)<br />
+If nElements = -1 Then<br />
+MsgBox &quot;No port forward configuration defined&quot;<br />
+Else<br />
+MsgBox nElements + 1 &amp; _<br />
+&quot; port forward entries exist in this session (&quot; &amp; _<br />
+objTab.Session.Path &amp; &quot;)&quot;<br />
+End If</span></p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjText" style="margin-left: 96px;">In the following example, 
+ the current session’s Description is displayed.</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">Set objTab = crt.GetScriptTab<br />
+Set objConfig = objTab.Session.Config<br />
+strDescription = Join(objConfig.GetOption(&quot;Description&quot;), vbcrlf)<br />
+crt.Dialog.MessageBox &quot;Current Session's Description: &quot; &amp; 
+ vbcrlf &amp; _<br />
+strDescription</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">Python</span></p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry" style="font-style: italic;"><i>varname</i></span> 
+ <span class="Entry">=</span> <span class="Entry" style="font-style: italic;"><i>object</i></span><span 
+	 class="Entry">.GetOption</span><span class="Entry" style="font-style: italic;"><i>(OptionName)</i></span></p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single">objTab = crt.GetScriptTab()</p>
+<p class="Entry100single">objConfig = objTab.Session.Config</p>
+<p class="Entry100single">szUsername = objConfig.GetOption(&quot;Username&quot;)</p>
+<p class="Entry100single">szSessionName = objTab.Session.Path</p>
+<p class="Entry100single">crt.Dialog.MessageBox(&quot;Username for current 
+ session (&quot; +</p>
+<p class="Entry100single">szSessionName + &quot;) = &quot; + szUsername)</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">vPortForwards = objConfig.GetOption(&quot;Port 
+ Forward Table V2&quot;)</p>
+<p class="Entry100single">nElements = len(vPortForwards)</p>
+<p class="Entry100single">if nElements == 0:</p>
+<p class="Entry100single">&#160;&#160;crt.Dialog.MessageBox(&quot;No port 
+ forward configuration defined&quot;)</p>
+<p class="Entry100single">else:</p>
+<p class="Entry100single">&#160;&#160;crt.Dialog.MessageBox(str(nElements) 
+ +</p>
+<p class="Entry100single">&#160;&#160;&quot; port forward entries exist 
+ in this session (&quot; + objTab.Session.Path + &quot;)&quot;)</p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjText" style="margin-left: 96px;">In the following example, 
+ the current session’s Description is displayed.</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">&#160;&#160;objTab = crt.GetScriptTab()</p>
+<p class="Entry100single">&#160;&#160;objConfig = objTab.Session.Config</p>
+<p class="Entry100single">&#160;&#160;formattedDescription = []</p>
+<p class="Entry100single">&#160;&#160;arrDescription = objConfig.GetOption(&quot;Description&quot;)</p>
+<p class="Entry100single">&#160;&#160;nElements = len(arrDescription)</p>
+<p class="Entry100single">&#160;&#160;for index in xrange(nElements):</p>
+<p class="Entry100single">&#160;&#160;&#160;&#160;formattedDescription.append(arrDescription[index])</p>
+<p class="Entry100single">&#160;&#160;&#160;&#160;formattedDescription.append(&quot;\n&quot;)</p>
+<p class="Entry100single">&#160;&#160;strDescription = ''.join(formattedDescription)</p>
+<p class="Entry100single">&#160;&#160;crt.Dialog.MessageBox(&quot;Current 
+ Session's Description: \n&quot; + strDescription)</p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHead"><a name="SessConf_Object_Save" id="SessConf_Object_Save"></a>Save</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Saves the configuration.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">If <span class="Entry" style="font-style: italic;"><i>SessionPath</i></span> 
+ is not provided, the configuration will be saved to the .ini file that 
+ is associated with the Config object used. If the <span class="Entry" 
+														 style="font-style: italic;"><i>SessionPath</i></span> 
+ provided is the same as an existing session configuration, the existing 
+ .ini file will be overwritten with the settings contained in the Config 
+ object used. If the <span class="Entry" style="font-style: italic;"><i>SessionPath</i></span> 
+ provided does not exist, a new session of that name will be created in 
+ the session path specified. Note that the session path is not a full file 
+ system path, rather it is the path relative to the folders as they appear 
+ within the SecureCRT <span class="Label">Connect</span> dialog, with the 
+ built-in &quot;Sessions&quot; folder being the &quot;root&quot; path. 
+ In the graphic below, the path to the selected session would be <span 
+	 class="Entry">Redhat8 - SSH2\redhat</span>.</p>
+<p class="ObjText">&#160;</p>
+<p class="ObjText"><img src="image1.jpg" alt="" style="border: none;" width="375" 
+						 height="349" border="0" /></p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">V</span>BScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry" style="font-style: italic;"><i>object</i></span><span 
+	 class="Entry">.Save [</span><span class="Entry" style="font-style: italic;"><i>SessionPath</i></span><span 
+	 class="Entry">]</span></p>
+<p class="objhead075indent">Example</p>
+<p class="ObjText" style="margin-left: 96px;"><span class="Entry">' Save 
+ configuration to a new session.<br />
+objConfig.Save &quot;Redhat8 - SSH2\redhat - PF&quot;</span></p>
+<p class="ObjHeadSub"><span style="font-style: normal;"><span class="Entry">P</span>ython</span></p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.save([<span 
+	 style="font-style: italic;"><i>SessionPath</i></span>])</p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single"># Save configuration to a new session.</p>
+<p class="Entry100single">objConfig.Save(&quot;Redhat8 - SSH2\redhat - 
+ PF&quot;)</p>
+<p class="ObjText" style="margin-left: 96px;">&#160;</p>
+<p class="ObjHead"><a name="SessConf_Object_SetOption" id="SessConf_Object_SetOption"></a>SetOption</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Sets the specified option to the specified value.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText"><span class="Entry">OptionName</span> is a string parameter 
+ that is the name of the option. <span class="Entry">Value</span> is the 
+ value to set the option to. If the option is a string type (S), a string 
+ should be specified for the value. &#160;If the option is a multi-string 
+ (Z), an array of strings should be specified for the value. If the option 
+ is a DWORD (D), the value should be numeric. If there is an error this 
+ method will display a error message box. If the errors are not being displayed, 
+ the error message can be retrieved by using <span class="Entry">crt.GetLastErrorMessage</span>. 
+ It is not recommended to change a session's emulation to or from TN3270. 
+ Also, rows and columns cannot be changed for sessions using TN3270 emulation.</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">V</span>BScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry" style="font-style: italic;"><i>object</i></span><span 
+	 class="Entry">.SetOption OptionName, Value</span></p>
+<p class="Entry100single">&#160;</p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single">Config.SetOption &quot;Terminal Protocol Name&quot;, 
+ &quot;SSH2&quot;</p>
+<p class="objtext" style="margin-left: 96px;">&#160;</p>
+<p class="objtext" style="margin-left: 96px;">In the following example, 
+ the current session’s Description is changed.</p>
+<p class="objtext" style="margin-left: 96px;">&#160;</p>
+<p class="Entry100single">Set objTab = crt.GetScriptTab</p>
+<p class="Entry100single">Set objConfig = objTab.Session.Config</p>
+<p class="Entry100single">strNewDescription = _</p>
+<p class="Entry100single" style="margin-left: 120px;">&quot;This host is 
+ located in room 304.&quot; &amp; vbcrlf &amp; _</p>
+<p class="Entry100single" style="margin-left: 120px;">&quot;Requires SSH2 
+ publickey authentication.&quot;</p>
+<p class="Entry100single" style="margin-left: 120px;">&#160;</p>
+<p class="Entry100single">' Update the Config object's description;</p>
+<p class="Entry100single">' convert string to array using Split()</p>
+<p class="Entry100single">objConfig.SetOption &quot;Description&quot;, 
+ Split(strNewDescription, vbcrlf)</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">' Display updated configuration</p>
+<p class="Entry100single">strDescription = Join(objConfig.GetOption(&quot;Description&quot;), 
+ vbcrlf)</p>
+<p class="Entry100single">crt.Dialog.MessageBox &quot;Session's Updated 
+ Description (New): &quot; &amp; _</p>
+<p class="Entry100single" style="margin-left: 120px;">vbcrlf &amp; _</p>
+<p class="Entry100single" style="margin-left: 120px;">strDescription</p>
+<p class="Entry100single">' Save the configuration</p>
+<p class="Entry100single">objConfig.Save</p>
+<p class="objtext" style="margin-left: 96px;">&#160;</p>
+<p class="objtext" style="margin-left: 96px;">The following shows how to 
+ use a password in a script. The example uses Server1's password to connect 
+ to Server.</p>
+<p class="objtext" style="margin-left: 120px;"><span style="font-weight: bold;">Note:</span> 
+ When set, the <span class="Entry">Password</span> parameter must be encoded. 
+ The <span class="Entry">Session Password Saved</span> parameter must be 
+ set to true for the Password parameter to be used.</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">Sub Main ()</p>
+<p class="Entry100single">&#160;&#160;set config = crt.OpenSessionConfiguration(&quot;Server&quot;)</p>
+<p class="Entry100single">&#160;&#160;set config1 = crt.OpenSessionConfiguration(&quot;Server1&quot;)</p>
+<p class="Entry100single">&#160;&#160;config.SetOption &quot;Session Password 
+ Saved&quot;, 1</p>
+<p class="Entry100single">&#160;&#160;config.SetOption &quot;Password&quot;, 
+ config1.GetOption(&quot;Password&quot;)</p>
+<p class="Entry100single">&#160;&#160;config.ConnectInTab</p>
+<p class="Entry100single">End Sub</p>
+<p class="ObjHeadSub"><span style="font-style: normal;">Python</span></p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.SetOption(OptionName, 
+ Value)</p>
+<p class="objhead075indent">Example</p>
+<p class="Entry100single">config.SetOption(&quot;Terminal Protocol Name&quot;, 
+ &quot;SSH2&quot;)</p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjText" style="margin-left: 96px;">In the following example, 
+ the current session’s Description is changed.</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">objTab = crt.GetScriptTab()</p>
+<p class="Entry100single">objConfig = objTab.Session.Config</p>
+<p class="Entry100single">arrNewDescription = []</p>
+<p class="Entry100single">arrNewDescription.append(&quot;This host is located 
+ in room 304.&quot;)</p>
+<p class="Entry100single">arrNewDescription.append(&quot;Requires SSH2 
+ publickey authentication.&quot;)</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single"># Update the Config object's description;</p>
+<p class="Entry100single">objConfig.SetOption(&quot;Description&quot;, 
+ arrNewDescription)</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single"># Display updated configuration</p>
+<p class="Entry100single">formattedDescription = []</p>
+<p class="Entry100single">arrDescription = objConfig.GetOption(&quot;Description&quot;)</p>
+<p class="Entry100single">nElements = len(arrDescription)</p>
+<p class="Entry100single">for index in xrange(nElements):</p>
+<p class="Entry100single">&#160;&#160;formattedDescription.append(arrDescription[index])</p>
+<p class="Entry100single">&#160;&#160;formattedDescription.append(&quot;\n&quot;)</p>
+<p class="Entry100single">strDescription = ''.join(formattedDescription)</p>
+<p class="Entry100single">crt.Dialog.MessageBox(&quot;Session's Updated 
+ Description (New): \n&quot; + strDescription)</p>
+<p class="Entry100single"># Save the configuration</p>
+<p class="Entry100single">objConfig.Save()</p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjText" style="margin-left: 96px;">The following shows how to 
+ use a password in a script. The example uses Server1's password to connect 
+ to Server.</p>
+<p class="ObjText" style="margin-left: 120px;"><span style="font-weight: bold;">Note:</span> 
+ When set, the Password parameter must be encoded. The Session Password 
+ Saved parameter must be set to true for the Password parameter to be used.</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single">def main():</p>
+<p class="Entry100single">&#160;&#160;config = crt.OpenSessionConfiguration(&quot;Server&quot;)</p>
+<p class="Entry100single">&#160;&#160;config1 = crt.OpenSessionConfiguration(&quot;Server1&quot;)</p>
+<p class="Entry100single">&#160;&#160;config.SetOption(&quot;Session Password 
+ Saved&quot;, 1)</p>
+<p class="Entry100single">&#160;&#160;config.SetOption(&quot;Password&quot;, 
+ config1.GetOption(&quot;Password&quot;))</p>
+<p class="Entry100single">&#160;&#160;config.ConnectInTab()</p>
+<p class="Entry100single">main()</p>
+<p class="objtext">&#160;</p>
+<p class="objtext">&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

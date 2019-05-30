@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Public-Key Authentication for SSH2</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:#ffffff; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Secure Connections\nPublic-Key Authentication for SSH2\nPublic-Key Authentication for SSH2");
+addAvenueInfo("Secure Connections","Public-Key_Authentication_for_SSH1.htm","Changing_the_Passphrase_for.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Security_Considerations.htm\">Secure Connections<\/a> > <a href=\"Public-Key_Authentication_for_SSH2.htm\">Public-Key Authentication for SSH2<\/a> > Public-Key Authentication for SSH2<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Keyword KKEYS="passphrases;authentication;encryption;public keys;public-key authentication;DSA authentication;private keys;RSA authentication"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span>&#160;&#160;Public-Key 
+ Authentication for SSH2</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p class="SectionHead">Overview of Public-Key Authentication</p>
+<p><!--ForeHelp.Hotspot JUMP="Public_Key_Authentication"--><!--ForeHelp.EndHotspot--><a 
+	 href="Key_Terminology.htm#Public_Key_Authentication">Public-key authentication</a> 
+ uses a <a href="javascript:TextPopup(this)" id="HotSpot56819" class="glossterm">public-private key pair</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot56819', 'POPUP56819');
+//]]></script><span class="glosstext" id="POPUP56819" style="display: none;"> A pair of keys used with RSA or DSA authentication.  The public key is usually kept in a file named Identity.pub, which is then transferred to the remote SSH server and appended to the user's authorized_keys file.  Another file usually named identity contains both the public key and the corresponding private key.  This file is kept on the local machine and is used by SecureCRT with public key or RSA authentication methods.</span> 
+ to log onto an <!--ForeHelp.Hotspot JUMP="Connection_Options_SSH2"--><!--ForeHelp.EndHotspot--><a 
+	 href="SO_Connection_SSH2.htm">SSH2</a> <a href="javascript:TextPopup(this)" id="HotSpot27607" class="glossterm">server</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot27607', 'POPUP27607');
+//]]></script><span class="glosstext" id="POPUP27607" style="display: none;"> A computer program that provides services to other computer programs (called clients).  Often the computer on which a server program runs is also called a server.  The term host is often used as a synonym for server.</span> 
+ . Setting up public-key <a href="javascript:TextPopup(this)" id="HotSpot32708" class="glossterm">authentication</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot32708', 'POPUP32708');
+//]]></script><span class="glosstext" id="POPUP32708" style="display: none;"> The process of verifying that an individual truly is who he or she claims to be.  Supplying a password is a very common method of authentication.  The most secure method of authentication supported in SecureCRT is public-key authentication.  See also: identity file, public-private key pair.</span> 
+ for an <a href="javascript:TextPopup(this)" id="HotSpot45659" class="glossterm">SSH2</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot45659', 'POPUP45659');
+//]]></script><span class="glosstext" id="POPUP45659" style="display: none;"> The second version of the SSH protocol which provides a way to encrypt network traffic between a client and a server, with a slightly different set of security features than the SSH1 protocol provides.</span> SecureCRT 
+ <a href="javascript:TextPopup(this)" id="HotSpot35503" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot35503', 'POPUP35503');
+//]]></script><span class="glosstext" id="POPUP35503" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> is a multi-step 
+ process. Identity files must be created using the Key Generation wizard. 
+ One of the identity files created by the Key Generation wizard will contain 
+ a <!--ForeHelp.Hotspot JUMP="Private_Key"--><!--ForeHelp.EndHotspot--><a 
+	 href="Key_Terminology.htm#Private_Key">private key</a> that will be 
+ assigned either on a global level for all SSH2 sessions or on a session-specific 
+ level. The global or session-specific characteristic of the private key 
+ is specified in the <b>SSH2</b> category. The other <a href="javascript:TextPopup(this)" id="HotSpot35568" class="glossterm">identity 
+ file</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot35568', 'POPUP35568');
+//]]></script><span class="glosstext" id="POPUP35568" style="display: none;"> Identity files are two files containing the public-private key pair used to connect to an SSH server using RSA or DSA authentication.  The Identity file contains the public and private key pair and is used by SecureCRT.  The Identity.pub file contains only the public key  which is usually appended to the authorized_keys file.</span> created by the Key Generation wizard will contain 
+ the corresponding <!--ForeHelp.Hotspot JUMP="Public_key"--><!--ForeHelp.EndHotspot--><a 
+	 href="Key_Terminology.htm#Public_key">public key</a> and will need 
+ to be transferred to the proper location on the SSH2 server.</p>
+<p class="NoteLevel1"><span class="NoteBold">Note:</span> Public keys generated 
+ using VanDyke Software products comply with the established IETF draft 
+ specification defining the format of Secure Shell public key files. This 
+ does not guarantee that SecureCRT will work with public key files generated 
+ using other Secure Shell software implementations which may or may not 
+ comply with this specification.</p>
+<p class="NoteLevel1">Since there is no IETF specification defining the 
+ format of Secure Shell private key files, SecureCRT may not be able to 
+ use private key files generated with other implementations. It should 
+ also be noted that, since the private key generated by SecureCRT uses 
+ a different format from OpenSSH's private key, OpenSSH cannot use a VanDyke 
+ Software generated private key.</p>
+<p class="NoteLevel1">SecureCRT supports SSH2 public-private key files 
+ generated with VanDyke Software products and the public-private key files 
+ generated with the OpenSSH ssh-keygen utility.</p>
+<p class="SectionHead">Creating Global Identity Files</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->1.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Open 
+ the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="Dialog">Global Options</span></a> 
+ dialog and click on the <b><a href="GO_SSH2.htm">SSH2</a></b> category</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->2.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Click 
+ on the <b>Create Identity File</b> button.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->3.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Follow 
+ the instructions in the Key Generation wizard to create your identity 
+ files. The Key Generation wizard will ask for a passphrase, but the passphrase 
+ is not required. If the public key is going to be used as part of an automated 
+ process, you may not want to use a passphrase.</p>
+<p class="Step1Level1">4. &#160;&#160;Once your public-private key pair 
+ has been generated by the Key Generation wizard, you will be prompted 
+ for the path and filename in which your identity files will be stored. 
+ Be sure to specify a secure location for these files such that you are 
+ the only individual with access to them. The public key will be placed 
+ in a file with the same name as the private key file, but with an extension 
+ of <span style="font-family: 'Courier New', sans-serif;">.pub</span>.</p>
+<p class="NoteLevel2"><span class="NoteBold">Note:</span> SecureCRT supports 
+ RSA, Ed25519, ECDSA, and DSA key types.</p>
+<p class="SectionHead">Creating Session-Specific Identity Files</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->1.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->In 
+ the <span class="Dialog">Connect</span> dialog, select the SSH2 session 
+ with which you would like to use the identity files.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->2.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Open 
+ the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Options_Dialog.htm"><span class="Dialog">Session Options</span></a> 
+ dialog</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->3.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->In 
+ the <strong>Authentication</strong> group, set one of your authentication 
+ methods to be <code>PublicKey</code> and click on the associated <strong>Properties</strong> 
+ button.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->4.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->In 
+ the <!--ForeHelp.Hotspot JUMP="Public_Key_Properties_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Public_Key_Properties_Dialo.htm"><span class="Dialog">Public 
+ Key Properties</span></a> dialog, click on the <b>Create Identity File</b> 
+ button.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->5.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Follow 
+ the instructions in the Key Generation wizard to create your identity 
+ files. The Key Generation wizard will ask for a passphrase, but the passphrase 
+ is not required. If the public key is going to be used as part of an automated 
+ process, you may not want to use a passphrase.</p>
+<p class="Step1Level1">6.&#160;&#160;&#160;Once your public-private key 
+ pair has been generated by the Key Generation wizard, you will be prompted 
+ for the path and filename in which your identity files will be stored. 
+ Be sure to specify a secure location for these files such that you are 
+ the only individual with access to them. The public key will be placed 
+ in a file with the same name as the private key file, but with an extension 
+ of <span style="font-family: 'Courier New', sans-serif;">.pub</span>.</p>
+<p class="SectionHead">Using Your Identity Files</p>
+<p>Once you have created your identity files, there are several steps that 
+ will need to be completed so that you can make use of them with SecureCRT. 
+ The necessary steps are:</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->1.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Configure 
+ the SSH2 server to recognize your public-key file (e.g., <span style="font-family: 'Courier New', sans-serif;">Identity.pub</span>). 
+ Instructions are provided for configuring <!--ForeHelp.Hotspot JUMP="Configuring_VShell_to_Recognize_Identity_File"--><!--ForeHelp.EndHotspot--><a 
+	 href="Configuring_VShell_to_Recog.htm">VanDyke Software's VShell® 
+ server</a>, <!--ForeHelp.Hotspot JUMP="Configure_OpenSSH_to_Recognize_Identity_File"--><!--ForeHelp.EndHotspot--><a 
+	 href="Configure_OpenSSH_to_Recogn.htm">OpenSSH</a>, <!--ForeHelp.Hotspot JUMP="Configure_SSH_Communications_Data_Fellows_to_Recognize_Identity_File"--><!--ForeHelp.EndHotspot--><a 
+	 href="Configure_SSH_Communication.htm">SSH Communications, and Data 
+ Fellows</a> servers.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->2.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Configure 
+ SecureCRT to use the <span style="font-family: 'Courier New', sans-serif;">identity</span> 
+ file with public-key authentication on the local machine. The <span style="font-family: 'Courier New', sans-serif;">identity</span> 
+ file created by the Key Generation wizard contains both your new public 
+ key and your new private key. To configure SecureCRT to use the <span 
+	 style="font-family: 'Courier New', sans-serif;">identity</span> file 
+ complete the following instructions:</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">a.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->In 
+ the <span class="Dialog">Connect</span> dialog, select the SSH2 session 
+ with which you would like to use the <span style="font-family: 'Courier New', sans-serif;">identity</span> 
+ file.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore-->b.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Open 
+ the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Options_Dialog.htm"><span class="Dialog">Session Options</span></a> 
+ dialog and in the <b><a href="SO_Connection_SSH2.htm">Connection/SSH2</a></b> 
+ category, change the <b>Authentication</b> setting from <code>Password</code> 
+ to <code>PublicKey.</code></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">c.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->If 
+ you have more than one identity file, you may need to click on the <b>Properties</b> 
+ button and verify that the session is using the session-specific key you 
+ have created.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore-->d.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Click 
+ on the <b>OK</b> button to save the changes. If you supplied a <a href="javascript:TextPopup(this)" id="HotSpot22417" class="glossterm">passphrase</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot22417', 'POPUP22417');
+//]]></script><span class="glosstext" id="POPUP22417" style="display: none;"> A password used to protect a private key from unauthorized use.  It is recommended that a passphrase be assigned to all private keys to prevent unauthorized use, especially in environments where multiple individuals have access to the machine on which the private key files are stored.  When using public-key   authentication, a private key with an assigned passphrase will not be available if the correct passphrase is not supplied during the authentication process.</span> when you created your key, 
+ you will be prompted to enter it during the connection process.</p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Key Terminology','Key_Terminology.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+ </p>
+<p class="relatedtopics">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

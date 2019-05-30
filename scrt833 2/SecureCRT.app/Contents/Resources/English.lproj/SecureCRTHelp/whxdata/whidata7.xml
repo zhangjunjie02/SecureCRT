@@ -1,0 +1,255 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="TAB character" >
+  <topic name="Session Options/Emulation/Advanced#SO_Emulation_Adv_tab" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_tab" />
+</key>
+<key name="tab names" >
+  <topic name="Session Options/Terminal/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+</key>
+<key name="tab object" >
+  <topic name="Tab Object" url="Tab_Object.htm" />
+</key>
+<key name="tabs" >
+  <topic name="View Menu" url="View_Menu.htm" />
+  <topic name="Global Options/Terminal Emulation/Appearance" url="GO_Terminal_Appearance.htm" />
+  <topic name="Session Tabs" url="Session_Tabs.htm" />
+  <topic name="Switching Between Multiple Session Windows" url="Switching_Between_Multiple_.htm" />
+  <topic name="Global Options/Terminal/Tabs" url="GO_Terminal_Tabs.htm" />
+  <topic name="Tab Object" url="Tab_Object.htm" />
+  <topic name="SFTP Tab Command Options" url="SFTP_Tab_Command_Options.htm" />
+</key>
+<key name="TAPI" >
+  <topic name="Session Options/Connection" url="SO_Connection.htm" />
+</key>
+<key name="Telnet" >
+  <topic name="Telnet Quick Connect Options" url="Telnet_Quick_Connect_Option.htm" />
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+  <topic name="Session Options/Connection" url="SO_Connection.htm" />
+  <topic name="Using NTLM" url="Using_NTLM.htm" />
+  <topic name="Firewall Properties Dialog" url="Firewall_Properties_Dialog.htm" />
+</key>
+<key name="Telnet/SSL" >
+  <topic name="Session Options/Connection" url="SO_Connection.htm" />
+</key>
+<key name="terminal" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Session Options/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+  <topic name="Session Options/Emulation/Mapped Keys" url="SO_Terminal_Emulation_Mapped_Keys.htm" />
+  <topic name="Session Options/Terminal/Printing" url="SO_Terminal_Printing.htm" />
+  <topic name="Session Options/Terminal/Log File" url="SO_Terminal_Log_File.htm" />
+  <topic name="Session Options/Terminal/Emulation/Modes" url="SO_Terminal_Emulation_Modes.htm" />
+  <topic name="Session Options/Terminal/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  <topic name="Session Options/Terminal/Appearance" url="SO_Terminal_Appearance.htm" />
+  <topic name="Session Options/Terminal" url="SO_Terminal.htm" />
+  <topic name="Global Options/Terminal/Printing" url="GO_Terminal_Printing.htm" />
+  <topic name="Global Options/Terminal/Appearance/Color Scheme" url="GO_Terminal_Appearance_Advanced.htm" />
+  <topic name="Global Options/Terminal/Appearance/ANSI Color" url="GO_Terminal_Appearance_ANSI_Color.htm" />
+  <topic name="Global Options/Terminal/Appearance" url="GO_Terminal_Appearance.htm" />
+  <topic name="Global Options/Terminal" url="GO_Terminal.htm" />
+  <topic name="Session Options/Terminal/Xmodem/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+  <topic name="Global Options/Terminal/Advanced" url="GO_Terminal_Advanced.htm" />
+</key>
+<key name="terminal screens" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="terminal type" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Session Options/Emulation/Advanced#SO_Emulation_Adv_termtype" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_termtype" />
+</key>
+<key name="Themes" >
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="TIS" >
+  <topic name="SSH1 Quick Connect Options" url="SSH1_Quick_Connect_Options.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+</key>
+<key name="Title bar" >
+  <topic name="Xterm Escape Sequences" url="Xterm_Escape_Sequences.htm" />
+  <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+  <topic name="Session Options/Terminal/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+</key>
+<key name="toolbar" >
+  <topic name="View Menu" url="View_Menu.htm" />
+  <topic name="The Toolbar" url="The_Toolbar.htm" />
+</key>
+<key name="Tools menu" >
+  <topic name="Tools Menu" url="Tools_Menu.htm" />
+</key>
+<key name="Trace Options" >
+  <topic name="File Menu#FileMenu_traceoptions" url="File_Menu.htm#FileMenu_traceoptions" />
+</key>
+<key name="trademarks" >
+  <topic name="Copyright and Trademark Notices" url="Copyright_and_Trademark_Not.htm" />
+</key>
+<key name="Transfer menu" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+</key>
+<key name="transfer sessions" >
+  <topic name="Connect Dialog" url="Connect_Dialog.htm" />
+</key>
+<key name="transferring files" >
+  <topic name="Uploading a File with Zmodem" url="Uploading_a_File_w_Zmodem.htm" />
+  <topic name="Uploading a File with Xmodem" url="Uploading_a_File_with_XMode.htm" />
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+  <topic name="Session Options/File Transfer/Xmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+  <topic name="Overview of Zmodem" url="Overview_of_ZModem.htm" />
+  <topic name="Overview of Xmodem" url="Overview_of_XModem.htm" />
+  <topic name="Downloading a File with Zmodem" url="Downloading_a_File_w_Zmodem.htm" />
+  <topic name="Downloading a File with Xmodem" url="Downloading_a_File_with_XMo.htm" />
+  <topic name="Changing the Default File Transfer Directories" url="Changing_the_Default_File_T.htm" />
+  <topic name="Downloading a File with Ymodem" url="Downloading_a_File_with_Ymodem.htm" />
+  <topic name="Overview of Ymodem" url="Overview_of_Ymodem.htm" />
+  <topic name="Uploading a File with Ymodem" url="Uploading_a_File_with_Ymodem.htm" />
+</key>
+<key name="Translate incoming CR to CR/LF" >
+  <topic name="Session Options/Terminal/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+</key>
+<key name="transparency" >
+  <topic name="Global Options/Terminal/Appearance/Advanced" url="GO_Terminal_Appearance_Advanced.htm" />
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="tunneling" >
+  <topic name="Port Forwarding With SSH" url="Port_Forwarding_With_SSH.htm" />
+</key>
+<key name="U3" >
+  <topic name="Using U3 Devices" url="Using_U3_Devices.htm" />
+</key>
+<key name="Unicode" >
+  <topic name="Session Options/Appearance" url="SO_Terminal_Appearance.htm" />
+  <topic name="Creating a Personal Font Map" url="Creating_a_Personal_Font_Map.htm" />
+</key>
+<key name="Unlock/Lock Session" >
+  <topic name="File Menu" url="File_Menu.htm" />
+  <topic name="Locking a Session" url="Locking_a_Session.htm" />
+</key>
+<key name="Unsave password" >
+  <topic name="SSH1 Quick Connect Options" url="SSH1_Quick_Connect_Options.htm" />
+  <topic name="SSH2 Quick Connect Options" url="SSH2_Quick_Connect_Options.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+</key>
+<key name="Upload" >
+  <topic name="Session Options/Terminal/Xmodem/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+</key>
+<key name="uploading files" >
+  <topic name="Uploading a File with Zmodem" url="Uploading_a_File_w_Zmodem.htm" />
+  <topic name="Uploading a File with Xmodem" url="Uploading_a_File_with_XMode.htm" />
+  <topic name="Overview of Xmodem" url="Overview_of_XModem.htm" />
+  <topic name="Overview of Zmodem" url="Overview_of_ZModem.htm" />
+  <topic name="Changing the Default File Transfer Directories" url="Changing_the_Default_File_T.htm" />
+  <topic name="Uploading a File with Ymodem" url="Uploading_a_File_with_Ymodem.htm" />
+</key>
+<key name="Upon connect" >
+  <topic name="Session Options/Terminal/Log File" url="SO_Terminal_Log_File.htm" />
+</key>
+<key name="Upon disconnect" >
+  <topic name="Session Options/Terminal/Log File" url="SO_Terminal_Log_File.htm" />
+</key>
+<key name="URL" >
+  <topic name="Global Options/Terminal" url="GO_Terminal.htm" />
+</key>
+<key name="Use 8th bit for meta key" >
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+</key>
+<key name="Use ALT as meta key" >
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+</key>
+<key name="Use auto session" >
+  <topic name="Starting a Session Automatically" url="Starting_a_Session_Automati.htm" />
+  <topic name="Global Options/Options/Default Session" url="GO_General_Default_Session.htm" />
+</key>
+<key name="Use ClearType to smooth edges of screen fonts" >
+  <topic name="Global Options/Appearance" url="GO_Terminal_Appearance.htm" />
+</key>
+<key name="Use color" >
+  <topic name="Session Options/Appearance#SO_App_curcolor" url="SO_Terminal_Appearance.htm#SO_App_curcolor" />
+</key>
+<key name="Use color scheme" >
+  <topic name="Session Options/Terminal/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="Use global public key setting" >
+  <topic name="Public Key Properties Dialog" url="Public_Key_Properties_Dialo.htm" />
+</key>
+<key name="Use global settings" >
+  <topic name="Session Options/Printing" url="SO_Terminal_Printing.htm" />
+</key>
+<key name="Use identity or certificate file" >
+  <topic name="Public Key Properties Dialog" url="Public_Key_Properties_Dialo.htm" />
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+</key>
+<key name="Use personal store certificate (CAPI)" >
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+  <topic name="Public Key Properties Dialog" url="Public_Key_Properties_Dialo.htm" />
+</key>
+<key name="Use raw mode" >
+  <topic name="Session Options/Terminal/Printing" url="SO_Terminal_Printing.htm" />
+</key>
+<key name="Use trackable insertion caret" >
+  <topic name="Global Options/Appearance#GO_App_accessibility" url="GO_Terminal_Appearance.htm#GO_App_accessibility" />
+  <topic name="Global Options/Appearance" url="GO_Terminal_Appearance.htm" />
+</key>
+<key name="Use Unicode line drawing characters" >
+  <topic name="Session Options/Appearance" url="SO_Terminal_Appearance.htm" />
+</key>
+<key name="Use Windows copy and paste hotkeys" >
+  <topic name="Session Options/Terminal/Emulation/Mapped Keys" url="SO_Terminal_Emulation_Mapped_Keys.htm" />
+</key>
+<key name="user interface" >
+  <topic name="Menu Configuration Command Strings" url="Menu_Configuration_Command_.htm" />
+</key>
+<key name="UTF-8" >
+  <topic name="Session Options/Appearance" url="SO_Terminal_Appearance.htm" />
+</key>
+<key name="VanDyke Software" >
+  <topic name="Welcome" url="Welcome.htm" />
+  <topic name="Support FAQ" url="Support_FAQ.htm" />
+  <topic name="Reporting Problems" url="Reporting_Problems.htm" />
+  <topic name="Product Announcements" url="Product_Announcements.htm" />
+  <topic name="License Agreement" url="License_Agreement.htm" />
+  <topic name="How to Order" url="How_to_Register.htm" />
+  <topic name="Feature Requests and Questions" url="Feature_Requests_and_Questi.htm" />
+  <topic name="Copyright and Trademark Notices" url="Copyright_and_Trademark_Not.htm" />
+</key>
+<key name="Vertical Scroll Bar" >
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="View Key..." >
+  <topic name="Global Options/SSH2/Host Keys" url="GO_SSH_Host_Keys.htm" />
+</key>
+<key name="View menu" >
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="viewable rows and columns" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="Visual bell" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+</key>
+<key name="VShell" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Configuring VShell to Recognize Identity File" url="Configuring_VShell_to_Recog.htm" />
+</key>
+<key name="VT100" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="VT102" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="VT220" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="web browsers" >
+  <topic name="Table of Protocol-Specific Command-Line Options" url="Table_of_Protocol-Specific_.htm" />
+</key>
+<key name="welcome" >
+  <topic name="Welcome" url="Welcome.htm" />
+</key>
+<key name="Will LFLOW" >
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+</key>
+
+</indexdata>

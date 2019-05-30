@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/File Transfer</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nFile Transfer");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > File Transfer<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;File Transfer</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="color: #800000;">This category only appears if VanDyke Software's 
+ SecureFX® 3.0 (or newer) is also installed.</p>
+<p>The <strong>File Transfer</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a><span 
+	 class="Dialog">&#160;</span>dialog allows you to control attributes 
+ of transfers and FTP connections.</p>
+<p class="Group">Transfer options group</p>
+<p>This group contains options that define your file transfer parameters.</p>
+<p class="Field">Default transfer type</p>
+<p class="Normal025">Choose the default file transfer type for undefined 
+ file types.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">ASCII</span> - Select 
+ this mode to transfer text files.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Binary</span> - Select 
+ this mode to transfer program files, or other non-text files such as ZIP 
+ files.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Prompt for type</span> 
+ - Select this option if you want to be prompted for the transfer type 
+ each time a file of the selected type is transferred.</p>
+<p class="Field050">Use this type for all files</p>
+<p class="Normal050">Select this option to make the chosen transfer type 
+ the default for all file transfers regardless of registered file type 
+ settings.</p>
+<p class="Field">Action for existing files</p>
+<p class="Normal025">Choose the default overwrite action when files in 
+ a target directory already exist. The choices are:</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Confirm overwrite</span> 
+ - Presents a dialog confirming whether or not to overwrite files. The 
+ confirmation dialog allows you to confirm overwrites individually, or 
+ to choose the action for all files in the transfer with &quot;Yes to All&quot; 
+ or &quot;No to All&quot;.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Always overwrite</span> 
+ - Always overwrites existing files in the destination directory.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Never overwrite</span> 
+ - Never overwrites existing files in the destination directory.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Overwrite if older</span> 
+ - Overwrite existing files whose timestamp is older than the source file.</p>
+<p class="Group">Preferences group</p>
+<p>This group contains options that define your general preferences.</p>
+<p class="Field">Prompt to resume interrupted transfer</p>
+<p class="Normal025">Select whether or not to be prompted to resume interrupted 
+ transfers when starting a session. If this option is not selected, SecureFX 
+ will not attempt to resume interrupted transfers at startup. This option 
+ is enabled by default.</p>
+<p class="Field">Close window on disconnect</p>
+<p class="Normal025">Choose whether or not to close session windows when 
+ a session is disconnected. This option is disabled by default.</p>
+<p class="Field">Restore last session directory</p>
+<p class="Normal025">Choose if you want to restore the last remote directory 
+ that was visited when starting a session. This option is disabled by default.</p>
+<p class="Group">Connection retry options group</p>
+<p>This group contains options that allow you to create a retry strategy.</p>
+<p class="Field">Maximum number of attempts</p>
+<p class="Normal025">Choose the maximum number of logon retry attempts 
+ that will be performed after a failed logon attempts.</p>
+<p class="Field">Delay between attempts</p>
+<p class="Normal025">Choose the number of seconds to delay between retry 
+ attempts.</p>
+<p class="Group">Remote edit options group</p>
+<p>This group contains options that allow you to define actions to be taken 
+ after editing a file.</p>
+<p class="Field">When the editor exits</p>
+<p class="Normal025">Choose the action to be taken when the editor exits 
+ after a file has been modified.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Prompt</span> - asks 
+ the user to enter an action.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Always upload</span> 
+ - always uploads the edited file in the destination directory.</p>
+<p class="BulletL2"><span style="font-family: Symbol, sans-serif;">·</span> 
+ &#160;&#160;&#160;<span style="font-weight: bold;">Never upload</span> 
+ - never uploads a file whether or not it has been modified.</p>
+<p class="Field">Upload when the file is saved in the editor</p>
+<p class="Normal025">Check this box to execute the action selected above 
+ when a file has been modified and saved. SecureFX determines when to take 
+ action by checking the timestamp on the file being edited to see if the 
+ file has been modified before the editor exits. If the file has been modified, 
+ SecureFX implements the action defined by the above option.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> If you 
+ are using an editor, such as MS Word, that locks files while they are 
+ open, SecureFX cannot upload the updated file while the editor is running. 
+ You will need to close the file or exit the editor before the file can 
+ be uploaded.</p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Global Options/File Transfer/File Types','GO_File_Transfer_File_Types.htm','Global Options/File Transfer/FTP','GO_File_Transfer_FTP.htm','Global Options/File Transfer/Options','GO_File_Transfer_Options.htm','Global Options/File Transfer/Options/Advanced','GO_File_Transfer_Options_Advanced.htm','Global Options/File Transfer/Sound','GO_File_Transfer_Sound.htm','Global Options/File Transfer/View','GO_File_Transfer_View.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+ </p>
+<p class="RelatedTopics"><!--ForeHelp.Hotspot JUMP="Global_Options_Options"--><!--ForeHelp.EndHotspot--></p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

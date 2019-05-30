@@ -1,0 +1,3 @@
+popFont="Arial,8,"
+p_Global_Options="The Global Options dialog is accessed by opening the  Options menu and selecting Global Options... ."
+p_Session_Options="The Session Options dialog is accessed from the Connect dialog by selecting a session and either clicking on the Properties button on the toolbar of the Connect dialog or right-clicking on the session and selecting Properties from the pop-up menu.  If you are connected with a session, the Session Options dialog can be accessed by either opening the Options menu and selecting Session Options, or by clicking on the Properties button on the main toolbar. "

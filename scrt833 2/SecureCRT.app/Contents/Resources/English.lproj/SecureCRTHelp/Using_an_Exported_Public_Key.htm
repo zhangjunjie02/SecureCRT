@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>Using an Exported Public Key</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("Using an Exported Public Key<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Using an Exported Public Key</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<p>In order to use a public key that has been exported, you will need to complete the following steps:</p>
+<p class="Step1Level1">1. &#160;&#160;Configure the SSH2 server to recognize your public-key file (e.g., Identity.pub). Instructions are provided for configuring <a href="Configuring_VShell_to_Recog.htm">VanDyke Software's VShell® server</a>, <a href="Configure_OpenSSH_to_Recogn.htm">OpenSSH</a>, <a href="Configure_SSH_Communication.htm">SSH Communications</a>, and <a href="Configure_SSH_Communication.htm">Data Fellows</a> servers.</p>
+<p class="Step1Level1">2. &#160;Configure SecureCRT to use the certificate store with the exported public key(s). &#160;</p>
+<p class="StepaLevel1">a. &#160;&#160;Open the <span class="DialogName">Session Options</span> dialog and navigate to the <span class="DialogName">Connection/SSH2</span> category.</p>
+<p class="StepaLevel1">b. &#160;&#160;In the <span class="Label">Authentication</span> group, enable <span class="Label">PublicKey</span> authentication.</p>
+<p class="StepaLevel1">c. &#160;&#160;Select <span class="Label">PublicKey</span> from in the <span class="Label">Authentication</span> list and click on the <span class="Label">Properties</span> button.</p>
+<p class="StepaLevel1">d. &#160;&#160;Select <span class="Label">Use identity or certificate file</span> and enter <span class="Entry">capi::rawkey::my</span> in the entry box.</p>
+<p class="Normal025">If you would like this to be the default for all sessions, open the <span class="DialogName">Global Options</span> dialog, navigate to the <span class="DialogName">SSH2</span> category, and repeat Step d.</p>
+<p class="RelatedTopics"><a href="Tools_Menu.htm">Return to the Tools Menu</a></p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

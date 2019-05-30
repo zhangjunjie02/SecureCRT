@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>SFTP Tab Command Options</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Using the Software\nCommand-Line Options\nSFTP Command-Line Options");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"The_OSX_Toolbar_Mac.htm\">Using the Software<\/a> > <a href=\"Overview_of_Command_Line_Op.htm\">Command-Line Options<\/a> > SFTP Command-Line Options<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;SFTP Tab Command 
+ Options</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>SFTP Tab command options are described below. Commands that specify 
+ a path can contain the wildcard characters * and ?. SFTP will expand these 
+ wildcard characters. Multiple wildcard characters are permitted in a path 
+ (e.g., &quot;*.*&quot; or &quot;*.?&quot;). The SFTP Tab also supports 
+ file &quot;globbing&quot;. The sequence [...] will match any one of the 
+ characters enclosed. Within [...], a pair of characters separated by a 
+ quotation mark (&quot;) matches any character lexically between the two. 
+ The backslash can be used to turn off wildcard characters (e.g., \* or 
+ \[).</p>
+<p>SecureCRT also supports tab completion of command arguments on the SFTP 
+ Tab. Begin typing a command and argument and then press the <span class="Entry">TAB</span> 
+ key. SecureCRT will attempt to complete the argument(s) 
+ based on the available choices. If there are multiple choices, SecureCRT 
+ will display a list of possible options. You can choose from this list 
+ or continue typing until SecureCRT can identify the unique argument.</p>
+<p>To open an SFTP tab session, right-click on an existing, connected SSH2 
+ tab and choose <span style="font-weight: bold;">Connect SFTP Session</span> 
+ from the displayed menu.</p>
+<table style="border-collapse: separate; border-collapse: separate;" border="1">
+	<col width="87" />
+	<col width="181" />
+	<col width="565" />
+	<tr>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent"><b style="font-weight: bold;"><u 
+		 style="text-decoration: underline; ">Option</u></b></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent"><b style="font-weight: bold;"><u 
+		 style="text-decoration: underline; ">Arguments</u></b></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent"><b style="font-weight: bold;"><u 
+		 style="text-decoration: underline; ">Description</u></b></p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">ascii</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Sets the file transfer mode to ASCII.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">binary</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Sets the file transfer mode to binary.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">cd</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[path]</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Changes the remote directory to that 
+		 specified byS the path. If a path is not specified, the user is 
+		 placed in their &quot;home&quot; directory.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">chgrp</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">group 
+		 path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Changes group of file &quot;path&quot; 
+		 to &quot;group&quot;.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">chmod</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">mode 
+		 path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Changes permissions of file &quot;path&quot; 
+		 to &quot;mode&quot;.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">chown</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">owner 
+		 path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Changes owner of file &quot;path&quot; 
+		 to &quot;owner&quot;.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">detail</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">remotepath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays system information about the 
+		 specified remote file or folder.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">exit</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Exits the SFTP application.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">get</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[-r] 
+		 [-a|-b]<br />
+		remotepath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Retrieves the remote path and stores 
+		 it in the current local directory. The -r argument specifies a 
+		 recursive get. The -a argument specifies that the files are transferred 
+		 as ASCII; -b specifies binary. If neither -a nor -b is specified, 
+		 the current transfer mode will be used (see type command).</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">help</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays usage.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">include</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">filename</span> 
+		 &#160;<span style="font-style: normal;">or</span> <span class="Entry"><br />
+		&lt; filename</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Includes the commands in the specified 
+		 file as though they had been typed in.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lcd</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[path]</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Changes the local directory to that specified 
+		 by the path. &#160;If a path is not specified, the local working 
+		 directory is set to the local user's &quot;home&quot; directory. 
+		 Adding the -a argument will show all files and folders (including 
+		 those hidden), and the -d argument will show only directories.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">ldetail</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">localpath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays system information about the 
+		 specified local file or folder.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">ln</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">existingpath 
+		 linkpath [-s]</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Creates symbolic link on remote file.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lls</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[-l] 
+		 [-a|</span><span class="Entry" style="font-style: italic;"><i>-d] 
+		 [path]</i></span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays the local directory listing 
+		 of the path specified or of the current local working directory 
+		 if the path is not specified. Adding the -a argument will show 
+		 all files and folders (including those hidden), and the -d argument 
+		 will show only directories.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lmkdir</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Creates local directory specified by 
+		 the path.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lmv</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">oldpath 
+		 newpath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Moves/renames local file. Identical to 
+		 the local Rename (lrename) command.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lpwd</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Prints local working directory.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lrename</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">oldname 
+		 newname</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Renames the specified file. Identical 
+		 to the local Move (lmv) command.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lrm</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Deletes local file.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">lrmdir</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Removes local directory.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">ls</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[-l] 
+		 [-a|-d] [path]</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays the remote directory listing 
+		 of either the path or of the current directory if the path is 
+		 not specified. If the -l flag is set, SFTP displays permission 
+		 and ownership information. Adding the -a argument will show all 
+		 files and folders (including those hidden), and the -d argument 
+		 will show only directories.</p>
+		<p class="TableContent"><span style="font-weight: bold;">Note:</span> 
+		 This command, if used with a / (i.e., <span class="Entry">ls /</span> 
+		 ), lists the roots when connecting to a server that allows multiple 
+		 roots, such as VanDyke Software's VShell®.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">mkdir</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Creates remote directory specified by 
+		 the path.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">mv</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">oldpath 
+		 newpath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Moves/renames remote file. Identical 
+		 to the Rename command.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">pwd</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;">&#160;</p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Prints the remote working directory.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">put</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[-r] 
+		 [-a|-b]<br />
+		localpath</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Uploads the local path to the currently 
+		 open directory on the remote machine. The -a argument specifies 
+		 that the files are transferred as ASCII; -b specifies binary. 
+		 If neither -a nor -b is specified, the current transfer mode will 
+		 be used (see type comment).</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">rename</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">oldname 
+		 newname</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Renames the specified file. Identical 
+		 to the Move (mv) command.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">rm</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[-r] 
+		 path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Deletes the remote file specified by 
+		 the path. Adding the -r argument will initiate a recursive remove 
+		 operation.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">rmdir</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">path</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Deletes the remote directory specified 
+		 by the path.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">su</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">username</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Substitutes the current user with the 
+		 one specified.</p>
+		<p class="TableContent"><span style="font-weight: bold;">Note:</span> 
+		 This command can only be called if the remote machine is running 
+		 VShell for Windows 3.5 or later.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">type</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">[transfer 
+		 mode]</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays or sets the file transfer mode. 
+		 Issuing this command with no parameter will display the current 
+		 mode; issuing it with a mode parameter (either ascii or binary) 
+		 will set the mode to that parameter.</p></td>
+	</tr>
+	<tr>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent"><span class="Entry">view</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent" style="font-style: italic;"><span class="Entry">filename</span></p></td>
+		<td style="text-align: left; vertical-align: top; padding-left: 2px; 
+			 padding-top: 2px; padding-right: 2px; padding-bottom: 2px;"><p 
+			 class="TableContent">Displays or, if applicable, runs the 
+		 specified file or files. Displayed files can be modified but changes 
+		 made will not be uploaded to the original file.</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.3.3</string>
+	<key>CFBundleVersion</key>
+	<string>119814</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 1995-2018 VanDyke Software, Inc.</string>
+	<key>CFBundleSignature</key>
+	<string>aplt</string>
+	<key>CFBundleExecutable</key>
+	<string>applet</string>
+	<key>LSBackgroundOnly</key>
+	<string>1</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.vandyke.SecureCRT.UrlLauncher</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+			<dict>
+					<key>CFBundleURLName</key>
+					<string>telnet URL</string>
+					<key>CFBundleURLSchemes</key>
+					<array>
+							<string>telnet</string>
+					</array>
+			</dict>
+	</array>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>The Button Bar</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Using the Software\nGetting to Know the Window\nThe Button Bar");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"The_OSX_Toolbar_Mac.htm\">Using the Software<\/a> > <a href=\"The_OSX_Toolbar_Mac.htm\">Getting to Know the Window<\/a> > The Button Bar<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;The Button Bar</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The SecureCRT button bar is a user-configurable row of buttons that 
+ you can use to quickly access frequently needed actions and commands. 
+ You can toggle the button bar display on or off by selecting or unselecting 
+ the <span class="Label">Button Bar</span> option on the <span class="DialogName"><a 
+	 href="View_Menu.htm">View</a></span> menu, or by selecting or unselecting 
+ the <span class="Label">Show button bar</span> option on the <span class="DialogName"><a 
+	 href="SO_Terminal_Appearance_Window.htm">Terminal/Appearance/Window</a></span> 
+ category of the <span class="DialogName"><a href="Session_Options_Dialog.htm">Session 
+ Options</a></span> dialog or the <a href="GO_Terminal_Appearance.htm"><span 
+	 class="DialogName">Terminal/Appearance</span></a> category of the 
+ <a href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a> 
+ dialog.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> To perform 
+ an action, which has been mapped to a button, on all connected sessions, 
+ use the <span class="Entry">SHIFT+&lt;click&gt;</span> combination. If 
+ the mapped action is <span class="Entry">Launch Application</span>, only 
+ one instance of the application will be launched.</p>
+<p>The button bar assigned to the <a href="GO_General_Default_Session.htm">default 
+ session</a> is used for all new and <a href="Quick_Connect_Dialog.htm">Quick 
+ Connect</a> sessions. The default button bar is normally assigned to the 
+ default session, but this can be changed by editing the <a href="GO_General_Default_Session.htm"><span 
+	 class="DialogName">Default Session</span></a> category in the <a href="Global_Options_Dialog.htm"><span 
+	 class="DialogName">Global Options</span></a> dialog.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> The 
+ default button bar can be edited, but cannot be deleted.</p>
+<p>To create a new button bar, right-click on any part of the button bar 
+ to open the context menu and then select the <span class="Label">New Button 
+ Bar…</span> option. This opens the <span class="DialogName">New Button 
+ Bar</span> dialog which allows you to add a named button bar to the global 
+ list of button bars available to <span>Secure</span>CRT. A button bar 
+ can be assigned to a session in the <span class="DialogName"><a href="SO_Terminal_Appearance_Window.htm">Terminal/Appearance/Window</a></span> 
+ category of the <span class="DialogName"><a href="Session_Options_Dialog.htm">Session 
+ Options</a></span> dialog, or by selecting a different button bar in the 
+ button bar drop-down list while the session is active.</p>
+<p>To add a button to the button bar, right-click anywhere in the button 
+ bar and select the <span class="Label">New Button…</span> option; this 
+ will open the <span style="font-weight: bold;"><a href="Map_Button_Dialog.htm">Map 
+ Button</a></span> dialog. To change an existing button, right-click on 
+ the button you want to change and choose the <span class="Label">Edit 
+ Button…</span> option. Each button on a bar can be assigned one action. 
+ The list of actions available is the same as the list of actions available 
+ for <a href="Table_of_Keymap_Functions.htm">keymap key assignments</a> 
+ and includes Send String, Run Script, Menu, Scroll Bar, Telnet, SSH, and 
+ VT function genres.&#160;You can rearrange 
+ the buttons on the button bar by right-clicking on a button and selecting 
+ the <span style="font-weight: bold;">Move 
+ Button Left</span> 
+ or <span style="font-weight: bold;">Move 
+ Button Right</span> 
+ option. </p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span>&#160;In 
+ order to display an ampersand character (&amp;) in a button bar, it must 
+ be preceded by a second ampersand. For example, to label a button &quot;A 
+ &amp; B&quot;, the text entered in the <span style="font-weight: bold;">Label</span> 
+ field of the <span style="font-weight: bold;">Map Button Bar</span> dialog 
+ should be &quot;A &amp;&amp; B&quot;.</p>
+<p>You can also create a button that launches local commands. By assigning 
+ a button to the function Launch Application and entering the appropriate 
+ executable file, <span>Secure</span>CRT can open whatever application 
+ you need.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> Some 
+ actions might fail or be ignored if the active session is not connected 
+ or is in a state where the action cannot be performed.</p>
+<p>To remove a button from a button bar, right-click the button that you 
+ want to delete and select <span class="Label">Delete Button</span> from 
+ the context menu.</p>
+<p>To delete a button bar, select the button bar you want to delete in 
+ the button bar drop-down list (making it the active button bar for the 
+ session), right-click anywhere in the button bar, and choose the <span 
+	 class="Label">Delete Button Bar</span> option.</p>
+<p>Assignments of keys in keymaps and of buttons in button bars are independent 
+ of each other; i.e., assigning a key to an action does not affect any 
+ assignments or labels in button bars, but you can edit your keymap and 
+ button bars separately to have corresponding settings.</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

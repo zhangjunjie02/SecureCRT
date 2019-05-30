@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<item name="Changing the Terminal Emulation Type" url="SO_Terminal_Emulation.htm#bc-3" />
+<book name="Changing Terminal Emulation Modes" >
+  <item name="Terminal Emulation Modes" url="SO_Terminal_Emulation_Modes.htm#bc-1" />
+  <item name="Cursor Key Mode" url="SO_Terminal_Emulation_Modes.htm#SO_Emulation_Mode_cursorkeybc-2" />
+  <item name="Line Wrap Mode" url="SO_Terminal_Emulation_Modes.htm#SO_Emulation_Mode_linewrapbc-3" />
+  <item name="New Line Mode" url="SO_Terminal_Emulation_Modes.htm#SO_Emulation_Mode_newlinebc-4" />
+  <item name="Application and Numeric Keypad Modes" url="SO_Terminal_Emulation_Modes.htm#SO_Emulation_Mode_appkeypadbc-5" />
+  <item name="Enabling/Disabling Mode Switching Sequences" url="SO_Terminal_Emulation_Modes.htm#SO_Emulation_Mode_modeswitchingbc-6" />
+</book>
+<item name="Enabling Emacs Compatibility" url="SO_Terminal_Emulation_Emacs.htm#bc-1" />
+<item name="ANSI Color Settings" url="GO_Terminal_Appearance_ANSI_Color.htm#bc-1" />
+<book name="Advanced Terminal Settings" >
+  <item name="Overview of Advanced Terminal Settings" url="SO_Terminal_Emulation_Advanced.htm#bc-1" />
+  <item name="Enabling the Answerback Message" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_answerbackbc-2" />
+  <item name="Modifying the Terminal Type String" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_termtypebc-3" />
+  <item name="Modifying How the Tab Character is Displayed" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_tabbc-4" />
+  <item name="Enabling Local Echo" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_localechobc-5" />
+  <item name="Stripping the 8th Bit" url="SO_Terminal_Emulation_Advanced.htm#SO_Emulation_Adv_8thbitbc-6" />
+</book>
+<book name="Escape Sequences" >
+  <item name="Xterm Escape Sequences" url="Xterm_Escape_Sequences.htm" />
+</book>
+<item name="Creating a Personal Font Map" url="Creating_a_Personal_Font_Map.htm" />
+
+</tocdata>

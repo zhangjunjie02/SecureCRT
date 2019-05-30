@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Table of Protocol-Specific Command-Line Options</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:Transparent; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Using the Software\nCommand-Line Options\nTable of Protocol-Specific Command-Line Options");
+addAvenueInfo("Using the Software","Table_of_Standard_Command_L.htm","Overview_of_XModem.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"The_OSX_Toolbar_Mac.htm\">Using the Software<\/a> > <a href=\"Overview_of_Command_Line_Op.htm\">Command-Line Options<\/a> > Table of Protocol-Specific Command-Line Options<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Keyword KKEYS="command-line usage;web browsers;protocols;options;command-line options"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Table of Protocol-Specific 
+ Command-Line Options</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p>Any of the <!--ForeHelp.Hotspot JUMP="Table_of_Standard_Command_Line_Options"--><!--ForeHelp.EndHotspot--><a 
+	 href="Table_of_Standard_Command_L.htm">standard options</a> may be 
+ used in combination with a protocol-specific option.</p>
+<table width="100%" border="1">
+	<col width="144" />
+	<col width="176" />
+	<col width="516" />
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableHeading"><b 
+		 style="font-weight: bold;">Protocol Option And Mandatory Arguments</b></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableHeading"><b 
+		 style="font-weight: bold;">Related Options and Arguments</b></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableHeading"><b 
+		 style="font-weight: bold;">Description</b></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/S</span></b> 
+		 <i>session_name</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Starts 
+		 <span>Secure</span>CRT and opens a <a href="javascript:TextPopup(this)" id="HotSpot32657">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot32657', 'POPUP32657');
+//]]></script><span class="glosstext" id="POPUP32657" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> 
+		 with <i>session_name.</i>&#160;&#160;If <i>session_name</i>&#160;&#160;includes 
+		 any spaces, it must be enclosed with quotation marks, (e.g., &quot;My 
+		 Session&quot;). Multiple sessions can be opened by specifying 
+		 &#160;multiple &quot;/S <i>session_name</i>&quot; argument pairs 
+		 on the command line.</p>
+		<p class="TableContent"><b style="font-weight: bold;">Note:</b> 
+		 The /S option is considered a protocol-specific option because 
+		 the protocol to be used is defined by the <a href="javascript:TextPopup(this)" id="HotSpot27054">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot27054', 'POPUP27054');
+//]]></script><span class="glosstext" id="POPUP27054" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> 
+		 parameters.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/T</span></b></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-style: normal; font-weight: normal;"><span class="Entry">/S</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">When 
+		 used in conjunction with the /S options, the /T option opens the 
+		 specified session or sessions in a separate tab or tabs. For example, 
+		 the command:</p>
+		<p class="TableContent">&#160;&#160;&#160;&#160;&#160;<span class="Entry">/T 
+		 /S alpha</span></p>
+		<p class="TableContent">opens session alpha in a new tab. The command:</p>
+		<p class="TableContent">&#160;&#160;&#160;&#160;&#160;<span class="Entry">/T 
+		 /S alpha /S beta</span></p>
+		<p class="TableContent">opens both sessions alpha and beta in their 
+		 own tabs.</p>
+		<p class="TableContent"><span style="font-weight: bold;">Note:</span> 
+		 /T must precede /S in the command string.</p>
+		<p class="TableContent">The /T option can also be used with &quot;ad 
+		 hoc&quot; sessions such as:</p>
+		<p class="TableContent">&#160;&#160;&#160;&#160;&#160;<span class="Entry">/T 
+		 /SSH2 myserver</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/SSH1</span></b> 
+		 [ssh_options] <i>hostname</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Starts 
+		 SecureCRT and opens the default session with the <a href="javascript:TextPopup(this)" id="HotSpot24625">SSH1</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot24625', 'POPUP24625');
+//]]></script><span class="glosstext" id="POPUP24625" style="display: none;"> The first version of the SSH protocol which provides a way to encrypt network traffic between a client and a server.</span> protocol and begins connecting to <i>hostname</i>. 
+		 SecureCRT also accepts <span style="font-style: italic;"><i>username@hostname</i></span> 
+		 syntax.</p>
+		<p class="TableContent"><b style="font-weight: bold;">Note:</b> 
+		 /SSH1 and its related options are only available if SSH1 support 
+		 was selected for installation during the installation process.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">[ <span class="Entry">/ACCEPTHOSTKEYS</span> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Instructs SecureCRT 
+		 to automatically accept host keys.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/ C</span><span style="font-weight: normal;">&#160;</span></b><span 
+		 style="font-weight: normal;"><i><a href="javascript:TextPopup(this)" id="HotSpot31219" style="font-weight: normal;">cipher</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot31219', 'POPUP31219');
+//]]></script><span class="glosstext" id="POPUP31219" style="display: none;"> An algorithm used to encrypt data at varying levels of security.  Examples include 3DES, AES, Blowfish, RC4, and Twofish.</span></i> 
+		 ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 a cipher for encrypting the session. Valid values for SSH1 cipher 
+		 are NONE, DES, 3DES, RC4 and BLOWFISH. The default SSH1 cipher 
+		 is 3DES.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent" style="font-weight: normal;">[ 
+		 <span class="Entry">/ENCRYPTEDPASSWORD</span> <span style="font-style: italic;"><i>password</i></span> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Specifies a 
+		 password in encrypted form. This password must have been encrypted 
+		 by SecureCRT.</p>
+		<p class="TableContent">To obtain an encrypted password, specify 
+		 a password in the <span style="font-weight: bold;">Session Options</span> 
+		 dialog, then open that session's .ini file and copy the encrypted 
+		 string from the <span style="font-weight: bold;">Password</span> 
+		 field.</p>
+		<p class="TableContent">To use passwords in scripts, refer to the 
+		 Session Object <a href="Session_Object.htm#Session_Object_Methods_Connect">Connect</a> 
+		 method.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">[<span 
+		 class="Entry">/FORWARDX11PACKETS</span>]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Enables 
+		 X11 packet forwarding.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b><span class="Entry" style="font-weight: normal;">/I</span><span 
+		 style="font-weight: normal;">&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">identityfile</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Specifies 
+		 the location of the user's <a href="javascript:TextPopup(this)" id="HotSpot40085">identity file</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot40085', 'POPUP40085');
+//]]></script><span class="glosstext" id="POPUP40085" style="display: none;"> Identity files are two files containing the public-private key pair used to connect to an SSH server using RSA or DSA authentication.  The Identity file contains the public and private key pair and is used by SecureCRT.  The Identity.pub file contains only the public key  which is usually appended to the authorized_keys file.</span> 
+		 . The identity file contains the private key needed to connect 
+		 to the server using RSA <a href="javascript:TextPopup(this)" id="HotSpot26046">authentication</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot26046', 'POPUP26046');
+//]]></script><span class="glosstext" id="POPUP26046" style="display: none;"> The process of verifying that an individual truly is who he or she claims to be.  Supplying a password is a very common method of authentication.  The most secure method of authentication supported in SecureCRT is public-key authentication.  See also: identity file, public-private key pair.</span> 
+		 . The absence of this option causes password authentication to 
+		 be used.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/L</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">username</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 the username when connecting to the SSH1 <a href="javascript:TextPopup(this)" id="HotSpot59218">server</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot59218', 'POPUP59218');
+//]]></script><span class="glosstext" id="POPUP59218" style="display: none;"> A computer program that provides services to other computer programs (called clients).  Often the computer on which a server program runs is also called a server.  The term host is often used as a synonym for server.</span> 
+		 .</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry" style="font-weight: normal;">/P</span><span style="font-weight: normal;">&#160;&#160;</span></b><span 
+		 style="font-weight: normal;"><i style="font-weight: normal;">port</i> 
+		 ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Specifies 
+		 the SSH server port. The default value is 22.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/PASSPHRASE 
+		 </span></b><b><br />
+		</b><i>passphrase</i> ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Logs 
+		 on to the SSH1 server using <i>passphrase</i> as the <a href="javascript:TextPopup(this)" id="HotSpot16057">passphrase</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot16057', 'POPUP16057');
+//]]></script><span class="glosstext" id="POPUP16057" style="display: none;"> A password used to protect a private key from unauthorized use.  It is recommended that a passphrase be assigned to all private keys to prevent unauthorized use, especially in environments where multiple individuals have access to the machine on which the private key files are stored.  When using public-key   authentication, a private key with an assigned passphrase will not be available if the correct passphrase is not supplied during the authentication process.</span> for the identity file given with the 
+		 /L option.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry" style="font-weight: normal;">/PASSWORD</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">password</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Logs 
+		 on to the SSH1 server using <i>password</i> as the password for 
+		 the username given with the /L option.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/ Z</span><span style="font-weight: normal;">&#160;&#160;</span></b><span 
+		 style="font-weight: normal;"><i style="font-weight: normal;">compressionlevel</i> 
+		 ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 the compression level from 1 (lowest compression = fastest) to 
+		 9 (highest compression = slowest). Setting this option to 0 turns 
+		 off compression.</p></td>
+	</tr>
+</table>
+<table width="100%" border="1">
+	<col width="144" />
+	<col width="144" />
+	<col width="519" />
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;"><b><span class="Entry" style="font-weight: normal;">/SSH2</span></b> 
+		 <span style="font-weight: normal;">[ssh_options] <i style="font-weight: normal;">hostname</i></span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Starts 
+		 SecureCRT and opens the default session with the <a href="javascript:TextPopup(this)" id="HotSpot41398">SSH2</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot41398', 'POPUP41398');
+//]]></script><span class="glosstext" id="POPUP41398" style="display: none;"> The second version of the SSH protocol which provides a way to encrypt network traffic between a client and a server, with a slightly different set of security features than the SSH1 protocol provides.</span> protocol and begins connecting to <span 
+		 style="font-style: italic;"><i>hostname</i></span>. SecureCRT also accepts 
+		 <span style="font-style: italic;"><i>username@hostname</i></span> syntax.</p>
+		<p class="TableContent"><b style="font-weight: bold;">Note:</b> 
+		 /SSH2 and its related options are only available if SSH2 support 
+		 was selected for installation during the installation process.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><span 
+		 class="Entry" style="font-family: Arial, sans-serif;">[</span> 
+		 <span class="Entry">/ACCEPTHOSTKEYS</span> <span class="Entry" 
+															 style="font-family: Arial, sans-serif;">]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Instructs 
+		 SecureCRT to automatically accept host keys.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">[ 
+		 <span class="Entry">/AUTH</span> <span style="font-style: italic;"><i>method</i></span> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Specifies 
+		 the authentication method(s) to be attempted when connecting to 
+		 the SSH2 server. If multiple methods are specified, they must 
+		 be comma-separated with no spaces (i.e., <span class="Entry">/AUTH 
+		 password,publickey,keyboard-interactive,gssapi</span>)</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/C</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">cipher</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 a cipher for encrypting the session. Valid values for SSH2 cipher 
+		 are NONE, 3DES, RC4, and TWOFISH. The default SSH2 cipher is 3DES.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry" style="font-weight: normal;">/COMPRESSIONS</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">type</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Specifies 
+		 the compression type for the session. Valid values for SSH2 compression 
+		 type are NONE, ZLIB, and ZLIB@OPENSSH.COM. The default type is 
+		 NONE.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <span class="Entry">/ENCRYPTEDPASSWORD</span> &#160;</p>
+		<p class="TableContent" style="font-weight: normal;"><span style="font-style: italic;"><i>password</i></span> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 a password in encrypted form. This password must have been encrypted 
+		 by SecureCRT.</p>
+		<p class="TableContent">To obtain an encrypted password, specify 
+		 a password in the <span style="font-weight: bold;">Session Options</span> 
+		 dialog, then open that session's .ini file and copy the encrypted 
+		 string from the <span style="font-weight: bold;">Password</span> 
+		 field.</p>
+		<p class="TableContent">To use passwords in scripts, refer to the 
+		 Session Object <a href="Session_Object.htm#Session_Object_Methods_Connect">Connect</a> 
+		 method.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><span 
+		 style="font-weight: normal; font-family: 'MS Shell Dlg 2'; font-size: 8.25pt;"><font size="1" style="font-size:8pt;">[<span 
+		 class="Entry">/FORWARDX11PACKETS</span>]</font></span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Enables 
+		 X11 packet forwarding.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/I</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">identityfile</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 the location of the user's identity file. The identity file contains 
+		 the private key needed to connect to the server using public-key 
+		 authentication. The absence of this option causes password authentication 
+		 to be used.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent" style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/L</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">username</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Specifies the 
+		 username when connecting to the SSH2 server.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">[ 
+		 <span class="Entry">/LOCAL</span> <br />
+		&#160;[<span style="font-style: italic;"><i>localip</i></span>:]<span 
+		 style="font-style: italic;"><i>localport</i></span>:<span style="font-style: italic;"><i>hostname</i></span>: 
+		 <span style="font-style: italic;"><i>hostport</i></span>]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Allows 
+		 you to specify a local listening IP address when setting up a 
+		 <a href="Port_Forwarding_With_SSH.htm">port forward</a> (not required), 
+		 and forwards connection requests from <span style="font-style: italic;"><i>localport</i></span> 
+		 (on localhost) to <span style="font-style: italic;"><i>hostport</i></span> 
+		 on <span style="font-style: italic;"><i>hostname</i></span>.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent" style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/M</span><span 
+		 style="font-weight: normal;">&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">&#160;<a href="javascript:TextPopup(this)" id="HotSpot34759" style="font-weight: normal; 
+		 font-style: italic;">MAC</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot34759', 'POPUP34759');
+//]]></script><span class="glosstext" id="POPUP34759" style="display: none;"> Message Authentication Code.  A component of the SSH2 protocol consisting of a hashing algorithm used to ensure data integrity between an SSH2 client and an SSH2 server communicating over a TCP/IP network such as the internet.  The MAC ensures data integrity by protecting against message alteration.</span></i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Specifies the 
+		 Message Authentication Code (<i>MAC</i>) to use.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/P</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">port</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 the SSH2 server port. The default value is 22.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent" style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/PASSPHRASE 
+		 </span></b><br />
+		<i>passphrase</i> ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Logs on to the 
+		 SSH2 server using <i>passphrase</i> as the <a href="javascript:TextPopup(this)" id="HotSpot36903">passphrase</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot36903', 'POPUP36903');
+//]]></script><span class="glosstext" id="POPUP36903" style="display: none;"> A password used to protect a private key from unauthorized use.  It is recommended that a passphrase be assigned to all private keys to prevent unauthorized use, especially in environments where multiple individuals have access to the machine on which the private key files are stored.  When using public-key   authentication, a private key with an assigned passphrase will not be available if the correct passphrase is not supplied during the authentication process.</span> 
+		 for the identity file given with the /L option.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/PASSWORD</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">password</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Logs 
+		 on to the SSH2 server using <i>password</i> as the password for 
+		 the username given with the /L option.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent" style="font-weight: normal;">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/REMOTE</span></b>&#160;<br />
+		[<span style="font-style: italic;"><i>listenip</i></span>:]<span style="font-style: italic;"><i>listenport</i></span>:</p>
+		<p class="TableContent" style="font-weight: normal;"><span style="font-weight: normal; 
+		 font-style: italic;"><i>destination-host</i></span><span style="font-weight: normal;">:</span><span 
+		 style="font-weight: normal; font-style: italic;"><i>destination-port</i></span><span 
+		 style="font-weight: normal;">]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;"><p class="TableContent">Allows you to 
+		 specify a remote listening IP address when setting up a remote 
+		 forward (not required), and requests the SSH2 server to accept 
+		 connection requests on <span style="font-style: italic;"><i>listenport</i></span> 
+		 (on the remote machine) and forward the requests to <span style="font-style: italic;"><i>hostport</i></span> 
+		 on <span style="font-style: italic;"><i>hostname</i></span>.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">&#160;</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/Z</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><span style="font-weight: normal;"><i 
+		 style="font-weight: normal;">compressionlevel</i> ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Specifies 
+		 the compression level from 1 (lowest compression = fastest) to 
+		 9 (highest compression = slowest). Setting this option to 0 turns 
+		 off compression.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/TELNET</span></b> 
+		 <i>hostname [port]</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Starts 
+		 <span>Secure</span>CRT and opens the default session with the 
+		 <a href="javascript:TextPopup(this)" id="HotSpot40801">Telnet</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot40801', 'POPUP40801');
+//]]></script><span class="glosstext" id="POPUP40801" style="display: none;"> Telnet is a protocol that provides an interface for communications between clients and servers.</span> protocol and begins connecting 
+		 to [<i>port</i>] on <i>hostname</i>.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/RLOGIN</span></b> 
+		 <i>hostname</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Starts 
+		 <span>Secure</span>CRT and opens the default session with the 
+		 RLogin protocol and begins connecting to <i>hostname</i>. <span>Secure</span>CRT 
+		 also accepts <span style="font-style: italic;"><i>username@hostname</i></span> 
+		 syntax.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/L</span>&#160;<i>&#160;</i></b><i>username</i> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Specifies the username 
+		 to use with the RLogin protocol.</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/TAPI</span></b> 
+		 <i>phone number</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Starts 
+		 <span>Secure</span>CRT and opens the default session with the 
+		 TAPI protocol and begins connecting to the specified <i>phone 
+		 number</i>.</p>
+		<p class="TableContent"><b style="font-weight: bold;">Note:</b> 
+		 This command must be formatted as in the following example:</p>
+		<p class="TableContent">&#160;&#160;&#160;&#160;&#160;<span class="Entry">/TAPI 
+		 &quot;+1 (555) 555-5555&quot;</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">[ 
+		 <b><span class="Entry" style="font-weight: normal;">/REDIAL</span>&#160;<i>&#160;</i></b><i>attempts</i> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Specifies 
+		 the number of redial attempts that <span>Secure</span>CRT will 
+		 make before giving up on the connection.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><b 
+		 style="font-weight: normal;"><span class="Entry">/SERIAL</span></b> 
+		 <i>port</i></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">none</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent">Starts 
+		 SecureCRT and opens the default session with <i>port</i>. If no 
+		 <i>port</i> value is entered, SecureCRT will use the value of 
+		 the <span class="Label">Port</span> option in the <span style="font-weight: bold;"><a 
+		 href="GO_General_Default_Session.htm">Global Options / General 
+		 / Default Session</a></span> category. If no setting is entered 
+		 for the default session, SecureCRT will use <span class="Entry">COM2</span> 
+		 as the <i>port</i> entry.</p>
+		<p class="TableContent"><b style="font-weight: bold;">Note:</b> 
+		 /SERIAL and its related options are only available if serial capability 
+		 is selected during installation.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry" style="font-weight: normal;">/BAUD</span><span style="font-weight: normal;">&#160;&#160;</span></b><span 
+		 style="font-weight: normal;"><i style="font-weight: normal;">baudrate</i> 
+		 ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent">Set 
+		 the baud rate. Valid values for <i>baudrate</i> are 110, 300, 
+		 600, 1200, 2400, 4800, 9600, 14400, 19200, 38400, 57600, 115200, 
+		 230400, 380400, 460800, and 921600. The default value is 38400.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/CTS</span><span 
+		 style="font-weight: normal;">&#160;&#160;| &#160;</span><span 
+		 class="Entry" style="font-weight: normal;">/NOCTS</span></b> <span 
+		 style="font-weight: normal;">]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Enable or Disable RTS/CTS 
+		 (request-to-send/clear-to-send) hardware flow control. By default, 
+		 RTS/CTS is enabled.</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry" style="font-weight: normal;">/DATA</span><span style="font-weight: normal;">&#160;&#160;</span></b><span 
+		 style="font-weight: normal;"><i style="font-weight: normal;">databits</i> 
+		 ]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Set the data bits. Valid 
+		 values for n are 5, 6, 7 or 8. The default value is 8.</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry" style="font-weight: normal;">/DSR</span><span 
+		 style="font-weight: normal;">&#160;&#160;|&#160;&#160;</span><span 
+		 class="Entry" style="font-weight: normal;">/NODSR</span></b> <span 
+		 style="font-weight: normal;">]</span></p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Enable or Disable DTR/DSR 
+		 (data-terminal-ready/data-set-ready). By default, DTR/DSR are 
+		 not enabled.</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry">/PARITY</span><span style="font-weight: normal;">&#160;&#160;</span></b><i>parity</i> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Set the parity. Valid 
+		 values for</span> <i><span style="font-family: Arial, sans-serif;">parity</span></i> 
+		 <span style="font-family: Arial, sans-serif;">are NONE, ODD, EVEN, 
+		 MARK, SPACE. The default is NONE.</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent" 
+														 style="font-weight: normal;">[ 
+		 <b style="font-weight: normal;"><span class="Entry">/STOP</span><span 
+		 style="font-weight: normal;">&#160;&#160;</span></b><i>stopbits</i> 
+		 ]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px;" bgcolor="#C0C0C0"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Sets the stop bits. Valid 
+		 values for</span> <i><span style="font-family: Arial, sans-serif;">stopbits</span></i> 
+		 <span style="font-family: Arial, sans-serif;">are 0, 1 or 2 ( 
+		 0 indicates 1 stop bit, 1 indicates 1.5 stop bits, 2 indicates 
+		 2 stop bits). The default value is 0 (1 stop bit).</span></p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;">&#160;</td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent" 
+			 style="font-weight: normal;">[ <b style="font-weight: normal;"><span 
+		 class="Entry">/XON</span><span style="font-weight: normal;">&#160;&#160;|&#160;&#160;</span><span 
+		 class="Entry">/NOXON</span></b>]</p></td>
+		<td style="padding-left: 2px; padding-top: 2px; padding-right: 2px; 
+			 padding-bottom: 2px; background-color: Transparent;"><p class="TableContent"><span 
+		 style="font-family: Arial, sans-serif;">Enable or Disable XON/XOFF 
+		 software flow control. By default, software flow control is disabled.</span></p></td>
+	</tr>
+</table>
+<p class="SectionHead"><a name="Examples_of_Command_Line_Usage_SSH" id="Examples_of_Command_Line_Usage_SSH"></a>Examples 
+ of Command Line Usage:</p>
+<p>Example 1:</p>
+<p class="Normal025">The following example opens a connection to the &quot;My 
+ Company&quot; session in the <a href="Table_of_Standard_Command_L.htm">specified 
+ position</a>:</p>
+<p class="Entry050" style="font-family: 'Courier New', sans-serif;"><span>Secure</span>CRT.exe 
+ /POS 100 50 /S &quot;My Company&quot;</p>
+<p>Example 2:</p>
+<p class="Normal025">The following example creates an <!--ForeHelp.Hotspot JUMP="Connection_Options_SSH2"--><!--ForeHelp.EndHotspot--><a 
+	 href="SO_Connection_SSH2.htm">SSH2</a> connection to the remote machine 
+ named <span style="font-family: 'Courier New', sans-serif;">mySSH2server.myISP.com.</span> 
+ It uses the username <span style="font-family: 'Courier New', sans-serif;">myusername</span> 
+ to begin the logon process. It also specifies the cipher to use as Twofish, 
+ and the MAC to use as MD5. In addition, <a href="javascript:TextPopup(this)" id="HotSpot43596" class="glossterm">port 
+ forwarding</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot43596', 'POPUP43596');
+//]]></script><span class="glosstext" id="POPUP43596" style="display: none;"> The concept of connecting a logical port on a local machine to a port on a remote machine over a secure (encrypted) channel.  All requests for services sent to the local port are then forwarded across the secure channel to the corresponding port on the remote machine.</span> is set up with the remote machine <span style="font-family: 'Courier New', sans-serif;">imap.myserver.com</span>, 
+ instructing the local machine to listen for IMAP requests on port 8143 
+ (local machine):</p>
+<p class="Entry050" style="font-family: 'Courier New', sans-serif;"><nobr 
+	 style="white-space: nowrap;">SecureCRT.exe /SSH2 /L myusername /C 
+ twofish /M MD5 /LOCAL 8143:imap.myimapserver.com:143 
+ mySSH2server.myISP.com</nobr></p>
+<p>Example 3:</p>
+<p class="Normal025">The following example connects to mycompany.com using 
+ the SSH1 protocol specifying the username &quot;bob&quot;, the location 
+ of an identity containing a private RSA key and the Blowfish cipher:</p>
+<p class="Entry050"><nobr style="white-space: nowrap;">SecureCRT.exe /SSH1 
+ /L bob /I &quot;C:\ SecureCRT\RSAIdentity.pri&quot; 
+ /C Blowfish mycompany.com</nobr></p>
+<p>Example 4:</p>
+<p class="Normal025">The following example connects to mycompany.com using 
+ the SSH2 protocol, username &quot;bob&quot;, level 4 compression, and 
+ sets up port forwarding of connections from port 555 on the localhost 
+ (the PC running SecureCRT) to port 6666 on mycompany.com:</p>
+<p class="Entry050"><nobr style="white-space: nowrap;">SecureCRT /SSH2 
+ /L bob /Z 4 /LOCAL 555:mycompany.com:6666 mycompany.com</nobr></p>
+<p class="RelatedTopics">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Table of Standard Command-Line Options','Table_of_Standard_Command_L.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+
+ </p>
+<p class="RelatedTopics">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

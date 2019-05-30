@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"Accepting a Host Key\" to=\"Global Options/Terminal/Appearance/ANSI Color\" num=\"61\"/><ck fm=\"Global Options/Terminal/Printing\" to=\"Session Options/Connection/Raw\" num=\"63\"/><ck fm=\"Session Options/Connection/Serial\" to=\"Zooming a Session\" num=\"54\"/></cki>";

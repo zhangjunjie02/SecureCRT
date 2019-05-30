@@ -1,0 +1,304 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="Quick Connect" >
+  <topic name="Serial Quick Connect Options" url="Serial_Quick_Connect_Option.htm" />
+  <topic name="RLogin Quick Connect Options" url="Rlogin_Quick_Connect_Option.htm" />
+  <topic name="Quick Connect Dialog" url="Quick_Connect_Dialog.htm" />
+  <topic name="SSH1 Quick Connect Options" url="SSH1_Quick_Connect_Options.htm" />
+  <topic name="SSH2 Quick Connect Options" url="SSH2_Quick_Connect_Options.htm" />
+  <topic name="Telnet Quick Connect Options" url="Telnet_Quick_Connect_Option.htm" />
+  <topic name="File Menu" url="File_Menu.htm" />
+  <topic name="Creating a New Session with Quick Connect" url="Creating_a_New_Session_with.htm" />
+  <topic name="Connecting with the Connect Dialog" url="Connecting_with_the_Connect.htm" />
+  <topic name="Connect Dialog" url="Connect_Dialog.htm" />
+</key>
+<key name="Quit SecureCRT" >
+  <topic name="SecureCRT Menu" url="SecureCRT_Menu.htm" />
+</key>
+<key name="Raw log" >
+  <topic name="Session Options/Log File" url="SO_Terminal_Log_File.htm" />
+</key>
+<key name="Raw Log Session" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="Raw protocol" >
+  <topic name="Session Options/Connection/Raw" url="SO_Connection_Raw.htm" />
+</key>
+<key name="Receive ASCII" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+</key>
+<key name="Receive Xmodem" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+</key>
+<key name="receiving files" >
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+</key>
+<key name="Recent Script" >
+  <topic name="Script Menu" url="Script_Menu.htm" />
+</key>
+<key name="Recently used session list" >
+  <topic name="File Menu" url="File_Menu.htm" />
+  <topic name="Global Options/General" url="GO_General.htm" />
+</key>
+<key name="Reconnect" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="Reconnect All" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="reconnecting" >
+  <topic name="Reconnecting Automatically" url="Reconnecting_Automatically.htm" />
+</key>
+<key name="recording scripts" >
+  <topic name="Script Menu" url="Script_Menu.htm" />
+</key>
+<key name="registering" >
+  <topic name="How to Order" url="How_to_Register.htm" />
+</key>
+<key name="Remember and connect to sessions from last use" >
+  <topic name="Global Options/General/Default Session" url="GO_General_Default_Session.htm" />
+</key>
+<key name="Remote Address" >
+  <topic name="Session Options/Connection/Port Forwarding/Remote" url="SO_Connection_Port_Forwarding_Remote.htm" />
+</key>
+<key name="Remote command" >
+  <topic name="Session Options/Connection/Logon Actions" url="SO_Connection_Login_Actions.htm" />
+</key>
+<key name="Remote Host" >
+  <topic name="Session Options/Connection/Port Forwarding" url="SO_Connection_Port_Forwarding.htm" />
+</key>
+<key name="remote port forwarding" >
+  <topic name="Session Options/Connection/Port Forwarding/Remote" url="SO_Connection_Port_Forwarding_Remote.htm" />
+  <topic name="Remote Port Forwarding Properties Dialog" url="Remote_Port_Forwarding_Prop.htm" />
+</key>
+<key name="remove" >
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="rename tab" >
+  <topic name="Session Options/Terminal/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+</key>
+<key name="requirements" >
+  <topic name="System Requirements" url="System_Requirements.htm" />
+</key>
+<key name="Reset" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="resizing fonts" >
+  <topic name="Session Options/Appearance" url="SO_Terminal_Appearance.htm" />
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="resizing windows" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Session Options/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+</key>
+<key name="Retain size and font" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="Reuse disconnected tabs" >
+  <topic name="Global Options/Terminal/Tabs" url="GO_Terminal_Tabs.htm" />
+</key>
+<key name="RLogin" >
+  <topic name="Session Options/Connection" url="SO_Connection.htm" />
+  <topic name="RLogin Quick Connect Options" url="Rlogin_Quick_Connect_Option.htm" />
+</key>
+<key name="rows" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="RSA authentication" >
+  <topic name="SSH1 Quick Connect Options" url="SSH1_Quick_Connect_Options.htm" />
+  <topic name="Public-Key Authentication for SSH1" url="Public-Key_Authentication_for_SSH1.htm" />
+  <topic name="Public-Key Authentication for SSH2" url="Public-Key_Authentication_for_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+</key>
+<key name="RTS/CTS" >
+  <topic name="Serial Quick Connect Options" url="Serial_Quick_Connect_Option.htm" />
+  <topic name="Session Options/Connection/Serial" url="SO_Connection_Serial.htm" />
+</key>
+<key name="Run" >
+  <topic name="Script Menu" url="Script_Menu.htm" />
+</key>
+<key name="Save as type" >
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+</key>
+<key name="Save expanded folder state in connect dialog" >
+  <topic name="Global Options/General" url="GO_General.htm" />
+</key>
+<key name="Save in" >
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+</key>
+<key name="Save session" >
+  <topic name="Quick Connect Dialog" url="Quick_Connect_Dialog.htm" />
+</key>
+<key name="Save Settings Now" >
+  <topic name="Options Menu" url="Options_Menu.htm" />
+</key>
+<key name="Save window state for each session" >
+  <topic name="Options Menu" url="Options_Menu.htm" />
+  <topic name="Global Options/Terminal Emulation" url="GO_Terminal.htm" />
+</key>
+<key name="saving" >
+  <topic name="Options Menu" url="Options_Menu.htm" />
+</key>
+<key name="Scale the font" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="SCO ANSI" >
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+</key>
+<key name="Screen" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="screen object" >
+  <topic name="Screen Object" url="Screen_Object.htm" />
+</key>
+<key name="Script menu" >
+  <topic name="Script Menu" url="Script_Menu.htm" />
+</key>
+<key name="script recorder" >
+  <topic name="Script Menu" url="Script_Menu.htm" />
+</key>
+<key name="scripting" >
+  <topic name="Window Object" url="Window_Object.htm" />
+  <topic name="Session Object" url="Session_Object.htm" />
+  <topic name="Script Menu" url="Script_Menu.htm" />
+  <topic name="Screen Object" url="Screen_Object.htm" />
+  <topic name="Overview of Script Objects" url="Overview_of_Script_Objects.htm" />
+  <topic name="Handling Script Errors" url="Handling_Script_Errors.htm" />
+  <topic name="FileTransfer Object" url="FileTransfer_Object.htm" />
+  <topic name="Dialog Object" url="Dialog_Object.htm" />
+  <topic name="Creating Scripts" url="Creating_Scripts.htm" />
+  <topic name="Application Object" url="Application_Object.htm" />
+  <topic name="Arguments Object" url="Arguments_Object.htm" />
+  <topic name="Tab Object" url="Tab_Object.htm" />
+  <topic name="Session Options/Connection/Logon Actions" url="SO_Connection_Login_Actions.htm" />
+  <topic name="Clipboard Object" url="Clipboard_Object.htm" />
+  <topic name="SessionConfiguration Object" url="SessionConfiguration_Object.htm" />
+  <topic name="Example Scripts" url="Example_Scripts.htm" />
+  <key name="ActiveX" >
+    <topic name="Application Object" url="Application_Object.htm" />
+    <topic name="Creating Scripts" url="Creating_Scripts.htm" />
+    <topic name="Dialog Object" url="Dialog_Object.htm" />
+    <topic name="FileTransfer Object" url="FileTransfer_Object.htm" />
+    <topic name="Handling Script Errors" url="Handling_Script_Errors.htm" />
+    <topic name="Overview of Script Objects" url="Overview_of_Script_Objects.htm" />
+    <topic name="Screen Object" url="Screen_Object.htm" />
+    <topic name="Session Object" url="Session_Object.htm" />
+    <topic name="Window Object" url="Window_Object.htm" />
+    <topic name="Arguments Object" url="Arguments_Object.htm" />
+    <topic name="Tab Object" url="Tab_Object.htm" />
+    <topic name="Clipboard Object" url="Clipboard_Object.htm" />
+    <topic name="SessionConfiguration Object" url="SessionConfiguration_Object.htm" />
+    <topic name="Example Scripts" url="Example_Scripts.htm" />
+  </key>
+  <key name="creating" >
+    <topic name="Handling Script Errors" url="Handling_Script_Errors.htm" />
+    <topic name="Creating Scripts" url="Creating_Scripts.htm" />
+    <topic name="Example Scripts" url="Example_Scripts.htm" />
+  </key>
+  <key name="errors" >
+    <topic name="Handling Script Errors" url="Handling_Script_Errors.htm" />
+  </key>
+  <key name="objects" >
+    <topic name="Application Object" url="Application_Object.htm" />
+    <topic name="Dialog Object" url="Dialog_Object.htm" />
+    <topic name="FileTransfer Object" url="FileTransfer_Object.htm" />
+    <topic name="Overview of Script Objects" url="Overview_of_Script_Objects.htm" />
+    <topic name="Screen Object" url="Screen_Object.htm" />
+    <topic name="Session Object" url="Session_Object.htm" />
+    <topic name="Window Object" url="Window_Object.htm" />
+    <topic name="Arguments Object" url="Arguments_Object.htm" />
+    <topic name="Tab Object" url="Tab_Object.htm" />
+    <topic name="Clipboard Object" url="Clipboard_Object.htm" />
+    <topic name="SessionConfiguration Object" url="SessionConfiguration_Object.htm" />
+  </key>
+  <key name="recording" >
+    <topic name="Script Menu" url="Script_Menu.htm" />
+  </key>
+</key>
+<key name="scroll bars" >
+  <topic name="View Menu" url="View_Menu.htm" />
+  <topic name="Session Options/Appearance/Window#SO_App_Win_scrollbar" url="SO_Terminal_Appearance_Window.htm#SO_App_Win_scrollbar" />
+  <topic name="Global Options/General" url="GO_General.htm" />
+  <topic name="Session Options/Terminal/Appearance/Window" url="SO_Terminal_Appearance_Window.htm" />
+</key>
+<key name="Scroll to bottom on keypress" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+</key>
+<key name="Scroll to bottom on output" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+</key>
+<key name="Scroll to clear screen" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+</key>
+<key name="Scrollback" >
+  <topic name="Session Options/Emulation#SO_Emulation_scrollback" url="SO_Terminal_Emulation.htm#SO_Emulation_scrollback" />
+</key>
+<key name="scrollback buffer" >
+  <topic name="Session Options/Emulation#SO_Emulation_scrollback" url="SO_Terminal_Emulation.htm#SO_Emulation_scrollback" />
+</key>
+<key name="secure connections" >
+  <topic name="Security Considerations" url="Security_Considerations.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+</key>
+<key name="secure shell" >
+  <topic name="Security Considerations" url="Security_Considerations.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+</key>
+<key name="SecureCRT" >
+  <topic name="New in SecureCRT" url="New_in_SecureCRT.htm" />
+  <topic name="What is SecureCRT?" url="What_is_SecureCRT_.htm" />
+</key>
+<key name="security" >
+  <topic name="Security Considerations" url="Security_Considerations.htm" />
+</key>
+<key name="select" >
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="Select All" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="Select an alternate keyboard emulation" >
+  <topic name="Session Options/Emulation#SO_Emulation_SAAKE" url="SO_Terminal_Emulation.htm#SO_Emulation_SAAKE" />
+</key>
+<key name="selecting text" >
+  <topic name="Copying and Pasting" url="Copying_and_Pasting.htm" />
+</key>
+<key name="Selection" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="Send ASCII" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+</key>
+<key name="Send Binary" >
+  <topic name="Transfer Menu" url="Transfer_Menu.htm" />
+</key>
+<key name="send delay" >
+  <topic name="Session Options/Terminal/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+</key>
+<key name="Send escape for meta key" >
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+</key>
+<key name="Send initial carriage return" >
+  <topic name="Session Options/Connection/Logon Scripts" url="SO_Connection_Login_Actions.htm" />
+</key>
+<key name="Send packet size" >
+  <topic name="Session Options/File Transfer/Xmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+</key>
+<key name="Send protocol NO-OP" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+</key>
+<key name="Send scroll wheel events to remote" >
+  <topic name="Session Options/Terminal" url="SO_Terminal.htm" />
+</key>
+<key name="Send SGA" >
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+</key>
+<key name="Send string" >
+  <topic name="Session Options/Options" url="SO_Terminal.htm" />
+  <topic name="Send String And Function Key Commands" url="Send_String_And_Function_Ke.htm" />
+</key>
+
+</indexdata>

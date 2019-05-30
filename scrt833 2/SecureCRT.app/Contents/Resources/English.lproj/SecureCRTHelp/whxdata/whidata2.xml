@@ -1,0 +1,262 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="DSA authentication" >
+  <topic name="Public-Key Authentication for SSH2" url="Public-Key_Authentication_for_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+</key>
+<key name="DTR/DSR" >
+  <topic name="Serial Quick Connect Options" url="Serial_Quick_Connect_Option.htm" />
+  <topic name="Session Options/Connection/Serial" url="SO_Connection_Serial.htm" />
+</key>
+<key name="Dynamic forwarding using SOCKS 4 or 5" >
+  <topic name="Local Port Forwarding Properties Dialog" url="Local_Port_Forwarding_Prope.htm" />
+</key>
+<key name="echo" >
+  <topic name="Session Options/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+</key>
+<key name="Edit Default Settings" >
+  <topic name="Global Options/Options/Default Session" url="GO_General_Default_Session.htm" />
+</key>
+<key name="edit keymap" >
+  <topic name="Map Selected Key Dialog" url="Map_Selected_Key_Dialog.htm" />
+</key>
+<key name="Edit menu" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="Eject Page" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="Emacs compatibility" >
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+</key>
+<key name="emulations" >
+  <topic name="Session Options/Emulation/Emacs" url="SO_Terminal_Emulation_Emacs.htm" />
+  <topic name="Session Options/Emulation/Advanced" url="SO_Terminal_Emulation_Advanced.htm" />
+  <topic name="Session Options/Emulation" url="SO_Terminal_Emulation.htm" />
+  <topic name="Session Options Emulation Modes" url="SO_Terminal_Emulation_Modes.htm" />
+  <topic name="Overview of Keymaps" url="Overview_of_Keymaps.htm" />
+  <topic name="Map Selected Key Dialog" url="Map_Selected_Key_Dialog.htm" />
+  <topic name="Customizing a Keymap" url="Customizing_a_Keymap.htm" />
+  <topic name="Session Options/Terminal/Emulation/Mapped Keys" url="SO_Terminal_Emulation_Mapped_Keys.htm" />
+</key>
+<key name="Enable 80/132 column switching" >
+  <topic name="Session Options Emulation Modes" url="SO_Terminal_Emulation_Modes.htm" />
+</key>
+<key name="Enable cursor key mode switching" >
+  <topic name="Session Options Emulation Modes" url="SO_Terminal_Emulation_Modes.htm" />
+</key>
+<key name="Enable deprecated GSSAPI" >
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+</key>
+<key name="Enable execute escape sequence" >
+  <topic name="Global Options/Terminal/Advanced" url="GO_Terminal_Advanced.htm" />
+</key>
+<key name="Enable keypad mode switching" >
+  <topic name="Session Options Emulation Modes" url="SO_Terminal_Emulation_Modes.htm" />
+</key>
+<key name="Enable line wrap mode switching" >
+  <topic name="Session Options Emulation Modes" url="SO_Terminal_Emulation_Modes.htm" />
+</key>
+<key name="Enable NTLM authentication" >
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+</key>
+<key name="Enable OpenSSH agent forwarding" >
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+  <topic name="Session Options/Connection/SSH2/Advanced" url="SO_Connection_SSH2_Advanced.htm" />
+</key>
+<key name="encoding" >
+  <topic name="Creating a Personal Font Map" url="Creating_a_Personal_Font_Map.htm" />
+</key>
+<key name="encryption" >
+  <topic name="Port Forwarding With SSH" url="Port_Forwarding_With_SSH.htm" />
+  <topic name="Security Considerations" url="Security_Considerations.htm" />
+  <topic name="Public-Key Authentication for SSH2" url="Public-Key_Authentication_for_SSH2.htm" />
+  <topic name="Public-Key Authentication for SSH1" url="Public-Key_Authentication_for_SSH1.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+  <topic name="Session Options/Connection/SSH1/Advanced" url="SO_Connection_SSH1_Advanced.htm" />
+</key>
+<key name="Enter License Data" >
+  <topic name="Help Menu" url="Help_Menu.htm" />
+</key>
+<key name="escape sequences" >
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+  <topic name="Xterm Escape Sequences" url="Xterm_Escape_Sequences.htm" />
+  <topic name="Determine Escape Sequence Key Codes" url="Determine_Escape_Sequence_Key_Codes.htm" />
+</key>
+<key name="Exit" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="Export Key..." >
+  <topic name="Global Options/SSH2/Host Keys" url="GO_SSH_Host_Keys.htm" />
+</key>
+<key name="Export Public Key from Certificate" >
+  <topic name="Tools Menu" url="Tools_Menu.htm" />
+</key>
+<key name="FAQ" >
+  <topic name="Support FAQ" url="Support_FAQ.htm" />
+</key>
+<key name="Feature Requests and Questions" >
+  <topic name="Feature Requests and Questions" url="Feature_Requests_and_Questi.htm" />
+</key>
+<key name="features" >
+  <topic name="Feature Requests and Questions" url="Feature_Requests_and_Questi.htm" />
+  <topic name="What is SecureCRT?" url="What_is_SecureCRT_.htm" />
+</key>
+<key name="File menu" >
+  <topic name="File Menu" url="File_Menu.htm" />
+</key>
+<key name="file transfers" >
+  <topic name="Changing the Default File Transfer Directories" url="Changing_the_Default_File_T.htm" />
+  <topic name="Disabling Zmodem" url="Disabling_ZModem.htm" />
+  <topic name="Downloading a File with Zmodem" url="Downloading_a_File_w_Zmodem.htm" />
+  <topic name="Downloading a File with Xmodem" url="Downloading_a_File_with_XMo.htm" />
+  <topic name="Overview of Xmodem" url="Overview_of_XModem.htm" />
+  <topic name="Overview of Zmodem" url="Overview_of_ZModem.htm" />
+  <topic name="Specify Filename to Receive... Dialogs" url="Specify_Filename_to_Receive.htm" />
+  <topic name="Uploading a File with Zmodem" url="Uploading_a_File_w_Zmodem.htm" />
+  <topic name="Uploading a File with Xmodem" url="Uploading_a_File_with_XMode.htm" />
+  <topic name="Session Options/File Transfer/Xmodem/Zmodem" url="SO_Terminal_X_Y_Zmodem.htm" />
+  <topic name="Connect Dialog" url="Connect_Dialog.htm" />
+  <topic name="Downloading a File with Ymodem" url="Downloading_a_File_with_Ymodem.htm" />
+  <topic name="Overview of Ymodem" url="Overview_of_Ymodem.htm" />
+  <topic name="Uploading a File with Ymodem" url="Uploading_a_File_with_Ymodem.htm" />
+</key>
+<key name="Files of type" >
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+</key>
+<key name="Files to send" >
+  <topic name="Select Files to Send... Dialogs" url="Select_Files_to_Send..._Dia.htm" />
+</key>
+<key name="filetransfer object" >
+  <topic name="FileTransfer Object" url="FileTransfer_Object.htm" />
+</key>
+<key name="filters" >
+  <topic name="Configuring Port-Forwarding Filters" url="Configuring_Port-Forwarding_Filters.htm" />
+</key>
+<key name="Find" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="Fingerprint" >
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+</key>
+<key name="Firewall" >
+  <topic name="Global Options/Firewall" url="GO_Firewall.htm" />
+  <topic name="Session Options/Connection/SSH1" url="SO_Connection_SSH1.htm" />
+  <topic name="Firewall Properties" url="Firewall_Properties_Dialog.htm" />
+  <topic name="SSH1 Quick Connect Options" url="SSH1_Quick_Connect_Options.htm" />
+  <topic name="SSH2 Quick Connect Options" url="SSH2_Quick_Connect_Options.htm" />
+  <topic name="Telnet Quick Connect Options" url="Telnet_Quick_Connect_Option.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+  <topic name="Session Options/Connection/Raw" url="SO_Connection_Raw.htm" />
+</key>
+<key name="Flow control" >
+  <topic name="Session Options/Connection/Serial" url="SO_Connection_Serial.htm" />
+</key>
+<key name="flush" >
+  <topic name="Using the Agent" url="Using_the_Agent.htm" />
+</key>
+<key name="fonts" >
+  <topic name="Session Options/Appearance" url="SO_Terminal_Appearance.htm" />
+  <topic name="Creating a Personal Font Map" url="Creating_a_Personal_Font_Map.htm" />
+</key>
+<key name="Force black on white" >
+  <topic name="Session Options/Terminal/Printing" url="SO_Terminal_Printing.htm" />
+  <topic name="Global Options/Terminal/Printing" url="GO_Terminal_Printing.htm" />
+</key>
+<key name="Force character at a time mode" >
+  <topic name="Session Options/Connection/Telnet" url="SO_Connection_Telnet.htm" />
+</key>
+<key name="foreground colors" >
+  <topic name="Overview of Color Schemes" url="Overview_of_Color_Schemes.htm" />
+  <topic name="Creating or Modifying a Color Scheme" url="Modifying_a_Color_Scheme.htm" />
+</key>
+<key name="Forward X11 Packets" >
+  <topic name="Session Options/Connection/Port Forwarding" url="SO_Connection_Port_Forwarding.htm" />
+</key>
+<key name="forwarding" >
+  <topic name="Using the Agent" url="Using_the_Agent.htm" />
+  <topic name="Session Options/Connection/Port Forwarding/Remote" url="SO_Connection_Port_Forwarding_Remote.htm" />
+  <topic name="Session Options/Connection/Port Forwarding" url="SO_Connection_Port_Forwarding.htm" />
+  <topic name="Remote Port Forwarding Properties Dialog" url="Remote_Port_Forwarding_Prop.htm" />
+  <topic name="Port Forwarding With SSH" url="Port_Forwarding_With_SSH.htm" />
+  <topic name="Local Port Forwarding Properties Dialog" url="Local_Port_Forwarding_Prope.htm" />
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+</key>
+<key name="Full Screen" >
+  <topic name="View Menu#ViewMenu_fullscreen" url="View_Menu.htm#ViewMenu_fullscreen" />
+</key>
+<key name="Function" >
+  <topic name="Map Selected Key Dialog" url="Map_Selected_Key_Dialog.htm" />
+</key>
+<key name="function keys" >
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+  <topic name="Send String And Function Key Commands" url="Send_String_And_Function_Ke.htm" />
+  <topic name="Session Options/Emulation/Mapped Keys" url="SO_Terminal_Emulation_Mapped_Keys.htm" />
+</key>
+<key name="global options" >
+  <topic name="Using the Agent" url="Using_the_Agent.htm" />
+  <topic name="Options Menu" url="Options_Menu.htm" />
+  <topic name="Global Options Dialog" url="Global_Options_Dialog.htm" />
+  <topic name="Global Options/Terminal Emulation/Firewall" url="GO_Firewall.htm" />
+  <topic name="Global Options/Terminal Emulation/Appearance/Color Scheme" url="GO_Terminal_Appearance_Advanced.htm" />
+  <topic name="Global Options/Terminal Emulation/Appearance/ANSI Color" url="GO_Terminal_Appearance_ANSI_Color.htm" />
+  <topic name="Global Options/Terminal Emulation/Appearance#GO_App_accessibility" url="GO_Terminal_Appearance.htm#GO_App_accessibility" />
+  <topic name="Global Options/Terminal Emulation/Appearance" url="GO_Terminal_Appearance.htm" />
+  <topic name="Global Options/Terminal Emulation" url="GO_Terminal.htm" />
+  <topic name="Global Options/SSH2/Host Keys" url="GO_SSH_Host_Keys.htm" />
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+  <topic name="Global Options/General/Default Session" url="GO_General_Default_Session.htm" />
+  <topic name="Global Options/General#Show_connection_closed_dialog" url="GO_General.htm#Show_connection_closed_dialog" />
+  <topic name="Global Options/General" url="GO_General.htm" />
+  <topic name="Global Options/Terminal/Printing" url="GO_Terminal_Printing.htm" />
+  <topic name="Global Options/Terminal/Tabs" url="GO_Terminal_Tabs.htm" />
+  <topic name="Global Options/Terminal/Advanced" url="GO_Terminal_Advanced.htm" />
+</key>
+<key name="Global Options Dialog" >
+  <topic name="Global Options Dialog" url="Global_Options_Dialog.htm" />
+</key>
+<key name="Go to Chat Window" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="Go to Session Window" >
+  <topic name="Edit Menu" url="Edit_Menu.htm" />
+</key>
+<key name="GSSAPI" >
+  <topic name="Global Options/SSH2" url="GO_SSH2.htm" />
+  <topic name="GSSAPI Properties Dialog" url="GSSAPI_Properties_Dialog.htm" />
+  <topic name="Session Options/Connection/SSH2" url="SO_Connection_SSH2.htm" />
+</key>
+<key name="Help menu" >
+  <topic name="Help Menu" url="Help_Menu.htm" />
+</key>
+<key name="Help Topics" >
+  <topic name="Help Menu" url="Help_Menu.htm" />
+</key>
+<key name="Hide mouse pointer on keypress" >
+  <topic name="Global Options/Terminal Emulation" url="GO_Terminal.htm" />
+</key>
+<key name="Hide Others" >
+  <topic name="SecureCRT Menu" url="SecureCRT_Menu.htm" />
+</key>
+<key name="Hide SecueCRT" >
+  <topic name="SecureCRT Menu" url="SecureCRT_Menu.htm" />
+</key>
+<key name="Highlight keywords" >
+  <topic name="Session Options/Terminal/Appearance" url="SO_Terminal_Appearance.htm" />
+</key>
+<key name="hold screen" >
+  <topic name="Emulation-Specific Keymappings" url="Emulation-Specific_Keymappi.htm" />
+</key>
+<key name="Horizontal Scroll Bar" >
+  <topic name="View Menu" url="View_Menu.htm" />
+</key>
+<key name="host key database" >
+  <topic name="Accepting a Host Key" url="Accepting_a_Host_Key.htm" />
+</key>
+<key name="Host key database location" >
+  <topic name="Global Options/SSH Host Keys" url="GO_SSH_Host_Keys.htm" />
+</key>
+
+</indexdata>

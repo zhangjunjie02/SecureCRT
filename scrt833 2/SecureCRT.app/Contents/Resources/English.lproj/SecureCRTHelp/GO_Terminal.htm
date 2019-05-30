@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/Terminal</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nTerminal");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > Terminal<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Terminal</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <strong>Terminal</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a><span 
+	 class="Dialog">&#160;</span>dialog allows you to configure <span>Secure</span>CRT 
+ terminal emulation-related options.</p>
+<p class="FieldLevel1">Save window state for each session</p>
+<p>Check this option to save the window size and position of each session 
+ window.</p>
+<p class="FieldLevel1">Auto reconnect</p>
+<p>Check this option to automatically reconnect to a remote machine when 
+ a connection is terminated. This feature can also be enabled or disabled 
+ on a per session basis.</p>
+<p class="FieldLevel1">Connect sessions in tabs</p>
+<p>Check this option to open new sessions as tabs in the active window.</p>
+<p class="FieldLevel1">Exit when last session is disconnected</p>
+<p>Check this option to exit SecureCRT when the last session is disconnected.</p>
+<p class="FieldLevel1">Prompt on multi-line paste</p>
+<p>Check this option to get prompted before multiple lines are pasted into 
+ a session.</p>
+<p class="Group">Mouse group</p>
+<p>This group contains options that affect mouse behavior.</p>
+<p class="Field025">Copy on select</p>
+<p class="Normal025">This option allows you to speed up the process of 
+ copying text from the <a href="javascript:TextPopup(this)" id="HotSpot44621" class="glossterm">terminal</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot44621', 'POPUP44621');
+//]]></script><span class="glosstext" id="POPUP44621" style="display: none;"> A device usually consisting of a keyboard, a display unit such as a cathode ray tube, and a serial port used for entering and sending data to a computer and displaying any data received from the computer.  Terminals are usually connected to a computer with a serial line or some other type of connection.  There are many terminal types including VT100, VT102, VT220, and others.</span> 
+ screen to the Clipboard. Check this option to allow text to be copied 
+ to the Clipboard as soon as it is selected.</p>
+<p class="Field025">Paste on middle/right button</p>
+<p class="Normal025">This option allows you to speed up the process of 
+ pasting content from the Clipboard to the terminal screen. Check this 
+ option to allow text to be pasted from the Clipboard to the terminal screen 
+ as soon as the middle or right mouse button is pressed. If your mouse 
+ does not have a middle mouse button, a middle button click can be simulated 
+ by pressing both the left and right mouse buttons simultaneously.</p>
+<p class="Field025">Hide mouse pointer on keypress</p>
+<p class="Normal025">Check this option to hide the mouse pointer when you 
+ start typing.</p>
+<p class="Field025">Open URL with <span 
+	 class="Entry">COMMAND</span><span class="Entry">+click</span></p>
+<p class="Normal025">Check this option to allow a URL in the terminal window 
+ to be opened by clicking on it using the <span class="Entry">COMMAND+click</span> 
+ key combination.</p>
+<p class="RelatedTopics">
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Global Options/Terminal/Appearance','GO_Terminal_Appearance.htm','Global Options/Terminal/Appearance#ShowSessionTabs','GO_Terminal_Appearance.htm#ShowSessionTabs','Global Options/Terminal/Appearance/ANSI Color','GO_Terminal_Appearance_ANSI_Color.htm','Global Options/Terminal/Appearance/Color Scheme','GO_Terminal_Appearance_Advanced.htm','Global Options/Terminal/Firewall','GO_Firewall.htm','Global Options/Terminal/Printing','GO_Terminal_Printing.htm','Global Options/Terminal/Tabs','GO_Terminal_Tabs.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+</p>
+<p class="RelatedTopics"><!--ForeHelp.Hotspot JUMP="Global_Options_Options"--><!--ForeHelp.EndHotspot--></p>
+<!--ForeHelp.EndHotspot-->
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

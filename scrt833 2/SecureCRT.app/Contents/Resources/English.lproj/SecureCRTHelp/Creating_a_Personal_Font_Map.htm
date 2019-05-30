@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Creating a Personal Font Map</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Terminal Emulation Settings\nCreating a Personal Font Map");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"SO_Terminal_Emulation.htm#bc-2\">Terminal Emulation Settings<\/a> > Creating a Personal Font Map<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Creating a Personal Font Map</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p><span>Secure</span>CRT provides a method for you to create a personal font map, in case the font maps available in the <span class="Label"><a href="SO_Terminal_Appearance.htm">Character Encoding</a></span> option are not sufficient for your needs. This method consists of two tasks: creating a font map file and adding that file to a <span>Secure</span>CRT session.</p>
+<p class="SectionHead">Creating a Font Map</p>
+<p>A font map is a text file of up to 256 lines (0 through 255). Each line in this file corresponds (by its position in the file) to a character cell in the selected codepage. The hexadecimal number on each line tells <span>Secure</span>CRT which Unicode character to display for that cell. For example, if the value 00df appeared on line 65 of the file, any "A" characters received from the remote machine would be displayed as " ß" characters.</p>
+<p>The line entry format is as follows:</p>
+<p class="Normal025"><span class="Entry">&lt;hexadecimal number&gt;&lt;comments&gt;</span></p>
+<p>Example:</p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">0000</span></p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">0001</span></p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">…</span></p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">00df “Sharp S”</span></p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">…</span></p>
+<p class="SingleSpaced" style="margin-left: 24px;"><span class="Entry">00ff</span></p>
+<p>Anything on the line after the hex number is ignored by <span>Secure</span>CRT, making the space useful for comments. Blank lines in the file will be ignored.</p>
+<p>If you only want to translate a few characters, you can choose not to include all 256 lines in your map file, however, the entries must be sequential and all entries must be included through the last assignment you want to make. For example, if you wanted to change the characters displayed for lines 2 and 10, you still must include lines 0 through 10 in your file.</p>
+<p class="SectionHead">Adding a Font Map to a Session</p>
+<p>Font map files are session specific. To assign a font map to a session, add a line like the following to your session’s .ini file:</p>
+<p class="Normal025"><span class="Entry">S: “User Font Map”=&lt;path&gt;</span></p>
+<p>In this command, the “path” variable is the full path of your font map.</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

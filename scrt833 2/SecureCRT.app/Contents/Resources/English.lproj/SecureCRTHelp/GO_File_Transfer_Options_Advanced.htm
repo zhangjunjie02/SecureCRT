@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/File Transfer/Options/Advanced</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nFile Transfer/Options/Advanced");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > File Transfer/Options/Advanced<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;File Transfer /Options / Advanced</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="color: #800000;">This category only appears if VanDyke Software's SecureFX® 3.0 (or newer) is also installed.</p>
+<p>The <strong>File Transfer/Options/Advanced</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a><span class="Dialog">&#160;</span>dialog allows you to access advanced features in SecureFX.</p>
+<p class="GroupNoText">Options group</p>
+<p class="Field">Move deleted local files to the Recycle Bin</p>
+<p class="Normal025">This option is enabled by default. Disabling this option causes deleted local files to be deleted from the file system.</p>
+<p class="Field">Keep connections alive</p>
+<p class="Normal025">This option is off by default. Enabling this option causes SecureFX to send SFTP/FTP NO-OP commands to the SFTP/FTP server whenever 1 minute or more has passed without sending a normal file operation command. This will usually keep the SFTP/FTP server from detecting that the connection is idle and, consequently, disconnecting the session.</p>
+<p class="Normal025">It is not recommended that you leave this feature enabled.</p>
+<p class="Field">Never use cached file for remote editing</p>
+<p class="Normal025">Enabling this option instructs SecureFX never to use the locally cached copy of a file to perform remote editing.</p>
+<p class="GroupNoText">Log group</p>
+<p class="Field025">Enable log output to file</p>
+<p class="Normal025">Enabling this option causes the SecureFX output to be logged to the specified file.</p>
+<p class="Field">Log filename</p>
+<p class="Normal025">This is the log file's full path.</p>
+<p class="Group">Permissions group</p>
+<p>This group contains options that allow you to specify file and directory permissions. The permissions should be specified in the appropriate octal representation. For FTP connections, these options only work with UNIX systems.</p>
+<p class="Field">File permissions</p>
+<p class="Normal025">This option allows you to specify the read/write/execute permissions on uploaded files. For example, entering 660 in the entry box gives read and write access permissions to the file owner and the group. If this option is left blank/empty, no attempt will be made to set the permissions and the permissions used on the files will be set according to the user's UMASK settings on the remote system.</p>
+<p class="Normal025">This option only affects new files that are uploaded (i.e., it will not change the permissions on files that already exist). The exception to this rule is that when the <span class="Label">Always overwrite</span> option is chosen for existing files, the permissions will be overwritten even for existing files.</p>
+<p class="Field">Directory permissions</p>
+<p class="Normal025">This option allows you to specify the read/write/execute permissions on created directories. For example, entering 775 in the entry box gives read and write access permissions to the directory owner and the group, and read access to the world. If this option is left blank/empty, no attempt will be made to set the permissions and the permissions used on the directories will be set according to the user's UMASK settings on the remote system.</p>
+<p class="GroupNoText">Transfer queue group</p>
+<p class="Field">Suspend transfer of queued items</p>
+<p class="Normal025">Check this option to postpone the transfer of queued files and folders. You can start the transfer of one or all items in the transfer queue by right-clicking in the transfer queue window and selecting the desired option.</p>
+<p class="RelatedTopics">&#160;&#160;&#160; <a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Global Options/File Transfer/Options','GO_File_Transfer_Options.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a> </p>
+<p class="RelatedTopics"><!--ForeHelp.Hotspot JUMP="Global_Options_Options"--><!--ForeHelp.EndHotspot--></p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

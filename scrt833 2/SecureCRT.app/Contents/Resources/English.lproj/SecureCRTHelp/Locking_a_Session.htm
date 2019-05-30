@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Locking a Session</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("Locking a Session<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Locking a Session</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>Sessions can be locked or unlocked by selecting the <span class="Label">Lock/Unlock Session</span> option on the <span class="Label">File</span> menu. When this option is selected, the <span class="DialogName">Lock Session</span> or <span class="DialogName">Unlock Session</span> dialog appears, as appropriate, allowing you to assign a password and lock the session, or give the original password to unlock the session. The <span class="DialogName">Lock Session</span> or <span class="DialogName">Unlock Session</span> dialogs also allow you to lock or unlock all sessions simultaneously using a single password.</p>
+<p>When a session is locked, actions that would affect the session are disallowed, including the following:</p>
+<p class="BulletLevel1"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Keyboard input</p>
+<p class="BulletLevel1"><!--ForeHelp.Ignore--><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Starting and canceling scripts</p>
+<p class="BulletLevel1"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Disconnecting and reconnecting the session</p>
+<p class="BulletLevel1"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Starting a file transfer</p>
+<p class="BulletLevel1"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Closing the session</p>
+<p class="BulletLevel1"><font face="Microsoft Sans Serif">•</font> &#160;&#160;&#160;&#160;Editing the session options</p>
+<p>Scripts that are started before a session is locked will continue to run, but can only access their own session and any unlocked sessions. This means that a script that is running in one session cannot access a different tab that is locked.</p>
+<p>A MENU_TAB_LOCK menu function is available for use in custom <a href="Customizing_a_Keymap.htm">keymaps</a>, toolbars, and the user button bar.</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Session Options/Connection/SSH2</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+body { background-color:#ffffff; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body bgproperties="FIXED"><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nSession Options Dialog\nConnection\nConnection/SSH2");
+addTocInfo("Creating and Editing Sessions\nChoosing a Connection Protocol\nSSH2 Connection Settings");
+addAvenueInfo("Dialogs","SO_Connection_SSH1.htm","SO_Connection_Telnet.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Sessions_Overview.htm\">Creating and Editing Sessions<\/a> > <a href=\"Overview_of_Connection_Prot.htm\">Choosing a Connection Protocol<\/a> > SSH2 Connection Settings<\/p>");
+}
+else{
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Session_Options_Dialog.htm\">Session Options Dialog<\/a> > <a href=\"SO_Connection.htm\">Connection<\/a> > Connection/SSH2<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Keyword KKEYS="compression;ciphers;MACs;SSH server;SSH"-->
+<!--ForeHelp.EndKeyword-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span>&#160;&#160;Connection 
+ / SSH2</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p>The <strong>SSH2</strong> category of the <!--ForeHelp.Hotspot JUMP="Session_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Session_Options_Dialog.htm"><span class="Dialog">Session Options</span></a> 
+ dialog allows you to configure your <a href="javascript:TextPopup(this)" id="HotSpot13544" class="glossterm">SSH2</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot13544', 'POPUP13544');
+//]]></script><span class="glosstext" id="POPUP13544" style="display: none;"> The second version of the SSH protocol which provides a way to encrypt network traffic between a client and a server, with a slightly different set of security features than the SSH1 protocol provides.</span> 
+ <a href="javascript:TextPopup(this)" id="HotSpot32099" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot32099', 'POPUP32099');
+//]]></script><span class="glosstext" id="POPUP32099" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> . The <strong>SSH2</strong> 
+ category only appears when you have selected <code>SSH2</code> or <span 
+	 class="Entry">SFTP</span> as your <!--ForeHelp.Hotspot JUMP="Session_Options_Connection"--><!--ForeHelp.EndHotspot--><a 
+	 href="SO_Connection.htm"><strong>Protocol</strong></a>.</p>
+<p class="SectionHead">SSH2 Overview</p>
+<p>SSH2 provides secure communication over an unsecure channel by encrypting 
+ the data channel using the <a href="javascript:TextPopup(this)" id="HotSpot23848" class="glossterm">cipher</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot23848', 'POPUP23848');
+//]]></script><span class="glosstext" id="POPUP23848" style="display: none;"> An algorithm used to encrypt data at varying levels of security.  Examples include 3DES, AES, Blowfish, RC4, and Twofish.</span> 
+ algorithm selected for the <a href="javascript:TextPopup(this)" id="HotSpot4211" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot4211', 'POPUP4211');
+//]]></script><span class="glosstext" id="POPUP4211" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span> 
+ by the user. The cipher selected must also be supported by the destination 
+ SSH2 <a href="javascript:TextPopup(this)" id="HotSpot46252" class="glossterm">server</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot46252', 'POPUP46252');
+//]]></script><span class="glosstext" id="POPUP46252" style="display: none;"> A computer program that provides services to other computer programs (called clients).  Often the computer on which a server program runs is also called a server.  The term host is often used as a synonym for server.</span> (an error 
+ will be reported during a connection attempt if the chosen cipher is not 
+ supported by the server). A cipher is used to encrypt network traffic 
+ between the local machine and the SSH2 server, thus providing <a href="javascript:TextPopup(this)" id="HotSpot20583" class="glossterm">data privacy</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot20583', 'POPUP20583');
+//]]></script><span class="glosstext" id="POPUP20583" style="display: none;"> The concept that data should only be viewed or accessed by those with authorization to do so.  Data privacy is achieved using a cipher to encrypt data.</span> .</p>
+<p><a href="javascript:TextPopup(this)" id="HotSpot29038" class="glossterm">Port forwarding</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot29038', 'POPUP29038');
+//]]></script><span class="glosstext" id="POPUP29038" style="display: none;"> The concept of connecting a logical port on a local machine to a port on a remote machine over a secure (encrypted) channel.  All requests for services sent to the local port are then forwarded across the secure channel to the corresponding port on the remote machine.</span> is 
+ another feature based on SSH security. See <!--ForeHelp.Hotspot JUMP="Port_Forwarding_With_SSH"--><!--ForeHelp.EndHotspot--><a 
+	 href="Port_Forwarding_With_SSH.htm"><b>Port Forwarding with SSH</b></a> 
+ to learn more about encrypting connections for other applications (such 
+ as IMAP) that are not secure by default.</p>
+<p>SSH2 connection settings include hostname, port, username, <a href="javascript:TextPopup(this)" id="HotSpot56269" class="glossterm">authentication</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot56269', 'POPUP56269');
+//]]></script><span class="glosstext" id="POPUP56269" style="display: none;"> The process of verifying that an individual truly is who he or she claims to be.  Supplying a password is a very common method of authentication.  The most secure method of authentication supported in SecureCRT is public-key authentication.  See also: identity file, public-private key pair.</span>, and key exchange.</p>
+<p class="FieldLevel1">Hostname</p>
+<p>The hostname or IP address of the remote machine that provides the SSH2 
+ service.</p>
+<p class="FieldLevel1">Port</p>
+<p>The port number of the SSH2 service on the remote machine. For SSH2, 
+ the default port is 22.</p>
+<p class="FieldLevel1">Firewall</p>
+<p>If your connection involves a firewall, select your firewall from the 
+ list of firewalls that have been configured in the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><span 
+	 class="DialogName"><a href="GO_Firewall.htm">Global Options/Firewall</a></span> 
+ dialog.</p>
+<p class="Normal025"><span style="font-weight: bold;">Note:</span> You 
+ can also select an SSH2 session to be used as a firewall. When a session 
+ is specified as a firewall, the firewall session will be connected first.</p>
+<p class="FieldLevel1">Username</p>
+<p>The username used to log on to the remote machine. </p>
+<p class="Group">Authentication group</p>
+<p>SecureCRT supports several authentication methods for connecting to 
+ SSH2 servers, and will attempt to connect using them in the order that 
+ you specify.</p>
+<p class="Normal025"><b style="font-weight: bold;">Password</b> authentication 
+ transmits the user's password to the server to authenticate the connection. 
+ The transmitted password is protected from network eavesdropping, due 
+ to the cipher <a href="javascript:TextPopup(this)" id="HotSpot13363" class="glossterm">encryption</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot13363', 'POPUP13363');
+//]]></script><span class="glosstext" id="POPUP13363" style="display: none;"> The process of converting a data transmission into a secret format that cannot easily be read by unauthorized individuals.  See also: decryption.</span> 
+ of the data channel.</p>
+<p class="NoteLevel2"><span style="font-weight: bold;">Note</span>: If 
+ the remote machine supports both the SSH2 protocol and changing passwords 
+ at the protocol level, the password for an SSH2 session can be changed 
+ from the <span class="DialogName">Password Properties</span> dialog, which 
+ is accessed by selecting <span class="Label">Password</span> in the <span 
+	 class="Label">Authentication</span> group and clicking on the <span 
+	 class="Label">Properties</span> button.</p>
+<p class="Normal025"><b style="font-weight: bold;">PublicKey</b> authentication 
+ uses a public/private key pair to authenticate the connection. During 
+ the authentication process, the <a href="javascript:TextPopup(this)" id="HotSpot57968" class="glossterm">client</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot57968', 'POPUP57968');
+//]]></script><span class="glosstext" id="POPUP57968" style="display: none;"> A computer or application that uses services provided by a server.</span> 
+ and the server negotiate a public key to use for the connection. Once 
+ a public key has been determined, the client uses the corresponding private 
+ key to perform a signature operation over a unique connection identifier. 
+ This signature is then sent to the server for verification. If verification 
+ is successful, the client is given permission to connect to the server. 
+ The security of the mechanism requires that no one but the owner have 
+ access to the private key. The private key is stored locally in an <a href="javascript:TextPopup(this)" id="HotSpot34066" class="glossterm">identity file</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot34066', 'POPUP34066');
+//]]></script><span class="glosstext" id="POPUP34066" style="display: none;"> Identity files are two files containing the public-private key pair used to connect to an SSH server using RSA or DSA authentication.  The Identity file contains the public and private key pair and is used by SecureCRT.  The Identity.pub file contains only the public key  which is usually appended to the authorized_keys file.</span> . Also, prior to using 
+ public-key authentication, the public key must be made available to the 
+ SSH2 server. For more information on generating private-public key pairs, 
+ see <!--ForeHelp.Hotspot JUMP="Public_Key_Authentication_for_SSH2"--><!--ForeHelp.EndHotspot--><a 
+	 href="Public-Key_Authentication_for_SSH2.htm">Public-Key Authentication 
+ for SSH2</a>.</p>
+<p class="Normal025"><span style="font-weight: bold;">Keyboard Interactive</span> 
+ authentication allows you to use the keyboard to respond to challenges 
+ put forth by the server.</p>
+<p class="Normal025"><span style="font-weight: bold;">GSSAPI</span> (Generic 
+ Security Services Application Program Interface) is a generic API for 
+ performing client/server authentication. GSSAPI allows SecureCRT to authenticate 
+ with a server without knowing anything about the specific authentication 
+ mechanism in use. &#160;For more information about using GSSAPI, see the 
+ <span class="DialogName">GSSAPI Properties</span> dialog.</p>
+
+<p class="Group">Key exchange group</p>
+<p>Key exchange is part of establishing trust between a client and a Secure 
+ Shell server. SecureCRT supports several algorithms for doing key exchange 
+ and will attempt to use them in the order that you specify.</p>
+<p class="Normal025" style="font-weight: normal;"><span style="font-weight: bold;">Diffie-Hellman</span> 
+ key exchange algorithms are common cryptographic protocols which are supported 
+ by Secure Shell servers.</p>
+<p class="Normal025"><span style="font-weight: bold;">GSSAPI</span> key 
+ exchange algorithms can be used to connect to SSH2 servers that support 
+ GSSAPI. When a GSSAPI key exchange algorithm is specified and the server 
+ supports it, further authentication is not needed if you already have 
+ GSSAPI credentials (e.g., by logging onto a Windows machine that is part 
+ of an Active Directory domain). &#160;</p>
+<p class="Normal025">If a GSSAPI key exchange algorithm is specified and 
+ is not supported by the server, there could be a delay during connection 
+ because the server is waiting to time out. To prevent this delay, uncheck 
+ the <span style="font-weight: bold;">GSSAPI</span> key exchange algorithms.</p>
+<p class="Group">Minimum group exchange prime size</p>
+<p>Allows the minimum size prime number that can be used for group exchange 
+ to be specified.</p>
+<p class="RelatedTopics">
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Session Options/Connection','SO_Connection.htm','Session Options/Connection/SSH2/Advanced','SO_Connection_SSH2_Advanced.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+ &#160;</p>
+<p class="Base">&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

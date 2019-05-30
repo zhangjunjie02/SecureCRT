@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>SecureCRT.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.3.3</string>
+	<key>CFBundleVersion</key>
+	<string>119814</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 1995-2018 VanDyke Software, Inc.</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>SecureCRT</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.vandyke.SecureCRT</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>SecureCRTHelp</string>
+	<key>CFBundleHelpBookName</key>
+	<string>SecureCRT Help</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.vandyke.SecureCRT.BindingHelper</key>
+		<string>identifier &quot;com.vandyke.SecureCRT.BindingHelper&quot; and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = &quot;9M229JAFBZ&quot;</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>Example Scripts</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Scripting\nExample Scripts");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > Example Scripts<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" 
+						 width="32" height="32" border="0" /> &#160;Example 
+ Scripts</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>Example Python 
+ scripts can be found in the SecureCRT installation folder. Python scripts use the 
+ file extension .py. If you would like to modify an example script, please 
+ modify a copy of the script file because if the original scripts are updated, 
+ the installer will overwrite the example scripts.</p>
+<p>The following are descriptions of the example scripts:</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font> 
+ &#160;&#160;&#160;AddCommentToLogFile – This example script allows you 
+ to add a custom line of text to your SecureCRT log file.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;AutoResponder 
+ – Demonstrates how to set up a list of commands/text that get sent to 
+ the remote as soon as a corresponding &quot;trigger&quot; string/text 
+ is detected from the remote system.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;BasicReadStringExample 
+ – This example script captures the output of a command (ls -l) sent to 
+ a remote machine by using the Screen.ReadString() method. The captured 
+ text is then displayed in a message box window.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;ConnectToMultipleSessionsAndSendCommands 
+ – Reads in sessions from a file (one session per line) and connects to 
+ each one (one at a time) and sends a series of commands to the remote, 
+ then disconnects from the session and moves on to the next session.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;CopyOutputToClipboard 
+ – This script example is designed to run while connected to a Cisco Pix 
+ firewall or other router device.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;GoogleSelectedText 
+ – When this script is launched, the text selected within the terminal 
+ window is used as the search term for a web search using google.com.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;LogOutputOfSpecificCommand-UseReadString 
+ – Sends commands one by one as listed in the g_vCommands() array to the 
+ remote machine. The results of each command are captured into a variable, 
+ and then written to an individual log file (one log file for each command). 
+ Once all the commands have been run, Windows Explorer is launched, with 
+ the first command output file selected within the explorer window.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;SaveSelectedTextToFile 
+ – If non-whitespace text is selected within the terminal screen, the user 
+ will be prompted for a location and filename in which to store the selected 
+ text. The selected text will then be saved to the file specified by the 
+ user.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;SendCommandToAllTabs 
+ – This example script shows how to send the same command to all tabs that 
+ currently have an active connection.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;UseIEAsCustomDialog 
+ – This sample script shows how the Internet Explorer automation object 
+ can be used to create custom dialog that can be used within a SecureCRT 
+ script.</p>
+<p class="BulletL1"><font face="Microsoft Sans Serif">•</font>&#160;&#160;&#160;&#160;UseIEAsListOutput 
+ – This example script shows how to create a custom dialog using the InternetExplorer.Application 
+ ActiveX object. This example also shows how data can be passed between 
+ the InternetExplorer object and SecureCRT.</p>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

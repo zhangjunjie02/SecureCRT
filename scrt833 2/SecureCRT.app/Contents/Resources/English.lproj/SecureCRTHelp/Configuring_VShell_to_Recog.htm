@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Configuring VShell to Recognize Public-Key File</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<style type="text/css">
+<!--
+.BannerBase { font-size:14pt;
+font-weight:bold;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Banner Base; }
+.Base { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif; }
+.Base1 { font-size:10pt;
+margin:6pt 0pt 6pt 0pt;
+font-family:System, sans-serif;
+fhname:Base#1; }
+.Base025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Base025indent1 { margin:0pt 0pt 0pt 18pt;
+fhname:Base025indent#1; }
+.Base025indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+text-indent:18pt;
+font-family:Arial, sans-serif; }
+.Base050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Base050indent1 { margin:0pt 0pt 0pt 36pt;
+fhname:Base050indent#1; }
+.Base050indhanging { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:36pt;
+font-family:Arial, sans-serif; }
+.Base075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.BigBoldBase { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0.05in 0pt;
+font-family:Arial, sans-serif; }
+.BodyText2 { margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:Body Text 2; }
+.BodyTextIndent2 { margin:0pt 0pt 0pt 0.6in;
+font-family:Arial, sans-serif;
+fhname:Body Text Indent 2; }
+.Bullet1 { font-size:10pt;
+margin:0pt 0pt 2pt 0.2097in;
+text-indent:-0.2097in;
+font-family:Arial, sans-serif; }
+.bullet11 { font-size:8pt;
+margin:0pt 0.014in 0pt 0.2in;
+text-indent:-0.2in;
+font-family:Arial, sans-serif;
+fhname:bullet1#1; }
+.Bullet2 { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Bullet3 { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif; }
+.Bullet4 { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+text-indent:72pt;
+font-family:Arial, sans-serif; }
+CODE { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhtype:character; }
+.CODE1 { font-size:10pt;
+font-family:"Courier New" , sans-serif;
+fhname:CODE#1;
+fhtype:character; }
+.CodeText { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.CodeText075Indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.DefaultParagraphFont { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font;
+fhtype:character; }
+.DefaultParagraphFont1 { font-size:12pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Default Paragraph Font#1;
+fhtype:character; }
+.Dialog { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.Entry { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:"Courier New" , sans-serif; }
+.Entry025indent1 { margin:6pt 0pt 6pt 18pt;
+font-family:"Courier New" , sans-serif;
+fhname:Entry025indent#1; }
+.Entry050indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:"Courier New" , sans-serif; }
+.Entry075indent { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:"Courier New" , sans-serif; }
+.Entry100indent { font-size:10pt;
+margin:0pt 0pt 0pt 72pt;
+font-family:"Courier New" , sans-serif; }
+.ExampleProgram { font-size:10pt;
+font-family:"Courier New" , sans-serif; }
+.Field { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Figure { font-style:italic; }
+.footnotereference { font-size:12pt;
+vertical-align:super;
+font-family:"Times New Roman" , sans-serif;
+fhname:footnote reference;
+fhtype:character; }
+.footnotetext { fhname:footnote text; }
+.GlossaryTerm { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Glossary Term; }
+.Group { font-size:10pt;
+font-weight:bold;
+margin:0.0166in 0pt 0.0166in 0pt;
+font-family:Arial, sans-serif; }
+.Heading { font-size:12pt;
+font-weight:bold;
+margin:12pt 0pt 6pt 0pt;
+font-family:System, sans-serif; }
+.heading1 { font-size:16pt;
+font-weight:bold;
+font-style:italic;
+fhname:heading 1; }
+.heading11 { font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 1#1; }
+.heading2 { font-size:14pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+fhname:heading 2; }
+.heading21 { font-weight:bold;
+margin:0pt 0pt 0pt 0.3in;
+font-family:Arial, sans-serif;
+fhname:heading 2#1; }
+.heading3 { font-size:12pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 3; }
+.heading4 { font-size:9pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:heading 4;
+text-decoration:overline; }
+.heading41 { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 4#1; }
+.heading5 { font-size:9pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif;
+fhname:heading 5;
+text-decoration:underline; }
+.heading51 { font-size:11pt;
+font-weight:bold;
+margin:0pt 0pt 0pt 54pt;
+fhname:heading 5#1; }
+.heading5Body { font-size:9pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif;
+fhname:heading 5:  Body; }
+.heading6 { font-size:9pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+fhname:heading 6; }
+.heading61 { font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 72pt;
+fhname:heading 6#1; }
+.Heading6Body { font-size:10pt;
+margin:0pt 0pt 0pt 54pt;
+font-family:Arial, sans-serif;
+fhname:Heading 6:  Body; }
+.heading8 { font-weight:bold;
+text-align:center;
+fhname:heading 8; }
+.Hyperlink { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhtype:character;
+text-decoration:underline; }
+.Hyperlink1 { font-size:12pt;
+color:#0000ff;
+font-family:"Times New Roman" , sans-serif;
+fhname:Hyperlink#1;
+fhtype:character;
+text-decoration:underline; }
+.Label1 { font-size:8pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhname:Label#1;
+fhtype:character; }
+.MenuCommand { font-size:10pt;
+font-weight:bold;
+margin:12pt 0pt 0pt 0pt;
+font-family:Arial, sans-serif; }
+.MenuCommand2ndLevel { font-size:10pt;
+font-weight:bold;
+margin:6pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.NewCodeText { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Courier New" , sans-serif; }
+.Normal { font-size:12pt;
+margin:5pt 0pt 5pt 0pt;
+font-family:"Times New Roman" , sans-serif; }
+.Normal1 { font-size:10pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#1; }
+.Normal2 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:"Times New Roman" , sans-serif;
+fhname:Normal#2; }
+.Normal3 { font-size:12pt;
+margin:0pt 1px 0pt 0pt;
+font-family:Arial, sans-serif;
+fhname:Normal#3; }
+.NoteBold { font-size:10pt;
+font-weight:bold;
+font-family:Arial, sans-serif;
+fhtype:character; }
+.NoteTest025indent { font-size:10pt;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.NoteText { font-size:10pt;
+margin:0pt 0pt 0pt 18pt;
+font-family:Arial, sans-serif; }
+.Number1 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number2 { font-size:10pt;
+font-family:Arial, sans-serif; }
+.Number3 {  }
+.Number4 {  }
+.Number5 {  }
+.ObjHead025Indent { font-size:10pt;
+font-weight:bold;
+margin:0pt 0pt 0.028in 18pt;
+font-family:Arial, sans-serif;
+text-decoration:underline; }
+.ObjHead050Indent { font-size:10pt;
+font-weight:bold;
+font-style:italic;
+margin:0pt 0pt 0pt 36pt;
+font-family:Arial, sans-serif; }
+.Seealso { margin:24pt 0pt 6pt 0pt; }
+.Step { font-size:10pt;
+margin:0pt 0pt 12pt 18pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.Step2 { font-size:10pt;
+margin:0pt 0pt 12pt 36pt;
+text-indent:-18pt;
+font-family:Arial, sans-serif; }
+.TableBody { font-size:10pt;
+margin:3pt 0pt 3pt 0pt;
+font-family:Arial, sans-serif; }
+-->
+</style>
+<!--ForeHelp.Ignore-->
+<script src="./sniffer.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./hhscript.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./SecureCRT.js" type="text/javascript" language="JavaScript1.2"></script>
+<script src="./fh_dhtml.js" type="text/javascript" language="JavaScript1.2"></script>
+<!--ForeHelp.EndIgnore-->
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body bgproperties="FIXED"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Secure Connections\nPublic-Key Authentication for SSH2\nConfiguring VShell to Recognize Public-Key File");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Security_Considerations.htm\">Secure Connections<\/a> > <a href=\"Public-Key_Authentication_for_SSH2.htm\">Public-Key Authentication for SSH2<\/a> > Configuring VShell to Recognize Public-Key File<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.Banner-->
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span>&#160;&#160;Configuring 
+ a VanDyke Software VShell® Server to Recognize Your Public-Key File</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore--><!--ForeHelp.EndBanner-->
+<p class="SectionHead">Using SecureCRT-Generated Public Keys with VShell 
+ for Windows</p>
+<p>In order to use your public key, you must transfer the Identity.pub 
+ (or whatever name you chose) file created by the Key Generation wizard 
+ to the individual user's folder under the Publickey folder on the VShell 
+ <a href="javascript:TextPopup(this)" id="HotSpot24115" class="glossterm">server</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot24115', 'POPUP24115');
+//]]></script><span class="glosstext" id="POPUP24115" style="display: none;"> A computer program that provides services to other computer programs (called clients).  Often the computer on which a server program runs is also called a server.  The term host is often used as a synonym for server.</span> . For example:</p>
+<p class="Entry025">C:\Program files\VShell\Publickey\%User%\Identity.pub</p>
+<p>If you are using VShell version 2.1 or newer, you can use the SecureCRT 
+ <!--ForeHelp.Hotspot JUMP="Public_Key_Assistant_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Public-Key_Assistant_Dialog.htm">public-key assistant</a> to 
+ upload your public key for you without knowing the exact location of the 
+ server's public-key folder.</p>
+<p>If you are not using VShell version 2.1 or newer, it is recommended 
+ that you follow the procedure below for using copy-and-paste operations 
+ to create a copy of the Identity.pub file in the Publickey folder on the 
+ remote machine. <b>If you decide instead to transfer the <code>Identity.pub</code></b> 
+ <b>using an FTP <a href="javascript:TextPopup(this)" id="HotSpot10135" class="glossterm">client</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot10135', 'POPUP10135');
+//]]></script><span class="glosstext" id="POPUP10135" style="display: none;"> A computer or application that uses services provided by a server.</span> 
+ , be sure to transfer the file in ASCII mode.</b></p>
+<p>To use copy-and-paste operations to configure the VShell server to recognize 
+ your Identity.pub file:</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->1.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Log 
+ on to the remote VShell server using <a href="javascript:TextPopup(this)" id="HotSpot17321" class="glossterm">SSH2</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot17321', 'POPUP17321');
+//]]></script><span class="glosstext" id="POPUP17321" style="display: none;"> The second version of the SSH protocol which provides a way to encrypt network traffic between a client and a server, with a slightly different set of security features than the SSH1 protocol provides.</span> 
+ and password <a href="javascript:TextPopup(this)" id="HotSpot12370" class="glossterm">authentication</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot12370', 'POPUP12370');
+//]]></script><span class="glosstext" id="POPUP12370" style="display: none;"> The process of verifying that an individual truly is who he or she claims to be.  Supplying a password is a very common method of authentication.  The most secure method of authentication supported in SecureCRT is public-key authentication.  See also: identity file, public-private key pair.</span> 
+ .</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->2.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->On 
+ the local machine, use Notepad.exe to open the <code>Identity.pub</code> 
+ file that was created with the SecureCRT Key Generation wizard.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->3.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->With 
+ the <code>Identity.pub</code> file open in Notepad, open the <b>Edit</b> 
+ menu and choose <b>Select All</b>. Once everything is selected, open the 
+ <b>Edit</b> menu again and select <b>Copy</b>.</p>
+<p class="Step1Level1"><!--ForeHelp.Ignore-->4.&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->On 
+ the remote machine, complete the following steps:</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">a.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Change 
+ to the individual user's folder under the Publickey folder. For example:</p>
+<p class="Entry075indent"><code style="font-family: monospace;">\Program 
+ files\VShell\Publickey\%User%</code></p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">b.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Type 
+ <code>copy con identity.pub</code> on the command line and press the <code>ENTER</code> 
+ key.</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">c.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Click 
+ on the SecureCRT <b>Paste</b> button to paste the contents of the Clipboard 
+ (which should now contain the contents of your <code>Identity.pub</code> 
+ file).</p>
+<p class="BulletL1"><!--ForeHelp.Ignore--><span style="font-family: Arial, sans-serif;">d.</span>&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->Press 
+ <code>CTRL+Z</code> <code>ENTER</code> <span style="font-family: Arial, sans-serif;">to 
+ close the</span> <code>Identity.pub</code> file. Once you have typed <code>CTRL+Z 
+ ENTER</code>, the <code>Identity.pub</code> file will have been created 
+ in the folder on the remote VShell server.</p>
+<p class="SectionHead">Using SecureCRT-Generated Public Keys with VShell 
+ for UNIX</p>
+<p>In order to use your public key, you must transfer the Identity.pub 
+ (or whatever name you chose) file created by the Key Generation wizard 
+ to the individual user's .vshell/publickey directory. For example:</p>
+<p class="Entry025">/home/someuser/.vshell/publickey/Identity.pub</p>
+<p>or</p>
+<p class="Entry025">~someuser/.vshell/publickey/Identity.pub</p>
+<p>You can use the SecureCRT public-key assistant to upload your public 
+ key for you without having to copy the identity file by-hand. If you are 
+ not able to use the public-key assistant, it is recommended that you follow 
+ the procedure below for using copy-and-paste operations to create a copy 
+ of the Identity.pub file in the Publickey folder on the remote machine. 
+ <span style="font-weight: bold;">If you decide instead to transfer the 
+ Identity.pub using an FTP or SFTP client, be sure to transfer the file 
+ in ASCII mode if applicable.</span></p>
+<p>To use copy-and-paste operations to configure the VShell server to recognize 
+ your Identity.pub file:</p>
+<p class="Step1Level1">1. &#160;&#160;Log on to the remote VShell server 
+ using SSH2 and password authentication.</p>
+<p class="Step1Level1">2. &#160;&#160;On the local machine, use Notepad.exe 
+ to open the <span class="Entry">Identity.pub</span> file that was created 
+ with the SecureCRT Key Generation wizard.</p>
+<p class="Step1Level1">3. &#160;&#160;With the <span class="Entry">Identity.pub</span> 
+ file open in Notepad, open the <span class="Label">Edit</span> menu and 
+ choose <span class="Label">Select All</span>. Once everything is selected, 
+ open the <span class="Label">Edit</span> menu again and select <span class="Label">Copy</span>.</p>
+<p class="Step1Level1">4. &#160;&#160;On the remote machine, complete the 
+ following steps:</p>
+<p class="BulletL1">a. &#160;&#160;Issue a <span class="Entry">cd</span> 
+ command to change the current working directory to the individual user's 
+ .vshell/publickey folder. For example:</p>
+<p class="Entry075">cd ~someuser/.vshell/publickey</p>
+<p class="BulletL1">b. &#160;&#160;Type <span class="Entry">cat &gt; ~someuser/.vshell/publickey/identity.pub</span> 
+ on the command line and press the <span class="Entry">ENTER</span> key.</p>
+<p class="BulletL1">c. &#160;&#160;Click on the SecureCRT <span class="Label">Paste</span> 
+ button to paste the contents of the Clipboard (which should now contain 
+ the contents of your <span class="Entry">Identity.pub</span> file).</p>
+<p class="BulletL1">d. &#160;&#160;Press <span class="Entry">CTRL+D</span> 
+ to close the <span class="Entry">Identity.pub</span> file. Once you have 
+ typed <span class="Entry">CTRL+D</span>, the <span class="Entry">Identity.pub</span> 
+ file will have been created in the user's .vshell/publickey directory 
+ on the remote VShell server.</p>
+<p class="RelatedTopics">Return to <!--ForeHelp.Hotspot JUMP="Public_Key_Authentication_for_SSH2"--><!--ForeHelp.EndHotspot--><a 
+	 href="Public-Key_Authentication_for_SSH2.htm">Public-Key Authentication 
+ for SSH2</a></p>
+<p>&#160;</p>
+<!--ForeHelp.EndHotspot-->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

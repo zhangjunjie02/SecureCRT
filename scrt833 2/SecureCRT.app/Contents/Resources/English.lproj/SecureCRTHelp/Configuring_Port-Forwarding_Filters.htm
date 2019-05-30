@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Configuring Port-Forwarding Filters</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Secure Connections\nConfiguring Port-Forwarding Filters");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Security_Considerations.htm\">Secure Connections<\/a> > Configuring Port-Forwarding Filters<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Configuring Port-Forwarding Filters</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p><span>Secure</span>CRT port-forwarding filters let you allow or deny connections from specific IP address or range of subnets. The filter configuration is stored in the session initialization file (&lt;session name&gt;.ini) in the <span>Secure</span>CRT Config/Sessions folder.</p>
+<p>Port-forwarding filters are defined in a list and applied from the first to last. When an application makes a port-forward connection via <span>Secure</span>CRT, the IP address of the application's machine is checked against the filter list. <span>Secure</span>CRT compares the address with the first filter entry and then goes through the list to the last filter entry. When an address meets the criteria of a filter entry, that filter is applied and the rest of the list is ignored. An empty list will deny all port-forwarding connections.</p>
+<p>The filter syntax is as follows:</p>
+<p class="Entry025">"Port Forward Filter"=[access,host] [access,host] [...]</p>
+<p>In the above syntax, the argument values are as follows:</p>
+<p class="Normal025">access - <span class="Entry">allow</span> or <span class="Entry">deny</span></p>
+<p class="Normal025">host - IP address or a range of subnets</p>
+<p>The default settings for the port-forward filter is as follows:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,127.0.0.1,0 deny,0.0.0.0/0.0.0.0,0</p>
+<p>This setting allows connections from localhost, but denies connections from any other machine.</p>
+<p class="SectionHead" style="background-color: Transparent;">Reverse Port Forwarding</p>
+<p style="background-color: Transparent;"><span>Secure</span>CRT also supports reverse port forwarding.</p>
+<p style="background-color: Transparent;">The filter syntax is as follows:</p>
+<p class="Entry025" style="background-color: Transparent;">"Reverse Forward Filter"=[access,host] [access,host] [...]</p>
+<p style="background-color: Transparent;">In the above syntax, the argument values are as follows:</p>
+<p class="Normal025" style="background-color: Transparent;">access - <span class="Entry">allow</span> or <span class="Entry">deny</span></p>
+<p class="Normal025" style="background-color: Transparent;">host - IP address or a range of subnets</p>
+<p style="background-color: Transparent;">The default settings for the port-forward filter is as follows:</p>
+<p class="Entry025" style="background-color: Transparent;">S:"Reverse Forward Filter"=allow,127.0.0.1,0 deny,0.0.0.0/0.0.0.0,0</p>
+<p style="background-color: Transparent;">This setting allows connections from localhost, but denies connections from any other machine.</p>
+<p class="SectionHead">Example Filters</p>
+<p>The following is an example of a port-forward filter list that allows connections from the specified machines (Alice's cable modem at 129.24.32.16 and Bob's DSL subnet at 198.129.241.85/255.255.255.128,0) but denies access from other machines:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,129.24.32.16,0 allow,198.129.241.85/255.255.255.128,0 deny,0.0.0.0/0.0.0.0,0</p>
+<p>This example list will allow all connections:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,0.0.0.0/0.0.0.0,0</p>
+<p class="Normal025">Or, for IPv6:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,::/0,0</p>
+<p>And this example list will allow everything in a local reserved class C network and any localhost loopback adapter (e.g., 127.0.0.2, 127.0.0.3, etc.), and deny everything else:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,192.168.0.0/255.255.255.0,0 allow,127.0.0.0/255.255.255.0,0 deny,0.0.0.0/0.0.0.0,0</p>
+<p>An example of a more common filter would be the following, which allows local host on 127.0.0.1,0, allows any host on local 192.168.0.0 network, and denies everything else:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,127.0.0.1,0 allow,192.168.0.0/255.255.255.0,0 deny,0.0.0.0/0.0.0.0,0</p>
+<p>The following is an example of a port-forward filter list that allows specific IPv6 connections:</p>
+<p class="Entry025">S:"Port Forward Filter"=allow,::ffff:198.129.241.85/128,0</p>
+<p>For reverse port forwarding, the syntax is similar. &#160;For example, this example list will allow everything in a local reserved class C network and any localhost loopback adapter (e.g., 127.0.0.2, 127.0.0.3, etc.), and deny everything else:</p>
+<p class="Entry025">S:"Reverse Forward Filter"=allow,192.168.0.0/255.255.255.0,0 allow,127.0.0.0/255.255.255.0,0 deny,0.0.0.0/0.0.0.0,0</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

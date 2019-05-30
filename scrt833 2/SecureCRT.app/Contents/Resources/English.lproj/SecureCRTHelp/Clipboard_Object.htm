@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 11" />
+<title>Clipboard Object</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Scripting\nScript Objects Reference\nClipboard Object");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > <a href=\"Application_Object.htm\">Script Objects Reference<\/a> > Clipboard Object<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" title="SecureCRT Icon" width="32" height="32" border="0" /></span> &#160;Clipboard Object</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p style="margin-top: 0pt; margin-bottom: 0pt;">&#160;</p>
+<p class="BigBoldBase" style="font-weight: bold; font-size: 11pt; margin-top: 0pt; margin-bottom: 0pt;">Description</p>
+<p class="Base" style="margin: 0pt 0pt 0pt 18pt;">The Clipboard object provides access to the application's clipboard.</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt;">&#160;</p>
+<p class="BigBoldBase" style="font-weight: bold; font-size: 11pt; margin-top: 0pt; margin-bottom: 0pt;">Syntax</p>
+<p class="NewCodeText" style="margin: 0pt 0pt 0pt 18pt; font-family: 'Courier New', sans-serif; white-space: nowrap; font-style: normal;">crt.Clipboard.<span style="font-style: italic;"><i>Property</i></span> [ = <span style="font-style: italic;"><i>expression</i></span> ]</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt;">&#160;</p>
+<p class="BigBoldBase" style="font-weight: bold; font-size: 11pt; margin-top: 0pt;"><u style="text-decoration: underline;"><span style="text-decoration: underline;"><u>Clipboard</u></span> Object Properties</u></p>
+<table cellspacing="1">
+<col />
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;"><!--ForeHelp.Hotspot JUMP="Application_Object_Properties"--><!--ForeHelp.EndHotspot--><a href="Application_Object.htm#Application_Object_Properties"><b>Properties</b></a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_Format">Format</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_CF_OEMTEXT">CF_OEMTEXT</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_CF_TEXT">CF_TEXT</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_CF_UNICODETEXT">CF_UNICODETEXT</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_DEFAULTFORMAT">DEFAULTFORMAT</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_VDS_TEXT">VDS_TEXT</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;" width="192">
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;&#160;&#160;&#160;<a href="#Clipboard_Object_Properties_Text">Text</a></p>
+</td>
+</tr>
+</table>
+<p class="Base" style="margin-top: 0pt; margin-bottom: 0pt;">&#160;</p>
+<p class="BigBoldBase" style="font-weight: bold; font-size: 11pt; margin-top: 0pt; margin-bottom: 0pt;"><a name="Application_Object_Properties" id="Application_Object_Properties"></a>Properties</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt;">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_Format" id="Clipboard_Object_Properties_Format"></a>Format</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns or sets the clipboard format.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">Possible formats on Windows are: CF_TEXT, CF_OEMTEXT, CF_UNICODETEXT, and VDS_TEXT.</p>
+<p class="ObjText">Possible formats on Mac are: CF_UNICODETEXT and VDS_TEXT.</p>
+<p class="ObjText">The following command restores the value to the global format for the clipboard:</p>
+<p class="Entry100">crt.Clipboard.Format = crt.Clipboard.DEFAULTFORMAT</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Example</p>
+<p class="Entry100single"><span class="Entry">#$language = "VBScript"</span></p>
+<p class="Entry100single"><span class="Entry">#$interface = "1.0"</span></p>
+<p class="Entry100single"><span class="Entry">crt.Screen.Synchronous = True</span></p>
+<p class="Entry100single"><span class="Entry">Sub Main</span></p>
+<p class="Entry125single"><span class="Entry">' Get the current clipboard format</span></p>
+<p class="Entry125single"><span class="Entry">format = crt.Clipboard.Format</span></p>
+<p class="Entry125single"><span class="Entry">' Set the clipboard format to VDS_TEXT:</span></p>
+<p class="Entry125single"><span class="Entry">crt.Clipboard.Format = crt.Clipboard.VDS_TEXT</span></p>
+<p class="Entry125single"><span class="Entry">' Restore the original clipboard format</span></p>
+<p class="Entry125single"><span class="Entry">crt.Clipboard.Format = format</span></p>
+<p class="Entry100single"><span class="Entry">End Sub</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Example</p>
+<p class="Entry100single">#$language = "Python"</p>
+<p class="Entry100single">#$interface = "1.0"</p>
+<p class="Entry100single">crt.Screen.Synchronous = True</p>
+<p class="Entry100single">def main():</p>
+<p class="Entry125single"># Get the current clipboard format</p>
+<p class="Entry125single">format = crt.Clipboard.Format</p>
+<p class="Entry125single"># Set the clipboard format to VDS_TEXT:</p>
+<p class="Entry125single">crt.Clipboard.Format = crt.Clipboard.VDS_TEXT</p>
+<p class="Entry125single"># Restore the original clipboard format</p>
+<p class="Entry125single">crt.Clipboard.Format = format</p>
+<p class="Entry100single">main()</p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_CF_OEMTEXT" id="Clipboard_Object_Properties_CF_OEMTEXT"></a>CF_OEMTEXT</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Read-only property that returns the format string for <span class="Entry">CF_OEMTEXT</span> clipboard format. This text format contains characters in the OEM character set. Each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data.</p>
+<p class="ObjHeadSub">Note</p>
+<p class="ObjText">This format is only supported on Windows.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single">var = crt.clipboard.CF_OEMTEXT</p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single">var = crt.clipboard.CF_OEMTEXT</p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_CF_TEXT" id="Clipboard_Object_Properties_CF_TEXT"></a>CF_TEXT</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Read-only property that returns the &#160;format string for <span class="Entry">CF_TEXT</span> clipboard format. In this text format, each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data. Use this format for ANSI text.</p>
+<p class="ObjHeadSub">Note</p>
+<p class="ObjText">This format is only supported on Windows.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single"><span class="Entry">var = crt.clipboard.CF_TEXT</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single">var = crt.clipboard.CF_TEXT</p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_CF_UNICODETEXT" id="Clipboard_Object_Properties_CF_UNICODETEXT"></a>CF_UNICODETEXT</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Read-only property that returns the format string for <span class="Entry">CF_UNICODETEXT</span> clipboard format. For Windows: In Unicode text format, each line ends with a carriage return/linefeed (CR-LF) combination. A null character signals the end of the data.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single">var = crt.clipboard.CF_UNICODETEXT</p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single">var = crt.clipboard.CF_UNICODETEXT</p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_DEFAULTFORMAT" id="Clipboard_Object_Properties_DEFAULTFORMAT"></a>DEFAULTFORMAT</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Read-only Property that returns the format string for <span class="Entry">DEFAULTFORMAT</span> clipboard format. Setting the format to this property restores the value to the global default format for the clipboard.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">var = crt.clipboard.DEFAULTFORMAT</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">var = crt.clipboard.DEFAULTFORMAT</span></p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_VDS_TEXT" id="Clipboard_Object_Properties_VDS_TEXT"></a>VDS_TEXT</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Read-only property that returns the format string for <span class="Entry">VDS_TEXT</span> clipboard format. This is a private clipboard format that translates certain special characters to ASCII when copying data from the screen to the clipboard. The characters that are translated are as follows:</p>
+<p class="ObjText" style="text-indent: -24px; margin-left: 120px;"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->directional quotation marks (also known as "smart quotes") are changed to ASCII quotation marks</p>
+<p class="ObjText" style="text-indent: -24px; margin-left: 120px;"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->"em" dashes are changed to hyphens</p>
+<p class="ObjText" style="text-indent: -24px; margin-left: 120px;"><span style="font-family: Symbol, sans-serif;">·</span>&#160;&#160;&#160;&#160;<!--ForeHelp.EndIgnore-->"en" dashes are changed to hyphens</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">var = crt.clipboard.VDS_TEXT</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">var = crt.clipboard.VDS_TEXT</span></p>
+<p class="ObjText">&#160;</p>
+<p class="ObjHead"><a name="Clipboard_Object_Properties_Text" id="Clipboard_Object_Properties_Text"></a>Text</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns or sets the contents of the clipboard.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single"><span class="Entry">crt.clipboard =</span> <span class="Entry" style="font-style: italic;"><i>varname</i></span></p>
+<p class="Entry100single"><span class="Entry">[</span> <span class="Entry" style="font-style: italic;"><i>varname</i></span> <span class="Entry">= ] crt.clipboard</span></p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Example</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry"># $language = "VBScript"</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry"># $interface = "1.0"</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;">&#160;</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">' Put the selected text into the clipboard:</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">crt.Clipboard.Text = crt.Screen.Selection</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;">&#160;</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">' Transfer text from the clipboard into a variable for</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">' use within the script:</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">MyStr = crt.Clipboard.Text</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;">&#160;</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">' Send the contents of the clipboard to the remote</span></p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;"><span class="Entry">' machine:</span></p>
+<p class="ObjText" style="margin-left: 96px;"><span class="Entry">crt.Screen.Send crt.Clipboard.Text</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Syntax</p>
+<p class="Entry100single"><span class="Entry">crt.clipboard =</span> <span class="Entry" style="font-style: italic;"><i>varname</i></span></p>
+<p class="Entry100single"><span class="Entry">[</span> <span class="Entry" style="font-style: italic;"><i>varname</i></span> <span class="Entry">= ] crt.clipboard</span></p>
+<p class="Entry100single">&#160;</p>
+<p class="ObjHeadSub" style="margin-left: 72px;">Example</p>
+<p class="Entry100single">#$language = "Python"</p>
+<p class="Entry100single">#$interface = "1.0"</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single"># Put the selected text into the clipboard:</p>
+<p class="Entry100single">crt.Clipboard.Text = crt.Screen.Selection</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single"># Transfer text from the clipboard into a variable for</p>
+<p class="Entry100single"># use within the script:</p>
+<p class="Entry100single">MyStr = crt.Clipboard.Text</p>
+<p class="Entry100single">&#160;</p>
+<p class="Entry100single"># Send the contents of the clipboard to the remote</p>
+<p class="Entry100single"># machine:</p>
+<p class="Entry100single">crt.Screen.Send(crt.Clipboard.Text)</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;">&#160;</p>
+<p class="ObjText" style="margin-left: 96px; margin-bottom: 0pt;">&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

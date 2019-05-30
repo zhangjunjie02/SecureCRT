@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Global Options/General</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Dialogs\nGlobal Options Dialog\nGeneral");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Connect_Dialog.htm\">Dialogs<\/a> > <a href=\"Global_Options_Dialog.htm\">Global Options Dialog<\/a> > General<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;General</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p>The <strong>General</strong> category of the <!--ForeHelp.Hotspot JUMP="Global_Options_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Global_Options_Dialog.htm"><span class="DialogName">Global Options</span></a> 
+ dialog allows you to configure general <span>Secure</span>CRT options.</p>
+<p class="Group">Dialogs group</p>
+<p>This group contain options that control the display of optional dialogs. 
+ These dialogs are displayed by default.</p>
+<p class="Field025"><a name="Show_connection_closed_dialog" id="Show_connection_closed_dialog"></a>Show 
+ connection closed dialog</p>
+<p class="Normal025">Check this option to display a <a href="javascript:TextPopup(this)" id="HotSpot39183" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot39183', 'POPUP39183');
+//]]></script><span class="glosstext" id="POPUP39183" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> 
+ closed message when the connection is closed.</p>
+<p class="Field025">Show confirm disconnect dialog</p>
+<p class="Normal025">Check this option to display a message asking for 
+ confirmation before <a class="glossterm">disconnecting</a> 
+ .</p>
+<p class="Field025">Show connect dialog on startup</p>
+<p class="Normal025">Check this option to display the <a href="Connect_Dialog.htm"><span 
+	 class="DialogName">Connect</span></a> dialog on startup of <span>Secure</span>CRT.</p>
+<p class="Field">Save expanded folder state in connect dialog</p>
+<p class="Normal025">Check this option to have SecureCRT remember the state 
+ (expanded or collapsed) of folders in the <a href="Connect_Dialog.htm"><span 
+	 class="DialogName">Connect</span></a> dialog.</p>
+<p class="Field">New session uses wizard</p>
+<p class="Normal025">Enabling this option causes the <span class="Label">New 
+ Session</span> toolbar button in the <span class="DialogName">Connect</span> 
+ dialog to start the New Session wizard. Disabling this option causes this 
+ button to open the <span class="DialogName"><a href="Session_Options_Dialog.htm">Session 
+ Options</a></span> dialog instead. This option is enabled by default.</p>
+<p class="Field">Use dockable Session Manager</p>
+<p class="Normal025">Check this option to use the <a href="Session_Manager.htm">Session 
+ Manager</a> for managing sessions. Uncheck this option to use the <a href="Connect_Dialog.htm"><span 
+	 class="DialogName">Connect</span></a> dialog for managing sessions.</p>
+<p class="Group">View group</p>
+<p>This group includes options that allow you to show or hide components 
+ of the <span>Secure</span>CRT application window. To turn off any of these 
+ options, clear the associated check box. The available options are as 
+ follows:</p>
+<p class="Field025">Show toolbar</p>
+<p class="Spacer">&#160;</p>
+<p class="Field025">Show status bar</p>
+<p class="Spacer">&#160;</p>
+
+
+
+<p class="Spacer">&#160;</p>
+
+<p class="Group">Mac options group</p>
+<p>This group includes options specific 
+ to the Mac OS X platform.</p>
+<p class="Field025">Use Keychain</p>
+<p class="Normal025">Check this option 
+ to save session passwords to the Mac Keychain rather than encrypted in 
+ SecureCRT's configuration files.</p>
+<p class="Field025">Disable App Nap 
+ to allow background processing</p>
+<p class="Normal025">Check this option 
+ so that background processing, such as anti-idle, continues when SecureCRT 
+ does not have focus.</p>
+<p class="Group">Sessions group</p>
+<p>This group includes options that deal with <span>Secure</span>CRT sessions. 
+ The available options are as follows:</p>
+<p class="Field025">Connect dialog sort order</p>
+<p class="Normal025">Select the method by which you want to sort the entries 
+ listed in the session tree of the <span style="font-weight: bold;">Connect</span> 
+ dialog. Sessions can be sorted alphabetically (i.e., A1, A10, A2, B), 
+ logically (i.e., A1, A2, A10, B), or manually. This option can also be 
+ controlled from the <span style="font-weight: bold;">Connect</span> dialog's 
+ <span style="font-weight: bold;">Arrange Tree</span> context menu option. 
+ See also <!--ForeHelp.Hotspot JUMP="Arranging_Entries_in_the_Connect_Dialog"--><!--ForeHelp.EndHotspot--><a 
+	 href="Arranging_Entries_in_the_Co.htm">Arranging Entries in the Connect 
+ Dialog</a>.</p>
+
+
+<p class="Field025">Recently used sessions list</p>
+<p class="Normal025">This option allows you to configure the number of 
+ <a class="glossterm">sessions</a> listed in the 
+ <strong>Recently Used Sessions</strong> section of the <strong>File</strong> 
+ menu. The <strong>Recently Used Sessions</strong> list displays a list 
+ of sessions that have recently been used to connect to a remote machine. 
+ The default value is 4.</p>
+<p class="NoteLevel2"><span class="NoteBold" style="font-weight: bold;">Note:</span> 
+ Entering a value of 0 (zero) in the <strong>Recently used sessions list</strong> 
+ entry box will disable the list in the <strong>File</strong> menu and 
+ clear the list of all entries.</p>
+<p class="RelatedTopics">
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Global Options/General/Default Session','GO_General_Default_Session.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" height="19" width="93" alt="Related Topics" /></a>
+
+ </p>
+<p>&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Tab Object</title>
+<link rel="StyleSheet" href="SecureCRT.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.replace(strUrl.substring(0, n));
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Scripting\nScript Objects Reference\nTab Object");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("SecureCRT.htm", "", ">", "Home", "Welcome.htm");
+document.write("<a href=\"Creating_Python_Scripts.htm\">Scripting<\/a> > <a href=\"Application_Object.htm\">Script Objects Reference<\/a> > Tab Object<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('SecureCRT.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(0);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="./ehlpdhtm.js" language="JavaScript1.2"></script>
+
+
+
+<p class="Banner"><span><img src="secureicon.bmp" alt="SecureCRT Icon" 
+							 title="SecureCRT Icon" width="32" height="32" 
+							 border="0" /></span> &#160;Tab Object</p>
+<!--ForeHelp.Ignore-->
+<hr align="center" />
+<!--ForeHelp.EndIgnore-->
+<!--ForeHelp.EndBanner-->
+<p class="SectionHead">Description</p>
+<p class="Normal025">The Tab object provides access to the tab functions 
+ that exist for the current <a href="javascript:TextPopup(this)" id="HotSpot53241" class="glossterm">connection</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot53241', 'POPUP53241');
+//]]></script><span class="glosstext" id="POPUP53241" style="display: none;"> A data path or circuit between two computers over a phone line, network cable, or other means.</span> 
+ or <a href="javascript:TextPopup(this)" id="HotSpot36077" class="glossterm">session</a><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+TextPopupInit('HotSpot36077', 'POPUP36077');
+//]]></script><span class="glosstext" id="POPUP36077" style="display: none;"> A session is a set of options that are assigned to a connection to a remote machine.  These settings and options are saved under a session name and allow the user to have different preferences for different hosts.</span>. The Tab object 
+ can also be used to work with tiled session windows.</p>
+<p class="SectionHead">Syntax</p>
+<p class="Normal025" style="margin-bottom: 0pt;"><nobr style="white-space: nowrap;"><span 
+	 class="Entry" style="font-style: italic;"><i>objTab</i></span><span class="Entry">.P<i>roperty</i> 
+ [ = <i>expression</i> ]</span></nobr></p>
+<p class="Normal025" style="margin-top: 0pt;"><nobr style="white-space: nowrap;"><span 
+	 class="Entry" style="font-style: italic;"><i>objTab</i></span><span class="Entry">.M<i>ethod</i>([<i>arglist</i>])</span></nobr></p>
+<p class="SectionHead"><u style="text-decoration: underline; ">Tab Object 
+ Properties and Methods</u></p>
+<table cellspacing="1">
+	<col width="193" />
+	<col width="191" />
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="TableContent"><!--ForeHelp.Hotspot JUMP="Session_Object_Properties"--><!--ForeHelp.EndHotspot--><b><a 
+		 href="Tab_Object.htm#Tab_Object_Properties">Properties</a></b></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="TableContent"><!--ForeHelp.Hotspot JUMP="Session_Object_Methods"--><!--ForeHelp.EndHotspot--><b><a 
+		 href="Tab_Object.htm#Tab_Object_Methods">Methods</a></b></p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="3" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Properties_Caption">Caption</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" height="3" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Methods_ActivateTab">Activate</a></p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Properties_Index">Index</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Methods_CloneTab">Clone</a></p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Properties_Screen">Screen</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Methods_Close">Close</a></p></td>
+	</tr>
+	<tr>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="193"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Properties_Session">Session</a></p></td>
+		<td style="padding-left: 1px; padding-top: 1px; padding-right: 1px; 
+			 padding-bottom: 1px;" width="191"><p class="ObjTableContent">&#160;&#160;&#160;&#160;<a 
+		 href="#Tab_Object_Methods_ConnectSftpTab">ConnectSftp</a></p></td>
+	</tr>
+</table>
+<p class="SectionHead"><a name="Tab_Object_Properties" id="Tab_Object_Properties"></a>Properties</p>
+<p class="ObjHead"><a name="Tab_Object_Properties_Caption" id="Tab_Object_Properties_Caption"></a>Caption</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns or sets the caption of the specified tab object.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">Setting this property sets the caption of the tab or 
+ tiled session window and sets the caption of the main application window 
+ if the tab or tiled session window is active. Tabs can be renamed by right-clicking 
+ on the name on the session tab and selecting <span style="font-weight: bold;">Rename</span>. 
+ The name change remains in effect until the tab is reused or until SecureCRT 
+ exits.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i><span class="Entry" 
+	 style="font-style: normal;">[</span> <span class="Entry">varname</span> 
+ <span class="Entry" style="font-style: normal;">= ]</span> <span class="Entry">tab.</span><span 
+	 class="Entry" style="font-style: normal;">Caption</span></i></span></p>
+<p class="Entry100single"><span class="Entry" style="font-style: italic;"><i>t</i></span><span 
+	 style="font-style: italic;"><i>ab</i></span>.Caption = <span style="font-style: italic;"><i>newCaption</i></span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single">[ <span style="font-style: italic;"><i>varname</i></span> 
+ = ] <span style="font-style: italic;"><i>tab</i></span>.Caption</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>tab</i></span>.Caption 
+ = <span style="font-style: italic;"><i>newCaption</i></span></p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Properties_Index" id="Tab_Object_Properties_Index"></a>Index</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns the index for the tab object referenced by <span 
+	 style="font-style: italic;"><i>object</i></span>.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">When sessions are tabbed, the index for each tab object 
+ matches its position in the tab bar. When sessions are tiled, the indexes 
+ of the tab objects may not match the indexes when tabbed, but will remain 
+ consistent while the sessions are tiled.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry">object.</span><span class="Entry">Index</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single">object.Index</p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Properties_Screen" id="Tab_Object_Properties_Screen"></a>Screen</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns a reference to the Screen object associated 
+ with the <span style="font-style: italic;"><i>tab</i></span> object.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">Object variables assigned from the screen property require 
+ the &quot;Set&quot; syntax. See the Screen object documentation for a 
+ description of its properties and methods.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry">Set <i>object</i> =</span> 
+ <span class="Entry" style="font-style: italic;"><i>tab</i></span><span class="Entry">.Screen</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span> 
+ = <span style="font-style: italic;"><i>tab</i></span>.Screen</p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Properties_Session" id="Tab_Object_Properties_Session"></a>Session</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns a reference to the Session object associated 
+ with the <span style="font-style: italic;"><i>tab</i></span> object..</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">See the Session object documentation for a description 
+ of its properties and methods.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry">Set <i>object</i> =</span> 
+ <span class="Entry" style="font-style: italic;"><i>tab</i></span><span class="Entry">.Session</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span> 
+ = <span style="font-style: italic;"><i>tab</i></span>.Session</p>
+<p class="objhead075indent">&#160;</p>
+<p class="SectionHead"><a name="Tab_Object_Methods" id="Tab_Object_Methods"></a>Methods</p>
+<p class="ObjHead"><a name="Tab_Object_Methods_ActivateTab" id="Tab_Object_Methods_ActivateTab"></a>Activate</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Brings the tab or tiled session window referenced by 
+ <span style="font-style: italic;"><i>object</i></span> to the foreground.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">A tab can receive and send text whether active or not. 
+ This method simulates a user clicking on a tab or tiled session window 
+ to activate.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry"><i style="font-style: italic;">object</i>.Activate</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Activate()</p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Methods_CloneTab" id="Tab_Object_Methods_CloneTab"></a>Clone</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Returns a reference to a tab object cloned from the 
+ specified <span style="font-style: italic;"><i>object</i></span> tab reference.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">Cloned sessions benefit from their parent session already 
+ having been authenticated to the server. Therefore, cloned sessions require 
+ no additional authentication.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry"><i style="font-style: italic;">Set 
+ cloneTab = object</i>.Clone</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>cloneTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.Clone()</p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Methods_Close" id="Tab_Object_Methods_Close"></a>Close</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Closes the tab or tiled session window referenced by 
+ <span style="font-style: italic;"><i>object</i></span>.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">Any active connection associated with the tab (or tiled 
+ session window) referenced by <span style="font-style: italic;"><i>object</i></span> 
+ is terminated when the tab (or tiled session window) is closed. The tab 
+ or tiled session window running the script cannot be closed.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry"><i style="font-style: italic;">object</i>.Close</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>object</i></span>.Close()</p>
+<p class="objhead075indent">&#160;</p>
+<p class="ObjHead"><a name="Tab_Object_Methods_ConnectSftpTab" id="Tab_Object_Methods_ConnectSftpTab"></a>ConnectSftp</p>
+<p class="ObjHeadSub">Description</p>
+<p class="ObjText">Creates an SFTP tab based on this tab. When in tiled 
+ mode, creates an SFTP session window based on this tiled session.</p>
+<p class="ObjHeadSub">Remarks</p>
+<p class="ObjText">SFTP sessions benefit from their parent session already 
+ having been authenticated to the server. Therefore, SFTP sessions require 
+ no additional authentication.</p>
+<p class="ObjHeadSub">VBScript</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span class="Entry"><i style="font-style: italic;">Set 
+ sftpTab =</i> <i>object</i>.ConnectSftp</span></p>
+<p class="ObjHeadSub">Python</p>
+<p class="objhead075indent">Syntax</p>
+<p class="Entry100single"><span style="font-style: italic;"><i>sftpTab</i></span> 
+ = <span style="font-style: italic;"><i>object</i></span>.ConnectSftp()</p>
+<p class="objhead075indent">&#160;</p>
+<!--ForeHelp.EndBanner-->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
